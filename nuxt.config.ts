@@ -11,6 +11,20 @@ export default defineNuxtConfig({
     dirs: ["composables/**"],
   },
 
+  // https://nuxt.com/docs/guide/concepts/modules
+  modules: ["@vesp/nuxt-fontawesome"],
+
+  // https://nuxt.com/modules/nuxt-fontawesome
+  fontawesome: {
+    // https://github.com/bezumkin/nuxt-fontawesome/tree/main
+    component: "fa",
+    suffix: true,
+    icons: {
+      solid: ["dollar-sign", "cog", "circle", "check", "calendar"],
+      regular: ["user"],
+    },
+  },
+
   // https://tailwindcss.com/docs/guides/nuxtjs
   postcss: {
     plugins: {
