@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
 export default {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -9,6 +11,39 @@ export default {
     "./error.vue",
   ],
   theme: {
+    colors: {
+      inherit: colors.inherit,
+      transparent: colors.transparent,
+      current: colors.current,
+      white: colors.white,
+      black: colors.black,
+      slate: colors.slate,
+      gray: colors.gray,
+      zinc: colors.zinc,
+      neutral: colors.neutral,
+      stone: colors.stone,
+      red: colors.red,
+      orange: colors.orange,
+      amber: colors.amber,
+      yellow: colors.yellow,
+      lime: colors.lime,
+      green: colors.green,
+      emerald: colors.emerald,
+      teal: colors.teal,
+      cyan: colors.cyan,
+      sky: colors.sky,
+      blue: colors.blue,
+      indigo: colors.indigo,
+      violet: colors.violet,
+      purple: colors.purple,
+      fuchsia: colors.fuchsia,
+      pink: colors.pink,
+      rose: colors.rose,
+      ownPrimary: "#1D2328",
+      ownSecondary: "#0E274C",
+      ownAccent: "#FD2C4D",
+      ownAccent2: colors.white,
+    },
     extend: {},
   },
   plugins: [require("daisyui")],
