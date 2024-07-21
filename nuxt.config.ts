@@ -20,7 +20,15 @@ export default defineNuxtConfig({
     component: "fa",
     suffix: true,
     icons: {
-      solid: ["dollar-sign", "cog", "circle", "check", "calendar"],
+      solid: [
+        "dollar-sign",
+        "cog",
+        "circle",
+        "check",
+        "calendar",
+        "bars",
+        "times",
+      ],
       regular: ["user"],
     },
   },

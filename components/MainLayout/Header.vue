@@ -41,10 +41,9 @@ function toggleNavBar() {
           </select>
         </div>
 
-        <fa-icon icon="cog" />
-
-        <!-- <Icon Name="@(!isNavBarOpen ? IconName.Bars : IconName.Times)"
-          class="text-[1.75rem] sm:text-[2rem] block lg:hidden" @click="toggleNavBar" /> -->
+        <button @click="toggleNavBar" class="block lg:hidden navbar-btn px-4 p-2 rounded-md">
+          <fa-icon :icon="!isNavBarOpen ? 'bars' : 'times'" class="text-[1.75rem] sm:text-[2rem]" />
+        </button>
       </div>
     </div>
   </nav>
