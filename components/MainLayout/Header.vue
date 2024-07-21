@@ -1,5 +1,4 @@
 <script setup lang="ts">
-let isNavBarOpen: boolean = false;
 let myName: string = "Justin Urbanek";
 let navLinks: [string, string][] = [
   ["Home", "/"],
@@ -9,14 +8,15 @@ let navLinks: [string, string][] = [
   ["Kontakt", "/contact"],
 ];
 
-let languages: string[] = [
+let isNavBarOpen: Ref<boolean> = ref(false);
+let languages: Ref<string[]> = ref([
   "de-CH",
   "en-US",
-];
-let currentLanguage: string = languages[0];
+]);
+let currentLanguage: Ref<string> = ref(languages.value[0]);
 
 function toggleNavBar() {
-  isNavBarOpen = !isNavBarOpen;
+  isNavBarOpen.value = !isNavBarOpen.value;
 }
 </script>
 
@@ -29,13 +29,13 @@ function toggleNavBar() {
 
       <div class="flex items-center gap-8">
         <div :class="isNavBarOpen ? 'flex' : 'hidden lg:block'" class="navbar-content flex-col lg:flex-row">
-          <NuxtLink v-for="navLink in navLinks" :to="navLinks[1]"
+          <NuxtLink v-for="navLink in navLinks" :to="navLink[1]"
             class="navbar-btn my-2 lg:my-0 mx-2 px-4 py-2 rounded-md">
             {{ navLink[0] }}
           </NuxtLink>
 
           <select v-model="currentLanguage" class="w-20 inline px-4 py-2 rounded-md navbar-btn-active">
-            <option v-for="language in languages" v-bind:value="language" :value="language">
+            <option v-for="language in languages" v-bind:value="language">
               {{ language.substring(0, 2).toUpperCase() }}
             </option>
           </select>
