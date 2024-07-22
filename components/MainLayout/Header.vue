@@ -18,6 +18,9 @@ let currentLanguage: Ref<string> = ref(languages.value[0]);
 function toggleNavBar() {
   isNavBarOpen.value = !isNavBarOpen.value;
 }
+
+const navBarClass = computed(() => isNavBarOpen.value ? 'flex' : 'hidden lg:block');
+const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
 </script>
 
 <template>
@@ -28,7 +31,7 @@ function toggleNavBar() {
       </p>
 
       <div class="flex items-center gap-8">
-        <div :class="isNavBarOpen ? 'flex' : 'hidden lg:block'" class="navbar-content flex-col lg:flex-row">
+        <div :class="navBarClass" class="navbar-content flex-col lg:flex-row">
           <NuxtLink v-for="navLink in navLinks" :to="navLink[1]"
             class="navbar-btn my-2 lg:my-0 mx-2 px-4 py-2 rounded-md">
             {{ navLink[0] }}
@@ -42,7 +45,7 @@ function toggleNavBar() {
         </div>
 
         <button @click="toggleNavBar" class="block lg:hidden navbar-btn px-4 p-2 rounded-md">
-          <fa-icon :icon="!isNavBarOpen ? 'bars' : 'times'" class="text-[1.75rem] sm:text-[2rem]" />
+          <fa-icon :icon="navBarIcon" class="text-[1.75rem] sm:text-[2rem]" />
         </button>
       </div>
     </div>
