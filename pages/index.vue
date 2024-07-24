@@ -1,8 +1,21 @@
+<script setup lang="ts">
+import HeroBanner from '~/components/HeroBanner.vue';
+
+function NavigateToAbout() {
+  const router = useRouter();
+  router.push('/about');
+}
+</script>
+
 <template>
   <div>
-    <div>
-      <h1>Welcome to the home page</h1>
-      <p>Here you can find all the information you need to know about our company.</p>
-    </div>
+    <HeroBanner :title="'Justin Urbanek - Ich'"
+                :subTitle="null"
+                :paragraphs="['Willkommen auf meiner persönlichen Webseite! Ich bin Justin Urbanek, ein leidenschaftlicher Informatiklernender im dritten Lehrjahr.', 'Aktuell absolviere ich meine Ausbildung bei der Kauz Informatik Medien AG und besuche das Berufsbildungszentrum BBZW Sursee.']"
+                :hasButton="true"
+                :isBigView="true"
+                :buttonText="'Mehr über mich'"
+                @buttonClickEvent="NavigateToAbout"
+    />
   </div>
 </template>

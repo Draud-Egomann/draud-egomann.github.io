@@ -28,6 +28,8 @@ export default defineNuxtConfig({
         "calendar",
         "bars",
         "times",
+        "arrow-right",
+        "arrow-down",
       ],
       regular: ["user"],
     },
