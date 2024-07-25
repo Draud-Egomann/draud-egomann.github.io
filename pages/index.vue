@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import HeroBanner from '~/components/HeroBanner.vue';
+import { ImageBaseItem } from '~/composables/models/ImageBaseItem';
 
 function NavigateToAbout() {
   const router = useRouter();
   router.push('/about');
 }
+
+const birthDate: Date = new Date(2004, 12, 17);
+const mySelfImage: ImageBaseItem = new ImageBaseItem("/imgs/me.png", null, "Image of Myself");
+const catchphraseText: string = `${new Date().getFullYear() - birthDate.getFullYear()}-jähriger angehender Entwickler mit einer Leidenschaft für Informatik`;
 </script>
 
 <template>
@@ -17,5 +21,7 @@ function NavigateToAbout() {
                 :buttonText="'Mehr über mich'"
                 @buttonClickEvent="NavigateToAbout"
     />
+
+    <TextCatchphrase :ImageItem="mySelfImage" :Text="catchphraseText" />
   </div>
 </template>
