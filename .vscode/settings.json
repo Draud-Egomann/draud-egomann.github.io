@@ -23,5 +23,10 @@
     "**/.vscode": true,
     "**/server": true,
     "LICENSE": true
-  }
+  },
+  "cSpell.words": [
+    "composables",
+    "gsap",
+    "pinia"
+  ]
 }
