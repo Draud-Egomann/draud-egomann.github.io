@@ -15,7 +15,6 @@ export const useCountUpAnimationStore = defineStore("countUpAnimation", () => {
   }
 
   return {
-    number,
     counter,
     setNumber,
   };

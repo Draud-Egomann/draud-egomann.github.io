@@ -1,10 +1,18 @@
 <script lang="ts" setup>
 import type { ImageBaseItem } from '#imports';
+import { useCountUpAnimationStore } from '~/stores/CountUpAnimationStore';
 
 const props = defineProps<{
   ImageItem: ImageBaseItem;
   Text: string;
+  Age: number;
 }>();
+
+const countUpAnimation = useCountUpAnimationStore();
+
+onMounted(() => {
+  countUpAnimation.setNumber(props.Age);
+})
 </script>
 
 <template>
@@ -17,7 +25,7 @@ const props = defineProps<{
         <div class="border-b-8 border-ownAccent w-full lg:w-[40rem]"></div>
 
         <h2 class="text-3xl text-center mx-4 font-bold italic">
-          {{ props.Text }}
+          {{ countUpAnimation.counter.number.toFixed(0) }}{{ props.Text }}
         </h2>
       </div>
 

@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import { ImageBaseItem } from '~/composables/models/ImageBaseItem';
 
+const birthDate: Date = new Date(2004, 12, 17);
+const mySelfImage: ImageBaseItem = new ImageBaseItem("/imgs/me.png", null, "Image of Myself");
+const catchphraseText: string = "-jähriger angehender Entwickler mit einer Leidenschaft für Informatik";
+const diff = new Date().getFullYear() - birthDate.getFullYear();
+
 function NavigateToAbout() {
   const router = useRouter();
   router.push('/about');
 }
-
-const birthDate: Date = new Date(2004, 12, 17);
-const mySelfImage: ImageBaseItem = new ImageBaseItem("/imgs/me.png", null, "Image of Myself");
-const catchphraseText: string = `${new Date().getFullYear() - birthDate.getFullYear()}-jähriger angehender Entwickler mit einer Leidenschaft für Informatik`;
 </script>
 
 <template>
@@ -22,6 +23,6 @@ const catchphraseText: string = `${new Date().getFullYear() - birthDate.getFullY
                 @buttonClickEvent="NavigateToAbout"
     />
 
-    <TextCatchphrase :ImageItem="mySelfImage" :Text="catchphraseText" />
+    <TextCatchphrase :ImageItem="mySelfImage" :Text="catchphraseText" :Age="diff" />
   </div>
 </template>
