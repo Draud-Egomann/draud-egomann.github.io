@@ -9,7 +9,7 @@ const props = defineProps<{
 }>();
 const emits = defineEmits(['buttonClickEvent']);
 
-const height = props.isBigView ? "h-[95vh]" : "h-[40vh]";
+const height = props.isBigView ? "h-[100vh]" : "h-[40vh]";
 
 onNuxtReady(() => {
   if (props.hasButton && stringHelper.IsNullOrEmpty(props.buttonText)) {
