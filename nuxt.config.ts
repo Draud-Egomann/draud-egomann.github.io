@@ -34,6 +34,8 @@ export default defineNuxtConfig({
         "times",
         "arrow-right",
         "arrow-down",
+        "book",
+        "copyright",
       ],
       regular: ["user"],
     },
