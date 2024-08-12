@@ -37,6 +37,7 @@ export default defineNuxtConfig({
         "book",
         "copyright",
         "hand-pointer",
+        "arrow-up",
       ],
       regular: ["user"],
     },
