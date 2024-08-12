@@ -46,7 +46,7 @@ function closeModal() {
             {{ currentCard?.BackText }}
           </p>
         </div>
-        <label class="modal-backdrop bg-gray-800/80" for="my_modal_combined" @click="closeModal">Close</label>
+        <label class="modal-backdrop bg-gray-900/80" for="my_modal_combined" @click="closeModal">Close</label>
       </dialog>
 
     </div>
