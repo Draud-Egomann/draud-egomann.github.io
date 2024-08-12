@@ -13,11 +13,13 @@ function setCurrentCard() {
 
 <template>
 
-  <div @click="setCurrentCard" class="w-[80vw] md:w-80 h-52 relative flex flex-wrap flip-box">
-    <div class="tw-front front">
-      <p class="tw-content content">
+  <div class="w-full sm:w-[48%] lg:w-80 h-52 relative flex flex-wrap flip-box">
+    <div @click="setCurrentCard" class="tw-front front">
+      <p class="w-full tw-content content">
         {{ card.FrontText }}
       </p>
+
+      <fa-icon class="block md:hidden w-full text-3xl text-white" icon="hand-pointer" />
     </div>
 
     <div class="tw-back back" :style="`background-image: url(${card.ImageUrl});`">
@@ -41,7 +43,7 @@ function setCurrentCard() {
 
 .tw-front,
 .tw-back {
-  @apply relative flex justify-center items-center flex-grow flex-shrink basis-full bg-cover bg-center bg-gray-600 z-10 rounded-xl p-4 sm:p-0;
+  @apply relative flex flex-wrap justify-center items-center flex-grow flex-shrink basis-full bg-cover bg-center bg-gray-600 z-10 rounded-xl p-4 sm:p-0;
 }
 
 .back,
