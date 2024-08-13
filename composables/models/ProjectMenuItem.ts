@@ -13,7 +13,6 @@ export class ProjectMenuItem extends ImageBaseItem {
   public Slides: MediaItem[] | null;
 
   constructor(
-    imageUrl: string,
     title: string,
     description: string,
     moreInfoText: string | null = null,
@@ -23,6 +22,7 @@ export class ProjectMenuItem extends ImageBaseItem {
     linkToSourceCodes: string[] | null = null,
     classes: string[] = [],
     slides: MediaItem[] | null = null,
+    imageUrl: string,
     imageClass: string | null = null,
     imageAltText: string | null = null,
     thumbnailUrl: string | null = null,
@@ -38,5 +38,9 @@ export class ProjectMenuItem extends ImageBaseItem {
     this.LinkToSourceCodes = linkToSourceCodes;
     this.Classes = classes;
     this.Slides = slides;
+  }
+
+  get HasMoreInfo(): boolean {
+    return !stringHelper.IsNullOrEmpty(this.MoreInfoText);
   }
 }
