@@ -37,5 +37,7 @@ function NavigateToAbout() {
                       :main-text="'Im Laufe meiner Ausbildung und beruflichen Tätigkeit habe ich an einer Vielzahl von Projekten gearbeitet, von Schulprojekten, Arbeitsprojekten, privaten Projekten bis hin Hackathon-Projekten. Meine Markanntesten Projekte sind hier einsehbar.'"
                       :mediaItems="gridContentItems"
     />
+
+    <MiscPepeLink />
   </div>
 </template>

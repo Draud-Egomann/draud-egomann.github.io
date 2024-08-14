@@ -27,5 +27,7 @@ onMounted(() => {
     />
 
     <MiscTimeline :timelineItems="timelineItems" />
+    
+    <MiscPepeLink />
   </div>
 </template>

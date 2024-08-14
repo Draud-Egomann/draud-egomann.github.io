@@ -20,5 +20,7 @@ const card: MediaItem[] = [
                     @buttonClickEvent="() => { }" />
 
     <CardsContactCards :cards="card" />
+
+    <MiscPepeLink />
   </div>
 </template>
