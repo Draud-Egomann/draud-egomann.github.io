@@ -40,6 +40,7 @@ export default defineNuxtConfig({
         "arrow-up",
         "external-link-square-alt",
         "copy",
+        "link",
       ],
       regular: ["user"],
     },

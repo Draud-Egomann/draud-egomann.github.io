@@ -4,12 +4,14 @@ export class MediaItem extends ImageBaseItem {
   public Title: string | null;
   public Description: string | null;
   public LinkUrl: string | null;
+  public LinkText: string | null;
 
   constructor(
     imageUrl: string,
     title: string | null = null,
     description: string | null = null,
     linkUrl: string | null = null,
+    linkText: string | null = null,
     imageClass: string | null = null,
     imageAltText: string | null = null,
     thumbnailUrl: string | null = null,
@@ -19,6 +21,7 @@ export class MediaItem extends ImageBaseItem {
     this.Title = title;
     this.Description = description;
     this.LinkUrl = linkUrl;
+    this.LinkText = linkText;
   }
 
   // Example of a property with a getter
