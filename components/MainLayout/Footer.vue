@@ -21,7 +21,7 @@ function setFooterBackground() {
 
 <template>
   <div :class="background" class="w-full text-white">
-    <div class="flex flex-col sm:flex-row justify-between items-center container px-8 py-4">
+    <div class="flex flex-col sm:flex-row justify-between items-center container px-8 py-4 mx-auto">
       <p class="inline text-2xl font-bold text-white my-4 sm:my-0">
         <fa-icon icon="copyright" class="text-white" />
 
