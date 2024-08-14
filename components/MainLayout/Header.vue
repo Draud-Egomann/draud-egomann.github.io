@@ -25,7 +25,7 @@ const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
 
 <template>
   <nav class="w-full sm:fixed z-40 bg-ownPrimary text-white sm:px-8 shadow-md shadow-gray-800">
-    <div class="flex flex-col sm:flex-row justify-between items-center container py-4 mx-auto">
+    <div class="flex flex-col sm:flex-row justify-between items-center container py-2 lg:py-4 mx-auto">
       <p class="inline text-3xl font-bold text-white my-4 sm:my-0">
         {{ myName }}
       </p>
