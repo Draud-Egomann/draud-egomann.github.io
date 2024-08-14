@@ -7,6 +7,12 @@ const timelineItems: TimelineItem[] = [
   new TimelineItem(new Date(2021, 2, 1), new Date(2025, 8, 1), "Berufliche Ausbildung als Informatiker Applikationsentwicklung (Kauz Informatik Medien AG)", "Berufliche Ausbildung als Informatiker Applikationsentwicklung bei der Kauz Informatik Medien AG in Ballwil. Während der Ausbildung wurde ich mit dem Google Workspace, sämtlichen Front- und Backendtechnologien, sowie der Konzeption und Umsetzung von Webapplikationen vertraut gemacht. Nahen Kundenkontakt gehörte ebenfalls zu meinen Aufgaben."),
   new TimelineItem(new Date(2021, 8, 19), new Date(2025, 7, 5), "Berufsliche Ausbildung als Informatiker Applikationsentwicklung (BBZW Sursee)", "Während dem theoretischen Teil der beruflichen Ausbildung besuche ich das Berufsbildungszentrum für Wirtschaft und Informatik (BBZW) in Sursee. Dort habe ich neben den Grundlagen des Unterrichts, Kenntnisse über Microsoft Office erlangt."),
 ]
+
+onMounted(() => {
+  if (timelineItems.length === 0) {
+    throw new Error('Timeline requires at least one item.');
+  }
+});
 </script>
 
 <template>
