@@ -39,6 +39,7 @@ export default defineNuxtConfig({
         "hand-pointer",
         "arrow-up",
         "external-link-square-alt",
+        "copy",
       ],
       regular: ["user"],
     },
