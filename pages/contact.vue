@@ -6,9 +6,6 @@ const card: MediaItem[] = [
   new MediaItem("https://via.placeholder.com/350", "Placeholder", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec elit sodales tincidunt.", "https://www.google.com"),
   new MediaItem("https://via.placeholder.com/350", "Placeholder", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec elit sodales tincidunt.", "https://www.google.com"),
   new MediaItem("https://via.placeholder.com/350", "Placeholder", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec elit sodales tincidunt.", "https://www.google.com"),
-  new MediaItem("https://via.placeholder.com/350", "Placeholder", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec elit sodales tincidunt.", "https://www.google.com"),
-  new MediaItem("https://via.placeholder.com/350", "Placeholder", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec elit sodales tincidunt.", "https://www.google.com"),
-  new MediaItem("https://via.placeholder.com/350", "Placeholder", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec elit sodales tincidunt.", "https://www.google.com"),
 ]
 </script>
 
