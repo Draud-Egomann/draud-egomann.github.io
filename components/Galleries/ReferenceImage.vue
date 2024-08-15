@@ -30,6 +30,6 @@ defineProps<{
 
 <style>
 .link {
-  @apply text-white no-underline;
+  @apply text-white underline;
 }
 </style>
