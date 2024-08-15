@@ -51,6 +51,6 @@ const contactHobbyCards: MediaItem[] = [
 
     <CardsReferenceCards :cards="contactHobbyCards" />
 
-    <TextDivider :text="'Benutzte nicht aufgelistete Bilder werden entweder noch hinzugefügt oder sind Eigenkreationen.'" />
+    <TextDivider :text="'Benutzte nicht aufgelistete Bilder werden entweder noch hinzugefügt, sind Eigenkreationen oder sind direkt bei der Grafik verlinkt.'" />
   </div>
 </template>
