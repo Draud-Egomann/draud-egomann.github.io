@@ -56,7 +56,7 @@ function closeModal() {
 </script>
 
 <template>
-  <div class="flex flex-wrap justify-around items-center own-bg-primary gap-32 lg:gap-16 py-24 overflow-hidden">
+  <div class="flex flex-wrap justify-around items-center bg-ownPrimary gap-32 lg:gap-16 py-24 overflow-hidden">
     <CardsCard v-for="card, index in cards" :key="index" :class="isSearchItem(index)" class="w-full lg:w-1/2 xl:w-1/3"
       :card="card" :index="index" @buttonClickEvent="selectCard(index)" />
 
@@ -78,7 +78,7 @@ function closeModal() {
             <GalleriesImageCarousel v-if="currentCard?.Slides && currentCard.Slides.length > 0" class="w-full xl:w-1/2"
               :slides="currentCard.Slides" />
 
-            <div class="w-full xl:w-1/2 flex flex-col justify-center items-center gap-4 mt-5">
+            <div class="w-full xl:w-2/3 xxl:w-1/2 flex flex-col justify-center items-center gap-4 mt-5">
               <p class="text-lg text-center text-white">
                 {{ currentCard.Description }}
               </p>
@@ -111,7 +111,7 @@ function closeModal() {
                   <a v-for="item, index in currentCard.LinkToSourceCodes" :href="item" target="_blank" rel="nofollow"
                     class="w-1/3 m-4">
                     <button class="btn btn-outline btn-info">
-                      {{ index + "." }} Source Code ansehen
+                      {{ index + 1 + "." }} Source Code ansehen
                       <fa-icon icon="external-link-square-alt" class="ml-2" />
                     </button>
                   </a>
