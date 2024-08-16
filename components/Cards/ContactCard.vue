@@ -70,7 +70,7 @@ function copyToClipboard(text: string) {
           class="ml-4 flex items-center justify-center rounded-lg bg-[#2c5ea8] text-white py-2 px-4 shadow-md hover:bg-[#193a6c] transition-all">
           <fa-icon icon="copy" class="w-6 h-6" />
         </button>
-        <NuxtLink v-else :to="card.LinkUrl ?? '/'"
+        <NuxtLink v-else :to="card.LinkUrl ?? '/'" target="_blank" rel="nofollow"
           class="ml-4 flex items-center justify-center rounded-lg bg-[#2c5ea8] text-white py-2 px-4 shadow-md hover:bg-[#193a6c] transition-all">
           <fa-icon icon="link" class="w-6 h-6" />
         </NuxtLink>
