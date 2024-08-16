@@ -8,15 +8,13 @@ import {
 } from "#imports";
 
 export class DataProvider {
-  async GetNavBarLinks() {
-    return [
-      { title: "Home", url: "/" },
-      { title: "Über mich", url: "/about" },
-      { title: "Erfahrung", url: "/experience" },
-      { title: "Projekte", url: "/projects" },
-      { title: "Kontakt", url: "/contact" },
-    ];
-  }
+  static GetNavBarLinks = (): [string, string][] => [
+    ["Home", "/"],
+    ["Über mich", "/about"],
+    ["Erfahrung", "/experience"],
+    ["Projekte", "/projects"],
+    ["Kontakt", "/contact"],
+  ];
 
   static GetExperienceContent = (): MediaItem[] => [
     new MediaItem(

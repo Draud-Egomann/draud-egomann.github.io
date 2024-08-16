@@ -1,14 +1,8 @@
 <script setup lang="ts">
 let myName: string = "Justin Urbanek";
-let navLinks: [string, string][] = [
-  ["Home", "/"],
-  ["Über mich", "/about"],
-  ["Erfahrung", "/experience"],
-  ["Projekte", "/projects"],
-  ["Kontakt", "/contact"],
-];
-
+let navLinks = DataProvider.GetNavBarLinks();
 let isNavBarOpen: Ref<boolean> = ref(false);
+
 let languages: Ref<string[]> = ref([
   "de-CH",
   "en-US",
