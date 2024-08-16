@@ -2,6 +2,7 @@
 let myName: string = "Justin Urbanek";
 let navLinks = DataProvider.GetNavBarLinks();
 let isNavBarOpen: Ref<boolean> = ref(false);
+const route = useRoute();
 
 let languages: Ref<string[]> = ref([
   "de-CH",
@@ -27,7 +28,8 @@ const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
       <div class="flex items-center gap-8">
         <div :class="navBarClass" class="navbar-content flex-col lg:flex-row">
           <NuxtLink v-for="navLink in navLinks" :to="navLink[1]"
-            class="navbar-btn my-2 lg:my-0 mx-2 px-4 py-2 rounded-md">
+            :class="navLink[1] === route.path ? 'navbar-btn-active' : 'navbar-btn'"
+            class="my-2 lg:my-0 mx-2 px-4 py-2 rounded-md">
             {{ navLink[0] }}
           </NuxtLink>
 
