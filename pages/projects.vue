@@ -27,6 +27,8 @@ function scrollToElement(elementId: string) {
 
 <template>
   <div>
+    <title>Justin Urbanek - Projekte</title>
+
     <LazyHeroBanner :title="'Nennenswerte Arbeiten'"
                     :subTitle="'Meilensteine und kreative Leistungen'"
                     :paragraphs="[]"

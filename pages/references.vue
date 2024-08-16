@@ -9,6 +9,8 @@ const contactHobbyCards: MediaItem[] = DataProvider.GetReferencesHobbyCards();
 
 <template>
   <div>
+    <title>Justin Urbanek - Quellenverzeichnis</title>
+
     <LazyHeroBanner :title="'Quellenverzeichnis'"
                     :subTitle="'Ja, ich verlinke Quellen!'"
                     :paragraphs="[]"

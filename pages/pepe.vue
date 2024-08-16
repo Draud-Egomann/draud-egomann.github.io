@@ -1,5 +1,7 @@
 <template>
   <div>
+    <title>Pepe?</title>
+
     <LazyHeroBanner :title="'Pepe?'"
                     :subTitle="'Pepe.'"
                     :paragraphs="[]"

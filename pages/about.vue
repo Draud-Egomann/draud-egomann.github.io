@@ -13,6 +13,8 @@ function NavigateToProjects() {
 
 <template>
   <div>
+    <title>Justin Urbanek - Über mich</title>
+
     <LazyHeroBanner :title="'Über mich'"
                     :subTitle="'Krume Tastatur, krummer Rücken, Krume Finger'"
                     :paragraphs="[]"

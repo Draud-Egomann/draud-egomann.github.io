@@ -1,5 +1,7 @@
 <template>
   <div>
+    <title>Justin Urbanek - GiGi?</title>
+
     <LazyHeroBanner :title="'GiGi?'"
                     :subTitle="'GIGI QUEEN.'"
                     :paragraphs="[]"

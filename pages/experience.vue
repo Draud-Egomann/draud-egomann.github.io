@@ -12,6 +12,8 @@ onMounted(() => {
 
 <template>
   <div>
+    <title>Justin Urbanek - Erfahrung</title>
+
     <LazyHeroBanner :title="'Meine Erfahrung'"
                     :subTitle="'Meine bisherigen Stationen und Erfahrungen.'"
                     :paragraphs="[]"
