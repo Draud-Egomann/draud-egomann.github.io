@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   },
 
   // https://nuxt.com/docs/guide/concepts/modules
-  modules: ["@vesp/nuxt-fontawesome", "@pinia/nuxt"],
+  modules: ["@vesp/nuxt-fontawesome", "@pinia/nuxt", "nuxt-aos"],
 
   pinia: {
     storesDirs: ["./stores/**"],
