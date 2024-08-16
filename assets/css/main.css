@@ -11,11 +11,11 @@
 }
 
 .bgImgParallax {
-  @apply bg-cover bg-center bg-no-repeat bg-fixed;
+  @apply bg-cover bg-center bg-no-repeat bg-fixed -left-[1px];
 }
 
 .bgImg {
-  @apply bg-contain bg-fixed bg-no-repeat -left-1;
+  @apply bg-contain bg-fixed bg-no-repeat -left-[2px];
 }
 
 .bg-heroBanner {
