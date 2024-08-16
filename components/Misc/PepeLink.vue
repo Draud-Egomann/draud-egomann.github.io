@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const randomPositionY = ref(0);
 const randomPositionX = ref(0);
+const link = ref(["", ""]);
 
 onMounted(() => {
   const fullHeight = document.body.scrollHeight;
@@ -8,6 +9,8 @@ onMounted(() => {
 
   randomPositionY.value = rndGenerator.generateBiasedRandom(fullHeight - 68, 0.5, 0.15);
   randomPositionX.value = rndGenerator.generateBiasedRandom(fullWidth, 0.2, 0.2);
+
+  link.value = Math.floor(Math.random() * 2) == 0 ? ["/pepe", "text-green-600", "pepe?"] : ["/gigi", "text-purple-600", "gigi?"];
 });
 
 
@@ -20,11 +23,11 @@ function getStyle() {
 </script>
 
 <template>
-  <NuxtLink to="/pepe" rel="nofollow">
-    <div
-      class="absolute z-50 underline font-bold text-xl text-green-600 opacity-0 transition duration-500 hover:opacity-100 hover:cursor-pointer"
+  <NuxtLink :to="link[0]" rel="nofollow">
+    <div :class="link[1]"
+      class="absolute z-50 underline font-bold text-xl opacity-0 transition duration-500 hover:opacity-100 hover:cursor-pointer"
       :style="getStyle()">
-      pepe?
+      {{ link[2] }}
     </div>
   </NuxtLink>
 </template>
