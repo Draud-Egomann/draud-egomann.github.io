@@ -21,7 +21,7 @@ export class DataProvider {
       "https://www.kauz.ch/assets/imgs/logo/kim-inv.svg",
       null,
       null,
-      "/projects/kauz",
+      "/projects?search=kauz",
       null,
       "bg-[#1b2533] bgImg",
       "Kauz Website"
@@ -30,7 +30,7 @@ export class DataProvider {
       "./imgs/logos/magical-imagery.svg",
       null,
       null,
-      "/projects/magical",
+      "/projects?search=magical",
       null,
       null,
       "Magical Imagery"
@@ -39,7 +39,7 @@ export class DataProvider {
       "https://young-talents-hackathon.ch/wp-content/uploads/2022/09/Hackathon_Logo_rgb.png",
       null,
       null,
-      "/projects/hackathon",
+      "/projects?search=hackathon",
       null,
       "bg-[#1b2533] bgImg",
       "Young Talents Hackathon 2022"
@@ -48,7 +48,7 @@ export class DataProvider {
       "./imgs/logos/scavenger-hunt.svg",
       null,
       null,
-      "/projects/scavenger",
+      "/projects?search=scavenger",
       null,
       null,
       "Scavenger-Hunt-Ionic-App"
