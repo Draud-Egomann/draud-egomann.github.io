@@ -5,9 +5,8 @@ const route = useRoute();
 const searchQuery = route.query.search || null;
 const cards: ProjectMenuItem[] = DataProvider.GetProjects();
 const searchItem = ref<ProjectMenuItem | null>(null);
-const cardsLoaded = ref(false);
 
-onMounted(() => {
+onNuxtReady(() => {
   if (searchQuery && !stringHelper.IsNullOrEmpty(searchQuery.toString())) {
     let project = cards.find(c => c.Title.toLowerCase().includes(searchQuery.toString().toLowerCase()));
 
@@ -16,14 +15,13 @@ onMounted(() => {
       scrollToElement(project.Title);
     }
   }
-  cardsLoaded.value = true;
 });
 
 function scrollToElement(elementId: string) {
   const element = document.getElementById(elementId);
 
   element?.scrollIntoView();
-  window.scrollBy(0, -70);  // because the header is fixed
+  window.scrollBy(0, -200);  // because the header is fixed
 }
 </script>
 
@@ -38,7 +36,7 @@ function scrollToElement(elementId: string) {
                     @buttonClickEvent="() => { }"
     />
 
-    <LazyCards v-if="cardsLoaded" :cards="cards" :searchItem="searchItem" />
+    <LazyCards :cards="cards" :searchItem="searchItem" />
 
     <MiscEastereggLink />
   </div>
