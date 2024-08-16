@@ -1,14 +1,14 @@
 <script setup lang="ts">
-let myName: string = "Justin Urbanek";
-let navLinks = DataProvider.GetNavBarLinks();
-let isNavBarOpen: Ref<boolean> = ref(false);
+const myName: string = "Justin Urbanek";
+const navLinks = DataProvider.GetNavBarLinks();
+const isNavBarOpen: Ref<boolean> = ref(false);
 const route = useRoute();
 
-let languages: Ref<string[]> = ref([
+const languages: Ref<string[]> = ref([
   "de-CH",
   "en-US",
 ]);
-let currentLanguage: Ref<string> = ref(languages.value[0]);
+const currentLanguage: Ref<string> = ref(languages.value[0]);
 
 function toggleNavBar() {
   isNavBarOpen.value = !isNavBarOpen.value;

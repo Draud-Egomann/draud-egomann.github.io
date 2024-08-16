@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-let currentUrl = ref("");
-let background = ref("");
+const currentUrl = ref("");
+const background = ref("");
 
 const route = useRoute();
 
