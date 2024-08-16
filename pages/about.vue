@@ -32,7 +32,7 @@ function NavigateToProjects() {
                       @buttonClickEvent="NavigateToProjects"
     />
 
-    <LazyGridsContentGrid3 :title="'Meine Freizeitaktivitäten'" :mediaItems="hobbies" />
+    <LazyGridsContentGrid2 :title="'Meine Freizeitaktivitäten'" :mediaItems="hobbies" />
 
     <MiscEastereggLink />
   </div>
