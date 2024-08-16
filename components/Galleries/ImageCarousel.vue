@@ -64,8 +64,8 @@ function slideStyle(index: number) {
       <button class="carousel-control right" @click="nextSlide">&#10095;</button>
     </div>
 
-    <div class="text-center own-bg-primary text-white p-1">
-      <p class="text-white">{{ slides[currentSlideIndex].Description }}</p>
+    <div class="text-center bg-gray-700 text-white p-1">
+      <p class="font-bold text-white text-lg my-1">{{ slides[currentSlideIndex].Description }}</p>
     </div>
 
     <div v-if="hasMultipleSlides" class="w-full">
