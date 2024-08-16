@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ImageReference } from '~/composables/models/ImageReference';
+import type { ImageReference } from '#imports';
 
 defineProps<{
   imageReferences: ImageReference[];

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { MediaItem } from '#imports';
+import type { MediaItem } from '#imports';
 
 const props = defineProps<{
   title: string;
@@ -35,7 +35,7 @@ const justifyWithIndex = (index: number): string => {
               <button class="relative w-full h-full rounded-lg overflow-hidden p-8">
                 <!-- Separate text and image to separate hover effects -->
                 <div :class="item.ImageClass" :style="`background-image: url(${item.ImageUrl});`"
-                  class="absolute inset-0 bgImg transform-gpu duration-300 hover:scale-125">
+                  class="absolute inset-0 bgImgParallax transform-gpu duration-300 hover:scale-125">
                 </div>
 
                 <div v-if="!stringHelper.IsNullOrEmpty(item.Title)"

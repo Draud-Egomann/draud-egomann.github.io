@@ -14,6 +14,10 @@
   @apply bg-cover bg-center bg-no-repeat bg-fixed;
 }
 
+.bgImg {
+  @apply bg-contain bg-fixed bg-no-repeat -left-1;
+}
+
 .bg-heroBanner {
   background: radial-gradient(circle 640px at 20% 50%, var(--accent) 0%, var(--secondary) 100%);
 }

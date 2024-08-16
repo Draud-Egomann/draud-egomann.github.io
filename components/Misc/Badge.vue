@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BadgeColor } from '~/composables/enums/BadgeColor';
+import { BadgeColor } from '#imports';
 
 defineProps<{
   text: string;

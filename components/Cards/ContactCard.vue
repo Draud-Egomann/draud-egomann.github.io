@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import type { MediaItem } from '#imports';
-import { ref } from 'vue';
 
-defineProps<{
+const props = defineProps<{
   card: MediaItem;
 }>();
 
@@ -11,6 +10,14 @@ const isPopoverVisible = ref(false);
 
 function toggleTextVisibility() {
   isTextVisible.value = !isTextVisible.value;
+}
+
+function hasContent() {
+  if (!stringHelper.IsNullOrEmpty(props.card.Title) && !stringHelper.IsNullOrEmpty(props.card.Description)) {
+    return "p-6";
+  }
+
+  return "p-3";
 }
 
 function copyToClipboard(text: string) {
@@ -29,12 +36,11 @@ function copyToClipboard(text: string) {
   <div class="relative flex w-full max-w-[26rem] flex-col">
     <div class="relative bg-gradient-to-b from-gray-500 to-gray-700 text-white rounded-xl bg-clip-border shadow-lg">
 
-      <div
-        class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+      <div class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white">
         <img :src="card.ImageUrl" :alt="card.ImageAltText ?? ''" :class="card.ImageClass" />
       </div>
 
-      <div class="p-6">
+      <div :class="hasContent()">
         <div class="mb-3 flex items-center justify-between">
           <h3 class="block font-sans text-xl font-semibold leading-snug tracking-normal antialiased">
             {{ card.Title }}
@@ -53,7 +59,7 @@ function copyToClipboard(text: string) {
       </div>
 
       <div v-if="isTextVisible"
-        class="relative p-6 py-3 flex items-center justify-between rounded-b-lg bg-ownSecondary">
+        class="relative p-6 py-3 flex items-center justify-between rounded-b-lg bg-ownSecondary animation-fadeIn">
 
         <span class="block font-sans text-lg font-bold tracking-wide leading-relaxed text-white antialiased italic">
           {{ card.LinkText }}
@@ -80,3 +86,19 @@ function copyToClipboard(text: string) {
     </div>
   </div>
 </template>
+
+<style>
+.animation-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+</style>
