@@ -8,7 +8,7 @@
                     :buttonText="null"
                     @buttonClickEvent="() => { }" />
 
-    <img src="https://media.tenor.com/Km4KsS1PixgAAAAi/pepe-the-frog-dancing.gif" class="mx-auto w-[52vh]" />
+    <img src="/imgs/eastereggs/pepe.gif" class="mx-auto w-[52vh]" />
 
     <div class="text-white text-center my-2">
       Bild von
