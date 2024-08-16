@@ -6,15 +6,12 @@ const card: MediaItem[] = DataProvider.GetContactCards();
 
 <template>
   <div>
-    <LazyHeroBanner :title="'Kontakt'"
-                    :subTitle="'Mittel und Wege um mich zu erreichen'"
-                    :paragraphs="[]"
-                    :hasButton="false"
-                    :isBigView="false"
-                    :buttonText="null"
-                    @buttonClickEvent="() => { }" />
+    <LazyHeroBanner :title="'Kontakt'" :subTitle="'Mittel und Wege um mich zu erreichen'" :paragraphs="[]"
+      :hasButton="false" :isBigView="false" :buttonText="null" @buttonClickEvent="() => { }" />
 
-    <CardsContactCards :cards="card" />
+    <div class="h-[50vh] flex flex-col justify-center">
+      <CardsContactCards :cards="card" data-aos="zoom-in" />
+    </div>
 
     <MiscEastereggLink />
   </div>

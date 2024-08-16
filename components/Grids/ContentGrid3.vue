@@ -27,12 +27,12 @@ function closeModal() {
 <template>
   <div class="w-full relative bg-ownPrimary">
     <div class="container flex flex-wrap justify-center items-center gap-8 py-12 mx-auto">
-      <h2 class="font-bold text-white text-center text-3xl lg:text-4xl my-2">
+      <h2 class="font-bold text-white text-center text-3xl lg:text-4xl my-2" data-aos="fade-up">
         {{ title }}
       </h2>
 
       <div class="w-full flex flex-wrap justify-center items-center">
-        <div v-for="item in mediaItems" class="w-full sm:w-1/2 xl:w-1/4 p-4">
+        <div v-for="item in mediaItems" class="w-full sm:w-1/2 xl:w-1/4 p-4" data-aos="zoom-in">
           <div class="relative rounded-xl shadow-gray-800 shadow-md hoverable">
 
             <div
@@ -65,7 +65,7 @@ function closeModal() {
 
           <div class="my-4 border-b border-gray-100/20"></div>
 
-          <p class="text-lg sm:text-xl lg:text-3xl text-center text-white">
+          <p class="text-lg sm:text-xl lg:text-3xl text-center text-white" data-aos="fade-up">
             {{ currentItem?.Description }}
           </p>
         </div>

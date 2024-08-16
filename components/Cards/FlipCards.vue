@@ -25,10 +25,11 @@ function closeModal() {
   <div class="w-full relative bg-ownPrimary">
     <div class="container w-full flex flex-wrap justify-center gap-4 py-12 mx-auto">
 
-      <CardsFlipCard v-for="(card, index) in cards" :key="index" :card="card" @onCardClicked="HandleCardClicked" />
+      <CardsFlipCard v-for="(card, index) in cards" :key="index" :card="card" :index="index"
+        @onCardClicked="HandleCardClicked" />
 
       <input type="checkbox" id="my_modal_combined" class="modal-toggle" :checked="isModalOpen" />
-      <dialog v-if="isModalOpen" class="modal">
+      <dialog v-if="isModalOpen" class="modal" data-aos="fade-up">
         <div class="modal-box relative bg-gray-700">
           <div class="flex flex-row-reverse justify-between items-center">
             <label for="my_modal_combined" class="btn btn-sm btn-circle btn-ghost text-white/80 text-xl"
@@ -40,7 +41,7 @@ function closeModal() {
           <div class="my-4 border-b border-gray-100/20"></div>
 
           <img :src="currentCard?.ImageUrl" :alt="currentCard?.ImageAltText ?? ''" :class="currentCard?.ImageClass"
-            class="w-full h-auto rounded-xl" />
+            class="w-full h-auto rounded-xl" data-aos="fade-up" data-aos-delay="200" />
 
           <p class="text-lg sm:text-xl lg:text-3xl text-center text-white">
             {{ currentCard?.BackText }}

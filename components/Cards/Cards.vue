@@ -79,19 +79,20 @@ function closeModal() {
               :slides="currentCard.Slides" />
 
             <div class="w-full xl:w-2/3 xxl:w-1/2 flex flex-col justify-center items-center gap-4 mt-5">
-              <p class="text-lg text-center text-white">
+              <p class="text-lg text-center text-white" data-aos="fade-up">
                 {{ currentCard.Description }}
               </p>
 
-              <p class="text-lg text-center text-white">
+              <p class="text-lg text-center text-white" data-aos="fade-up" data-aos-delay="200">
                 {{ currentCard.MoreInfoText }}
               </p>
 
-              <MiscBadge :color="badge[0]" :text="badge[1]" />
+              <MiscBadge :color="badge[0]" :text="badge[1]" data-aos="fade-up" data-aos-delay="400" />
 
               <div class="w-full flex justify-center gap-4">
                 <a v-if="!stringHelper.IsNullOrEmpty(currentCard.LinkToLiveSite)"
-                  :href="currentCard?.LinkToLiveSite ?? '/'" target="_blank" rel="nofollow">
+                  :href="currentCard?.LinkToLiveSite ?? '/'" target="_blank" rel="nofollow" data-aos="fade-up"
+                  data-aos-delay="600">
                   <button class="btn btn-outline btn-info">
                     Seite besuchen
                     <fa-icon icon="external-link-square-alt" class="ml-2" />
@@ -99,23 +100,24 @@ function closeModal() {
                 </a>
 
                 <a v-if="!stringHelper.IsNullOrEmpty(currentCard.LinkToSourceCode)"
-                  :href="currentCard?.LinkToSourceCode ?? '/'" target="_blank" rel="nofollow">
+                  :href="currentCard?.LinkToSourceCode ?? '/'" target="_blank" rel="nofollow" data-aos="fade-up"
+                  data-aos-delay="600">
                   <button class="btn btn-outline btn-info">
                     Source Code ansehen
                     <fa-icon icon="external-link-square-alt" class="ml-2" />
                   </button>
                 </a>
+
                 <div v-else-if="currentCard.LinkToSourceCodes && currentCard.LinkToSourceCodes.length > 0"
                   class="flex flex-wrap justify-center items-center">
 
                   <a v-for="item, index in currentCard.LinkToSourceCodes" :href="item" target="_blank" rel="nofollow"
-                    class="w-1/3 m-4">
+                    class="w-1/3 m-4 mx-auto flex justify-center" data-aos="fade-up" :data-aos-delay="600 + index * 100">
                     <button class="btn btn-outline btn-info">
                       {{ index + 1 + "." }} Source Code ansehen
                       <fa-icon icon="external-link-square-alt" class="ml-2" />
                     </button>
                   </a>
-
                 </div>
               </div>
 

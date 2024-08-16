@@ -44,7 +44,8 @@ function OnClick() {
       </div>
 
       <button v-if="!stringHelper.IsNullOrEmpty(buttonText)" @click="OnClick"
-        class="btn btn-outline mx-auto lg:mx-0 font-medium text-base text-white border-gray-400 rounded-full w-64 px-6">
+        class="btn btn-outline mx-auto lg:mx-0 font-medium text-base text-white border-gray-400 rounded-full w-64 px-6"
+        data-aos="fade-in">
         {{ buttonText }}
       </button>
     </div>

@@ -16,11 +16,11 @@ const justifyWithIndex = (index: number): string => {
   <div class="w-full relative bg-ownSecondary px-8">
     <div class="container flex flex-wrap lg:flex-nowrap justify-center items-center gap-8 py-12 mx-auto">
       <div class="w-full lg:w-1/4 flex flex-col items-center gap-8 px-12 lg:px-0">
-        <h2 class="text-3xl text-center text-white mx-4 font-bold">
+        <h2 class="text-3xl text-center text-white mx-4 font-bold" data-aos="fade-up">
           {{ title }}
         </h2>
 
-        <p class="w-full lg:max-w-md text-center lg:text-left text-white">
+        <p class="w-full lg:max-w-md text-center lg:text-left text-white" data-aos="fade-right">
           {{ mainText }}
         </p>
       </div>
@@ -28,7 +28,7 @@ const justifyWithIndex = (index: number): string => {
       <div class="w-full lg:w-3/4 flex flex-wrap justify-center">
 
         <div v-for="item in props.mediaItems" class="w-full sm:w-1/2 p-4 md:p-8 flex justify-center items-center"
-          :class="justifyWithIndex(props.mediaItems.indexOf(item))">
+          :class="justifyWithIndex(props.mediaItems.indexOf(item))" data-aos="zoom-in">
           <div class="relative bg-gray-600 rounded-lg w-full max-w-[368px] h-[256px] overflow-hidden">
 
             <NuxtLink :to="item.LinkUrl ?? '/'">

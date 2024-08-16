@@ -34,24 +34,25 @@ function copyToClipboard(text: string) {
 
 <template>
   <div class="relative flex w-full max-w-[26rem] flex-col">
-    <div class="relative bg-gradient-to-b from-gray-500 to-gray-700 text-white rounded-xl bg-clip-border shadow-lg">
+    <div class="relative bg-gradient-to-b from-gray-400 to-gray-700 text-white rounded-xl bg-clip-border shadow-lg">
 
       <div class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white">
-        <img :src="card.ImageUrl" :alt="card.ImageAltText ?? ''" :class="card.ImageClass" />
+        <img :src="card.ImageUrl" :alt="card.ImageAltText ?? ''" :class="card.ImageClass" data-aos="fade-up" />
       </div>
 
       <div :class="hasContent()">
-        <div class="mb-3 flex items-center justify-between">
+        <div class="mb-3 flex items-center justify-between" data-aos="fade-up" data-aos-delay="100">
           <h3 class="block font-sans text-xl font-semibold leading-snug tracking-normal antialiased">
             {{ card.Title }}
           </h3>
         </div>
-        <p class="block font-sans text-base font-light leading-relaxed text-gray-200 antialiased">
+        <p class="block font-sans text-base font-light leading-relaxed text-gray-200 antialiased" data-aos="fade-up"
+          data-aos-delay="100">
           {{ card.Description }}
         </p>
       </div>
 
-      <div class="p-6 pt-3">
+      <div class="p-6 pt-3" data-aos="fade-up" data-aos-delay="200">
         <button @click="toggleTextVisibility"
           class="block w-full select-none rounded-lg bg-ownSecondary py-3.5 px-4 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-[#2c5ea8]/20 transition-all hover:shadow-lg hover:shadow-[#2c5ea8]/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
           Zeigen

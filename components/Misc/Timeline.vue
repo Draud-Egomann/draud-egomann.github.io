@@ -39,7 +39,7 @@ const getDescriptionContainerClass = (index: number): string => {
   <div class="w-full bg-ownPrimary py-12">
     <div class="timeline relative container overflow-hidden py-24">
 
-      <div v-for="item in timeline" :class="item.Classes[0]" class="timeline-container">
+      <div v-for="item in timeline" :class="item.Classes[0]" class="timeline-container z-10" data-aos="fade-up">
         <div :class="item.Classes[1]" class="content duration-500">
 
           <div :class="item.Classes[2]"

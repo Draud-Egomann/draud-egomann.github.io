@@ -37,21 +37,22 @@ const cardBgBg = (index: number): string => {
 </script>
 
 <template>
-  <div :id="card.Title" class="relative">
+  <div :id="card.Title" class="relative" data-aos="zoom-in">
     <div :class="card.Classes[0]" class="relative z-20 bg-gradient-to-b px-4 lg:px-8 py-12 lg:py-16 rounded-3xl">
 
       <div class="relative z-20 flex flex-col justify-center items-center gap-4">
 
-        <h3 class="text-3xl font-bold w-full text-white text-center">
+        <h3 class="text-3xl font-bold w-full text-white text-center" data-aos="fade-up">
           {{ card.Title }}
         </h3>
 
-        <p class="w-full text-white text-center text-lg">
+        <p class="w-full text-white text-center text-lg" data-aos="fade-up">
           {{ card.Description }}
         </p>
 
         <button v-if="card.HasMoreInfo" @click="onclick()" :class="card.Classes[1]"
-          class="rounded-lg focus:ring-4 font-medium focus:outline-none px-6 py-3.5 text-base text-white">
+          class="rounded-lg focus:ring-4 font-medium focus:outline-none px-6 py-3.5 text-base text-white"
+          data-aos="fade-up">
           Mehr erfahren
         </button>
 

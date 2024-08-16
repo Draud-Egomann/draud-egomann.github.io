@@ -3,6 +3,7 @@ import type { FlipCardItem } from '#imports';
 
 const props = defineProps<{
   card: FlipCardItem;
+  index: number;
 }>();
 const emits = defineEmits(['onCardClicked']);
 
@@ -13,7 +14,7 @@ function setCurrentCard() {
 
 <template>
 
-  <div class="w-full sm:w-[48%] lg:w-80 h-52 relative flex flex-wrap flip-box">
+  <div class="w-full sm:w-[48%] lg:w-80 h-52 relative flex flex-wrap flip-box" data-aos="zoom-in" :data-aos-delay="index * 100">
     <div @click="setCurrentCard" class="tw-front front">
       <p class="w-full tw-content content">
         {{ card.FrontText }}
