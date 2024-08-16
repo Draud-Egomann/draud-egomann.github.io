@@ -16,6 +16,6 @@ const card: MediaItem[] = DataProvider.GetContactCards();
 
     <CardsContactCards :cards="card" />
 
-    <MiscPepeLink />
+    <MiscEastereggLink />
   </div>
 </template>

@@ -32,6 +32,6 @@ function NavigateToAbout() {
                       :mediaItems="experiences"
     />
 
-    <MiscPepeLink />
+    <MiscEastereggLink />
   </div>
 </template>

@@ -32,6 +32,6 @@ function NavigateToProjects() {
 
     <LazyGridsContentGrid3 :title="'Meine Freizeitaktivitäten'" :mediaItems="hobbies" />
 
-    <MiscPepeLink />
+    <MiscEastereggLink />
   </div>
 </template>

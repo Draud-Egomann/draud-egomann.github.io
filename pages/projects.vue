@@ -40,6 +40,6 @@ function scrollToElement(elementId: string) {
 
     <LazyCards v-if="cardsLoaded" :cards="cards" :searchItem="searchItem" />
 
-    <MiscPepeLink />
+    <MiscEastereggLink />
   </div>
 </template>

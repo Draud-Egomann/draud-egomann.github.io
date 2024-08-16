@@ -23,6 +23,6 @@ onMounted(() => {
 
     <MiscTimeline :timelineItems="timelineItems" />
     
-    <MiscPepeLink />
+    <MiscEastereggLink />
   </div>
 </template>
