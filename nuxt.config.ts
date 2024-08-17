@@ -12,7 +12,18 @@ export default defineNuxtConfig({
   },
 
   // https://nuxt.com/docs/guide/concepts/modules
-  modules: ["@vesp/nuxt-fontawesome", "@pinia/nuxt", "nuxt-aos"],
+  modules: ["@vesp/nuxt-fontawesome", "@pinia/nuxt", "nuxt-aos", "@nuxtjs/i18n"],
+
+  // https://i18n.nuxtjs.org/
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en.json' },
+      { code: 'de', iso: 'de-DE', file: 'de.json' }
+    ],
+    defaultLocale: 'de',
+    lazy: true,
+    langDir: 'translations/'
+  },
 
   pinia: {
     storesDirs: ["./stores/**"],
