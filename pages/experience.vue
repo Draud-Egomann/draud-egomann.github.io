@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { TimelineItem } from '#imports';
 
-const timelineItems: TimelineItem[] = DataProvider.GetTimelineItems();
+const { t } = useI18n();
+const timelineItems: TimelineItem[] = DataProvider.GetTimelineItems(t);
 
 onMounted(() => {
   if (timelineItems.length === 0) {
@@ -12,10 +13,10 @@ onMounted(() => {
 
 <template>
   <div>
-    <title>Justin Urbanek - Erfahrung</title>
+    <title>{{ $t('myName') }} - {{ $t('about.title') }}</title>
 
-    <LazyHeroBanner :title="'Meine Erfahrung'"
-                    :subTitle="'Meine bisherigen Stationen und Erfahrungen.'"
+    <LazyHeroBanner :title="$t('about.title')"
+                    :subTitle="$t('about.subTitle')"
                     :paragraphs="[]"
                     :hasButton="false"
                     :isBigView="false"

@@ -111,30 +111,30 @@ export class DataProvider {
     ),
   ];
 
-  static GetTimelineItems = (): TimelineItem[] => [
+  static GetTimelineItems = (t: (key: string) => string): TimelineItem[] => [
     new TimelineItem(
       new Date(2011, 0, 1), // Month is zero-based in JavaScript
       new Date(2020, 5, 27),
-      "Obligatorische Schulzeit",
-      "Obligatorische Schulzeit an der Primarschule und Sekundarschule in Luzern. Abschluss der Sekundarschule im Sommer 2020."
+      t('experience.components.timelines[0].title'),
+      t('experience.components.timelines[0].text')
     ),
     new TimelineItem(
       new Date(2020, 7, 19),
       new Date(2021, 6, 5),
-      "Zentrum für Brückenangebote (ZBA) Luzern",
-      "Besuch des Zentrums für Brückenangebote (ZBA) in Luzern. Während dieser Zeit konnte ich meine schulischen Leistungen verbessern und mich auf die berufliche Ausbildung vorbereiten."
+      t('experience.components.timelines[1].title'),
+      t('experience.components.timelines[1].text')
     ),
     new TimelineItem(
       new Date(2021, 1, 1),
       new Date(2025, 7, 1),
-      "Berufliche Ausbildung als Informatiker Applikationsentwicklung (Kauz Informatik Medien AG)",
-      "Berufliche Ausbildung als Informatiker Applikationsentwicklung bei der Kauz Informatik Medien AG in Ballwil. Während der Ausbildung wurde ich mit dem Google Workspace, sämtlichen Front- und Backendtechnologien, sowie der Konzeption und Umsetzung von Webapplikationen vertraut gemacht. Nahen Kundenkontakt gehörte ebenfalls zu meinen Aufgaben."
+      t('experience.components.timelines[2].title'),
+      t('experience.components.timelines[2].text')
     ),
     new TimelineItem(
       new Date(2021, 7, 19),
       new Date(2025, 6, 5),
-      "Berufsliche Ausbildung als Informatiker Applikationsentwicklung (BBZW Sursee)",
-      "Während dem theoretischen Teil der beruflichen Ausbildung besuche ich das Berufsbildungszentrum für Wirtschaft und Informatik (BBZW) in Sursee. Dort habe ich neben den Grundlagen des Unterrichts, Kenntnisse über Microsoft Office erlangt."
+      t('experience.components.timelines[3].title'),
+      t('experience.components.timelines[3].text')
     ),
   ];
 
