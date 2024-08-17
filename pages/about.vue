@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import type { CarouselWord, FlipCardItem, MediaItem } from '#imports';
 
+const localePath = useLocalePath()
 const flipCards: FlipCardItem[] = DataProvider.GetFlipCards();
 const frameWorks: CarouselWord[] = DataProvider.GetFrameWorksInfo();
 const hobbies: MediaItem[] = DataProvider.GetHobbies();
 
 function NavigateToProjects() {
   const router = useRouter();
-  router.push('/projects');
+  router.push(localePath('/projects'));
 }
 </script>
 

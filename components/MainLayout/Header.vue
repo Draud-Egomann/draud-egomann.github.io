@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
+const localePath = useLocalePath()
 const { locale, setLocale, t } = useI18n()
 const isNavBarOpen: Ref<boolean> = ref(false);
 const navLinks = DataProvider.GetNavBarLinks(t);
@@ -31,7 +32,7 @@ const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
 
       <div class="flex items-center gap-8">
         <div :class="navBarClass" class="navbar-content flex-col lg:flex-row">
-          <NuxtLink v-for="navLink in navLinks" :to="navLink[1]"
+          <NuxtLink v-for="navLink in navLinks" :to="localePath(navLink[1])"
             :class="navLink[1] === route.path ? 'navbar-btn-active' : 'navbar-btn'"
             class="my-2 lg:my-0 mx-2 px-4 py-2 rounded-md">
             {{ navLink[0] }}

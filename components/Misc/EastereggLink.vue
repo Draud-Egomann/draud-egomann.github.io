@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const localePath = useLocalePath();
 const randomPositionY = ref(0);
 const randomPositionX = ref(0);
 const link = ref(["", ""]);
@@ -13,7 +14,6 @@ onMounted(() => {
   link.value = Math.floor(Math.random() * 2) == 0 ? ["/pepe", "text-green-600", "pepe?"] : ["/gigi", "text-purple-600", "gigi?"];
 });
 
-
 function getStyle() {
   return {
     top: `${randomPositionY.value}px`,
@@ -23,7 +23,7 @@ function getStyle() {
 </script>
 
 <template>
-  <NuxtLink :to="link[0]" rel="nofollow">
+  <NuxtLink :to="localePath(link[0])" rel="nofollow">
     <div :class="link[1]"
       class="absolute z-50 underline font-bold text-xl opacity-0 transition duration-500 hover:opacity-100 hover:cursor-pointer"
       :style="getStyle()">

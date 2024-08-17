@@ -3,6 +3,7 @@ const currentUrl = ref("");
 const background = ref("");
 
 const route = useRoute();
+const localePath = useLocalePath();
 
 onMounted(() => {
   setFooterBackground();
@@ -29,7 +30,7 @@ function setFooterBackground() {
       </p>
 
       <div class=" flex items-center gap-8">
-        <NuxtLink to="/references" class="cursor-pointer">
+        <NuxtLink :to="localePath('/references')" class="cursor-pointer">
           <fa-icon icon="book" class="text-white fa-2x" />
         </NuxtLink>
 

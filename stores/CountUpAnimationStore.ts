@@ -7,7 +7,7 @@ export const useCountUpAnimationStore = defineStore("countUpAnimation", () => {
   });
 
   watch(number, (n: number): void => {
-    gsap.to(counter, { duration: 2, number: n || 0 });
+    gsap.to(counter, { duration: 4, number: n || 0 });
   });
 
   function setNumber(n: number) {

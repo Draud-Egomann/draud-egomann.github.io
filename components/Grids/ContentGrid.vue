@@ -7,6 +7,8 @@ const props = defineProps<{
   mediaItems: MediaItem[];
 }>();
 
+const localePath = useLocalePath();
+
 const justifyWithIndex = (index: number): string => {
   return index % 2 == 0 ? 'lg:justify-end' : 'lg:justify-start';
 }
@@ -31,7 +33,7 @@ const justifyWithIndex = (index: number): string => {
           :class="justifyWithIndex(props.mediaItems.indexOf(item))" data-aos="zoom-in">
           <div class="relative bg-gray-600 rounded-lg w-full max-w-[368px] h-[256px] overflow-hidden">
 
-            <NuxtLink :to="item.LinkUrl ?? '/'">
+            <NuxtLink :to="localePath(item.LinkUrl ?? '/')">
               <button class="relative w-full h-full rounded-lg overflow-hidden p-8">
                 <!-- Separate text and image to separate hover effects -->
                 <div :class="item.ImageClass" :style="`background-image: url(${item.ImageUrl});`"
