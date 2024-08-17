@@ -10,15 +10,7 @@
     "imageOfMyselfAltText": "Ein Bild von mir",
     "catchphraseText": "{age}-jähriger angehender Entwickler mit einer Leidenschaft für Informatik.",
     "experienceTitle": "Erfahrung",
-    "experienceMainText": "Ich habe bereits Erfahrung in der Entwicklung von Webseiten und Webapplikationen. Dabei habe ich unter anderem mit HTML, CSS, JavaScript, PHP und SQL gearbeitet.",
-    "components": {
-      "experienceContent": [
-        "Kauz Website",
-        "Magical Imagery",
-        "Young Talents Hackathon 2022",
-        "Scavenger-Hunt-Ionic-App"
-      ]
-    }
+    "experienceMainText": "Ich habe bereits Erfahrung in der Entwicklung von Webseiten und Webapplikationen. Dabei habe ich unter anderem mit HTML, CSS, JavaScript, PHP und SQL gearbeitet."
   },
   "about": {
     "title": "Über mich",

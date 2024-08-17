@@ -2,12 +2,14 @@
 import { ImageBaseItem, MediaItem } from '#imports';
 
 const localePath = useLocalePath();
+const { t } = useI18n();
+
 const birthDate: Date = new Date(2004, 12, 17);
-const mySelfImage: ImageBaseItem = new ImageBaseItem("/imgs/me.png", null, "Image of Myself");
-const catchphraseText: string = "-jähriger angehender Entwickler mit einer Leidenschaft für Informatik";
 const diff = new Date().getFullYear() - birthDate.getFullYear();
 
+const mySelfImage = new ImageBaseItem("/imgs/me.png", null, t('index.imageOfMyselfAltText'));
 const experiences: MediaItem[] = DataProvider.GetExperienceContent();
+
 
 function NavigateToAbout() {
   const router = useRouter();
@@ -17,23 +19,23 @@ function NavigateToAbout() {
 
 <template>
   <div>
-    <title>Justin Urbanek - Ich</title>
+    <title>{{ $t('index.title') }}</title>
 
-    <LazyHeroBanner :title="'Justin Urbanek - Ich'"
-                :subTitle="null"
-                :paragraphs="['Willkommen auf meiner persönlichen Webseite! Ich bin Justin Urbanek, ein leidenschaftlicher Informatiklernender im dritten Lehrjahr.', 'Aktuell absolviere ich meine Ausbildung bei der Kauz Informatik Medien AG und besuche das Berufsbildungszentrum BBZW Sursee.']"
-                :hasButton="true"
-                :isBigView="true"
-                :buttonText="'Mehr über mich'"
-                @buttonClickEvent="NavigateToAbout"
-    />
+    <LazyHeroBanner :title="$t('index.title')"
+                    :subTitle="null"
+                    :paragraphs="[$t('index.paragraphs[0]'), $t('index.paragraphs[1]')]"
+                    :hasButton="true"
+                    :isBigView="true"
+                    :buttonText="$t('index.buttonText')"
+                    @buttonClickEvent="NavigateToAbout" />
 
-    <LazyTextCatchphrase :ImageItem="mySelfImage" :Text="catchphraseText" :Age="diff" />
+    <LazyTextCatchphrase :ImageItem="mySelfImage"
+                         :Text="$t('index.catchphraseText')"
+                         :Age="diff" />
 
-    <LazyGridsContentGrid :title="'Erfahrung'"
-                      :main-text="'Im Laufe meiner Ausbildung und beruflichen Tätigkeit habe ich an einer Vielzahl von Projekten gearbeitet, von Schulprojekten, Arbeitsprojekten, privaten Projekten bis hin Hackathon-Projekten. Meine Markanntesten Projekte sind hier einsehbar.'"
-                      :mediaItems="experiences"
-    />
+    <LazyGridsContentGrid :title="$t('index.experienceTitle')"
+                          :main-text="$t('index.experienceMainText')"
+                          :mediaItems="experiences" />
 
     <MiscEastereggLink />
   </div>
