@@ -1,0 +1,294 @@
+{
+  "myName": "Justin Urbanek",
+  "index": {
+    "title": "Justin Urbanek - Me",
+    "paragraphs": [
+      "Welcome to my personal website! I am Justin Urbanek, a passionate computer science apprentice in my fourth year.",
+      "Currently, I am completing my apprenticeship at Kauz Informatik Medien AG and attending the BBZW Sursee vocational training center."
+    ],
+    "buttonText": "More about me",
+    "imageOfMyselfAltText": "Image of myself",
+    "catchphraseText": "{age}-year-old aspiring developer with a passion for computer science",
+    "experienceTitle": "Experience",
+    "experienceMainText": "Throughout my training and professional work, I have participated in a variety of projects, from school projects, work projects, and private projects to hackathon projects. My most notable projects can be viewed here.",
+    "components": {
+      "experienceContent": [
+        "Kauz Website",
+        "Magical Imagery",
+        "Young Talents Hackathon 2022",
+        "Scavenger-Hunt-Ionic-App"
+      ]
+    }
+  },
+  "about": {
+    "title": "About me",
+    "subTitle": "Crooked keyboard, crooked back, crooked fingers",
+    "textCarouselTitle": "I use",
+    "textCarouselButtonText": "View my projects",
+    "myHobbiesTitle": "My hobbies",
+    "components": {
+      "flipCardsFrontTextes": [
+        "My place of residence",
+        "My profession",
+        "My favorite color",
+        "My favorite food",
+        "My favorite animal",
+        "My favorite season",
+        "My favorite drink"
+      ],
+      "frameWorksAltTexts": [
+        "WordPress Logo",
+        "ASP .NET Logo",
+        "Ionic Logo",
+        "VueJS Logo",
+        "TailwindCSS Logo"
+      ],
+      "hobbies": [
+        {
+          "title": "Creative writing",
+          "text": "My greatest passion is dedicated to creative writing. I have discovered that writing and coming up with stories is what fulfills me the most personally. At the moment, I only write smaller works or concepts.",
+          "imageAltText": "A picture of a notebook"
+        },
+        {
+          "title": "Programming and coding",
+          "text": "Programming is a hobby that you can spend your free time on productively, and it can also be part of your profession. I enjoy programming the frontend as well as the backend logic of websites. The languages I use are C#, JS/TS, Python, and unfortunately also PHP 😪.",
+          "imageAltText": "A picture of a workplace"
+        },
+        {
+          "title": "Gaming",
+          "text": "I am what one would call a passionate gamer, even though this passion is increasingly taking a backseat. My favorite genres are RPGs, hack'n'slash, and MMOs, and I believe in PC supremacy.",
+          "imageAltText": "A wallpaper about the game 'The Witcher 3: Wild Hunt'"
+        },
+        {
+          "title": "Reading",
+          "text": "Reading is becoming an increasingly prevalent hobby. I like to read books to expand my vocabulary and to immerse myself in other worlds. My favorite genres are fantasy, sci-fi, and thrillers.",
+          "imageAltText": "A picture of a book"
+        }
+      ]
+    }
+  },
+  "experience": {
+    "title": "My Experience",
+    "subTitle": "My previous positions and experiences.",
+    "components": {
+      "timelines": [
+        {
+          "title": "Compulsory Schooling",
+          "text": "Mandatory schooling at primary and secondary school in Lucerne. Completed secondary school in the summer of 2020."
+        },
+        {
+          "title": "Center for Bridge Programs (ZBA) Lucerne",
+          "text": "Attended the Center for Bridge Programs (ZBA) in Lucerne. During this time, I was able to improve my academic performance and prepare for apprenticeship."
+        },
+        {
+          "title": "Apprenticeship as a computer scientist in application development (Kauz Informatik Medien AG)",
+          "text": "Apprenticeship as an application development IT specialist at Kauz Informatik Medien AG in Ballwil. During the apprenticeship, I became familiar with Google Workspace, various front-end and back-end technologies, as well as the design and implementation of web applications. Close customer contact was also part of my duties."
+        },
+        {
+          "title": "Apprenticeship as a computer scientist in application development (BBZW Sursee)",
+          "text": "During the theoretical part of the apprenticeship, I attended the Berufsbildungszentrum für Wirtschaft und Informatik (BBZW) in Sursee. There, in addition to the basics of the curriculum, I gained knowledge of Microsoft Office."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "Notable Projects",
+    "subTitle": "Milestones and Creative Achievements",
+    "components": {
+      "projectMenuItems": [
+        {
+          "title": "Kauz Website",
+          "text": "The Kauz Website was a project to redesign the website of Kauz Informatik Medien AG. I helped with the implementation of the design.",
+          "moreInfoText": "This was an internal project and my tasks included implementing design elements. I had the freedom to design the elements as long as usability, functionality, and basic requirements were ensured.",
+          "slides": [
+            {
+              "description": null,
+              "imageAltText": "Project image 1"
+            },
+            {
+              "description": null,
+              "imageAltText": "Project image 2"
+            },
+            {
+              "description": null,
+              "imageAltText": "Project image 3"
+            }
+          ]
+        },
+        {
+          "title": "Magical Imagery",
+          "text": "Magical Imagery was a pilot project as part of a module in my apprenticeship and was meant to simulate how to plan and implement a real project. It is an online shop for photography and art, aimed at creating a simple platform for artists to sell their works.",
+          "moreInfoText": "An online shop that should meet both private and business needs. The challenge was to create a simple and intuitive user interface that is easy to use for both artists and customers. The motivation for this idea was to make life easier for artists and allow them to sell their works on our platform without the legal hurdles of their own shop. We also wanted to provide freedom for AI-generated artworks.",
+          "slides": [
+            {
+              "description": "Index page",
+              "imageAltText": "Image of the index page"
+            },
+            {
+              "description": "Detailed view of a product",
+              "imageAltText": "Image of the detailed view of a product"
+            },
+            {
+              "description": "License Models",
+              "imageAltText": "Image of the license models"
+            },
+            {
+              "description": "Shopping Cart",
+              "imageAltText": "Image of a shopping cart"
+            },
+            {
+              "description": "Create Product Page",
+              "imageAltText": "Image of the create product view"
+            }
+          ]
+        },
+        {
+          "title": "Blazor Templates",
+          "text": "The Blazor Templates are a small collection of templates for Blazor web projects. They are intended for developers looking for a quick and easy template for their projects.",
+          "moreInfoText": "All Blazor templates consist of the same structure, which separates the database logic and the user interface; written as a Blazor web app. Currently, there are 4 templates: a standard Blazor web app, the standard one with Radzen as a UI library, and two more standard ones with Blazorise as a UI library; one with TailwindCSS and the other with Bootstrap.",
+          "slides": null
+        },
+        {
+          "title": "Hackathon",
+          "text": "In 2022, three colleageus and myself participated in the Young Talents Hackathon, organized by UMB AG and ICT-Berufsbildung Zentralschweiz. We were supposed to develop a vacation planner for the employees of HSLU.",
+          "moreInfoText": "The actual implementation was rather poor; it was our first attempt to develop a web app. In the end, we developed and presented a simple web app with VueJs as the frontend and .Net as the REST API. Not much came of it, but it was an interesting experience.",
+          "slides": [
+            {
+              "description": "Login",
+              "imageAltText": "Login-Page of the vacation planner"
+            },
+            {
+              "description": "Calendar",
+              "imageAltText": "Calendar-Page of the vacation planner"
+            },
+            {
+              "description": "Requested Vacations",
+              "imageAltText": "View of the requested vacations"
+            }
+          ]
+        },
+        {
+          "title": "Scavenger-Hunt-Ionic-App",
+          "text": "As the name suggests, the Scavenger Hunt is a scavenger hunt app. This small app was developed by me and two colleagues as part of a Inter-company vocational training course.",
+          "moreInfoText": "The app is written in Ionic and Angular. In the app, you can do scavenger hunts with a total of 6 tasks, where potatoes are distributed if you spend too much time on a task. All scavenger hunts can be viewed in a leaderboard. The data is stored in the local storage of the device, and during the course, the players' performance was stored in a Google spreadsheet. The source code is currently not publicly available.",
+          "slides": [
+            {
+              "description": "Home and Leaderboard",
+              "imageAltText": "Home page of the scavenger hunt app with ranking list"
+            },
+            {
+              "description": "Task 1: Sensor",
+              "imageAltText": "Screenshot of the first task where sensors are used"
+            },
+            {
+              "description": "Task 2: Running",
+              "imageAltText": "Image of the task where users have to walk"
+            },
+            {
+              "description": "Task 4: Shaking or Turning",
+              "imageAltText": "Game scene in which the device is shaken or rotated"
+            },
+            {
+              "description": "End and Evaluation",
+              "imageAltText": "Final image with evaluation of the scavenger hunt"
+            }
+          ]
+        },
+        {
+          "title": "Powershell Word-Header replacer",
+          "text": "The Powershell Word-Header replacer is a small script that a colleague and I developed in our first year of our apprenticeship within 3 days. The goal of the script was to replace the headers and footers of Word documents with those of another.",
+          "moreInfoText": "A teacher asked us if we could develop such a script because they needed it for work, and PowerShell was specified as the language. The script uses the built-in Word API from Microsoft and can replace the headers and footers of Word documents, but unfortunately, it doesn't always work. I have made many attempts to improve the script over the years, but none have been crowned with success.A teacher asked us if we could develop such a script because they needed it for work, and PowerShell was specified as the language. The script uses the built-in Word API from Microsoft and can replace the headers and footers of Word documents, but unfortunately, it doesn't always work. I have made many attempts to improve the script over the years, but none have been crowned with success.",
+          "slides": [
+            {
+              "description": null,
+              "imageAltText": "sketch of the main function of the script"
+            }
+          ]
+        },
+        {
+          "title": "Mongo Python",
+          "text": "Mongo Python is actually called Jukebox and is a final project of a module, developed by a colleague and myself. It is a small web app that can play music and store the music in a MongoDB.",
+          "moreInfoText": "The goal of the project was to develop a web app that can play music, save it in playlists, and store the music in a MongoDB. The web app should also have a user interface to manage the music. The project was implemented with VueJs as the frontend and Python as the backend. The database runs in a Docker-Container.",
+          "slides": null
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subTitle": "Ways and means of reaching me",
+    "components": {
+      "contactCardsTexts": ["Egomann88#9118", "GitHub", "LinkedIn"]
+    }
+  },
+  "references": {
+    "title": "References",
+    "subTitle": "Yes, I link sources!",
+    "dividerText": "Unlisted images used are either still to be added, are my own creations, or are linked directly to the graphic.",
+    "components": {
+      "referencesImagesAltTexts": [
+        "Image of Lucerne from Pixabay",
+        "Image about code from Pixabay",
+        "Image of lasagna from Pixabay",
+        "Image of a wolf from Pixabay",
+        "Image of a winter landscape by Pixabay",
+        "Picture of water from Pixabay",
+        "Logo from Kauz Informatik Medien AG",
+        "Logo of the Young Talents Hackathon 2022"
+      ],
+      "referencesContactBrandLogos": [
+        {
+          "title": "Discord Brand",
+          "imageAltText": "Discord-Tag"
+        },
+        {
+          "title": "GitHub Brand",
+          "imageAltText": "GitHub-Logo"
+        },
+        {
+          "title": "LinkedIn Brand",
+          "imageAltText": "LinkedIn-Logo"
+        }
+      ],
+      "referencesHobbyCards": [
+        {
+          "title": "The Witcher 3 Wallpaper",
+          "text": "A free image by Luiz Eduardo on Pinterest.",
+          "imageAltText": "The Witcher 3 Wallpaper"
+        },
+        {
+          "title": "AI Generated",
+          "text": "The image was generated on my request by GPT-4 DALL·E.",
+          "imageAltText": "AI Generated"
+        },
+        {
+          "title": "Book Lamp",
+          "text": "A free image by jadeharmony1111 on Pinterest.",
+          "imageAltText": "Image of a open book"
+        },
+        {
+          "title": "AI Generated",
+          "text": "The image was generated on my request by recraft ai.",
+          "imageAltText": "AI Generated"
+        }
+      ]
+    }
+  },
+  "mainLayout": {
+    "home": "Home",
+    "about": "About me",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "components": {
+    "learnMore": "Learn more",
+    "visitSite": "Visit Site",
+    "viewSourceCode": "Link to Source Code",
+    "show": "show",
+    "copied": "copied",
+    "source": "Source",
+    "imgFrom": "Image by",
+    "imgOn": "on"
+  }
+}

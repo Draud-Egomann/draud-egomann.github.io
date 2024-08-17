@@ -1,0 +1,294 @@
+{
+  "myName": "Justin Urbanek",
+  "index": {
+    "title": "Justin Urbanek - Ich",
+    "paragraphs": [
+      "Willkommen auf meiner persönlichen Webseite! Ich bin Justin Urbanek, ein leidenschaftlicher Informatiklernender im vierten Lehrjahr.",
+      "Aktuell absolviere ich meine Ausbildung bei der Kauz Informatik Medien AG und besuche das Berufsbildungszentrum BBZW Sursee."
+    ],
+    "buttonText": "Mehr über mich",
+    "imageOfMyselfAltText": "Ein Bild von mir",
+    "catchphraseText": "{age}-jähriger angehender Entwickler mit einer Leidenschaft für Informatik.",
+    "experienceTitle": "Erfahrung",
+    "experienceMainText": "Ich habe bereits Erfahrung in der Entwicklung von Webseiten und Webapplikationen. Dabei habe ich unter anderem mit HTML, CSS, JavaScript, PHP und SQL gearbeitet.",
+    "components": {
+      "experienceContent": [
+        "Kauz Website",
+        "Magical Imagery",
+        "Young Talents Hackathon 2022",
+        "Scavenger-Hunt-Ionic-App"
+      ]
+    }
+  },
+  "about": {
+    "title": "Über mich",
+    "subTitle": "Krume Tastatur, krummer Rücken, Krume Finger",
+    "textCarouselTitle": "Ich verwende",
+    "textCarouselButtonText": "Meine Projekte ansehen",
+    "myHobbiesTitle": "Meine Freizeitaktivitäten",
+    "components": {
+      "flipCardsFrontTextes": [
+        "Mein Wohnort",
+        "Mein Beruf",
+        "Meine Lieblingsfarbe",
+        "Mein Lieblingsessen",
+        "Mein Lieblingstier",
+        "Meine Lieblingsjahreszeit",
+        "Mein Lieblingsgetränk"
+      ],
+      "frameWorksAltTexts": [
+        "WordPress Logo",
+        "ASP .NET Logo",
+        "Ionic Logo",
+        "VueJS Logo",
+        "TailwindCSS Logo"
+      ],
+      "hobbies": [
+        {
+          "title": "Kreatives Schreiben",
+          "text": "Meine grösste Leidenschaft widmet sich dem kreativen Schreiben. Ich habe herausgefunden, dass das Verfassen und Ausdenken von Geschichten das ist, was mich persönlich am meisten erfüllt. Momentan schreibe ich nur kleinere Werke oder Konzepte.",
+          "imageAltText": "Ein Bild von einem Notizbuch"
+        },
+        {
+          "title": "Programmieren und Coden",
+          "text": "Programmieren ist ein Hobby, mit dem man seine Freizeit sinnvoll verbringen kann und das auch Teil des Berufs sein kann. Ich programmiere gerne das Frontend, aber auch die Backend-Logik von Websites. Die Sprachen, die ich benutze, sind C#, JS/TS, Python und leider auch PHP 😪.",
+          "imageAltText": "Ein Bild von einem Arbeitsplatz"
+        },
+        {
+          "title": "Gaming",
+          "text": "Ich bin das, was man als leidenschaftlichen Gamer bezeichnen würde, auch wenn diese Leidenschaft immer mehr in den Hintergrund gerät. Meine Lieblingsgenres sind RPGs, Hack'n'Slay und MMOs und glaube an die PC-Supremacy.",
+          "imageAltText": "Ein Wallpaper von dem Spiel 'The Witcher 3: Wild Hunt'"
+        },
+        {
+          "title": "Lesen",
+          "text": "Ein immer mehr aufkommendes Hobby ist das Lesen. Ich lese gerne Bücher, um meinen Wortschatz zu erweitern und um mich in andere Welten zu versetzen. Meine Lieblingsgenres sind Fantasy, Sci-Fi und Thriller.",
+          "imageAltText": "Ein Bild von einem Buch"
+        }
+      ]
+    }
+  },
+  "experience": {
+    "title": "Erfahrung",
+    "subTitle": "Meine bisherigen Stationen und Erfahrungen",
+    "components": {
+      "timelines": [
+        {
+          "title": "Obligatorische Schulzeit",
+          "text": "Obligatorische Schulzeit an der Primarschule und Sekundarschule in Luzern. Abschluss der Sekundarschule im Sommer 2020."
+        },
+        {
+          "title": "Zentrum für Brückenangebote (ZBA) Luzern",
+          "text": "Besuch des Zentrums für Brückenangebote (ZBA) in Luzern. Während dieser Zeit konnte ich meine schulischen Leistungen verbessern und mich auf die berufliche Ausbildung vorbereiten."
+        },
+        {
+          "title": "Berufliche Ausbildung als Informatiker Applikationsentwicklung (Kauz Informatik Medien AG)",
+          "text": "Berufliche Ausbildung als Informatiker Applikationsentwicklung bei der Kauz Informatik Medien AG in Ballwil. Während der Ausbildung wurde ich mit dem Google Workspace, sämtlichen Front- und Backendtechnologien, sowie der Konzeption und Umsetzung von Webapplikationen vertraut gemacht. Nahen Kundenkontakt gehörte ebenfalls zu meinen Aufgaben."
+        },
+        {
+          "title": "Berufsliche Ausbildung als Informatiker Applikationsentwicklung (BBZW Sursee)",
+          "text": "Während dem theoretischen Teil der beruflichen Ausbildung besuche ich das Berufsbildungszentrum für Wirtschaft und Informatik (BBZW) in Sursee. Dort habe ich neben den Grundlagen des Unterrichts, Kenntnisse über Microsoft Office erlangt."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "Nennenswerte Arbeiten",
+    "subTitle": "Meilensteine und kreative Leistungen",
+    "components": {
+      "projectMenuItems": [
+        {
+          "title": "Kauz Website",
+          "text": "Die Kauz Website war ein Projekt zur Neugestaltung der Website der Kauz Informatik Medien AG. Ich habe unter anderem bei der Umsetzung des Designs geholfen.",
+          "moreInfoText": "Dies war ein internes Projekt und zu meinen Aufgaben gehörte es, Gestaltungselemente umzusetzen, dabei war ich frei wie die Elemente aussehen sollten, solange Benutzerfreundlichkeit, Funktionalität und die Grundanforderungen gewährleistet waren.",
+          "slides": [
+            {
+              "description": null,
+              "imageAltText": "Projektbild 1"
+            },
+            {
+              "description": null,
+              "imageAltText": "Projektbild 2"
+            },
+            {
+              "description": null,
+              "imageAltText": "Projektbild 3"
+            }
+          ]
+        },
+        {
+          "title": "Magical Imagery",
+          "text": "Magical Imagery war ein Pilotprojekt im Rahmen eines Moduls meiner Ausbildung und sollte simulieren, wie man ein echtes Projekt plant und umsetzt. Es handelt sich um einen Online-Shop für Fotografie und Kunst, mit dem eine einfache Plattform für Künstler geschaffen werden soll, um ihre Werke zu verkaufen.",
+          "moreInfoText": "Ein Online-Shop der sowohl privaten als auch geschäftliche Bedürfnisse abdecken sollte. Die Herausforderung bestand darin, eine einfache und intuitive Benutzeroberfläche zu schaffen, die sowohl für Künstler als auch für Kunden einfach zu bedienen ist. Die Beweggründe für diese Idee war es, Künstlern das leben zu vereinfachen und sie auf unserer Plattform ihre Werke ohne die rechtlichen Hürden eines eigenen Shops zu verkaufen. Freiheit für KI generierte Kunstwerke wollten wir auch bieten.",
+          "slides": [
+            {
+              "description": "Startseite",
+              "imageAltText": "Bild von der Startseite"
+            },
+            {
+              "description": "Detailierte Ansicht eines Produkts",
+              "imageAltText": "Bild von der Detailierten Ansicht eines Produkts"
+            },
+            {
+              "description": "Lizenzmodelle",
+              "imageAltText": "Bild von den Lizenzmodellen"
+            },
+            {
+              "description": "Warenkorb",
+              "imageAltText": "Bild vom Warenkorb"
+            },
+            {
+              "description": "Produkt erstellen",
+              "imageAltText": "Bild von der Produkt erstellen Seite"
+            }
+          ]
+        },
+        {
+          "title": "Blazor Templates",
+          "text": "Die Blazor Templates sind eine kleine Anreihung an Vorlagen für Blazor Web Projekte. Sie sind für Entwickler gedacht, die schnell und einfach eine Vorlage für ihre Projekte suchen.",
+          "moreInfoText": "Alle Blazor Vorlagen bestehen aus derselben Struktur, welche die Datenbank-Logik und die Benutzeroberfläche trennt; geschrieben als Blazor Web-App. Im Moment gibt es 4 Vorlagen: Eine normale Blazor Web-App, die normale mit Radzen als UI-Libary und zwei weitere normale mit Blazorise als UI-Libary; eine mit TailwindCSS und die andere mit Bootstrap.",
+          "slides": null
+        },
+        {
+          "title": "Hackathon",
+          "text": "2022 habe ich zusammen mit drei Kollegen an dem Young Talents Hackathon, organisiert von der UMB AG und der ICT-Berufsbildung Zentralschweiz, teilgenommen. Wir sollten für die HSLU einen Ferienplanner für die Angestellten entwickeln.",
+          "moreInfoText": "Die effektive Umsetzung war eher mager; es war unser erster Versuch eine Web-App zu entwickeln. Schlussendlich haben wir eine einfache Web-App mit VueJs als Frontend und .Net als REST-Api entwickelt und präsentiert. Viel ist nicht daraus geworden, aber es war eine interessante Erfahrung.",
+          "slides": [
+            {
+              "description": "Login",
+              "imageAltText": "Login-Seite des Ferienplaners"
+            },
+            {
+              "description": "Kalender",
+              "imageAltText": "Kalenderansicht des Ferienplaners"
+            },
+            {
+              "description": "Beantragte Ferien",
+              "imageAltText": "Übersicht der beantragten Ferien"
+            }
+          ]
+        },
+        {
+          "title": "Scavenger-Hunt-Ionic-App",
+          "text": "Die Scavenger-Hunt ist wie man von dem Namen ableiten kann, eine Schnitzeljagd-App. Diese kleine App wurde von mir und zwei Kollegen im Rahmen eines ÜKs entwickelt.",
+          "moreInfoText": "Die App ist in Ionic und Angular geschriebenen. In der App kann man Schnitzeljagten mit insgesamt 6 Aufgaben machen, in dem Kartoffeln verteilt werden, wenn man zu viel Zeit bei einem Auftrag verbraucht. Alle Schnitzeljagten kann man in einer Rangliste einsehen. Die Daten werden im lokalen Speicher des Gerätes gespeichert, dazu wurden damals zur Bearbeitung der ÜKs die Leistungen der Spieler in einer Google Tabelle gespeichert. Der Source-Code ist derzeit nicht öffentlich verfügbar.",
+          "slides": [
+            {
+              "description": "Startseite und Rangliste",
+              "imageAltText": "Startseite der Schnitzeljagd-App mit Rangliste"
+            },
+            {
+              "description": "1. Aufgabe: Sensor",
+              "imageAltText": "Screenshot der ersten Aufgabe, bei der Sensoren verwendet werden"
+            },
+            {
+              "description": "2. Aufgabe: Laufen",
+              "imageAltText": "Bild der Aufgabe, bei der Nutzer laufen müssen"
+            },
+            {
+              "description": "4. Aufgabe: Schütteln bzw. Drehen",
+              "imageAltText": "Spielszene, bei der das Gerät geschüttelt oder gedreht wird"
+            },
+            {
+              "description": "Ende und Auswertung",
+              "imageAltText": "Abschlussbild mit Auswertung der Schnitzeljagd"
+            }
+          ]
+        },
+        {
+          "title": "Powershell Word-Header replacer",
+          "text": "Das Powershell Word-Header replacer ist ein kleines Skript, welches ein Kollege und ich in unserem 1. Lehrjahr innerhalb von 3 Tagen entwickelt haben. Ziel des Skripts war es die Kopf- und Fusszeilen von Word-Dokumenten mit denen von einem anderen Dokument zu ersetzen.",
+          "moreInfoText": "Eine Lehrperson hatte uns gefragt, ob wir ein solches Skript entwickeln könnten, da sie es für ihre Arbeit benötigte und PowerShell war als Sprache vorgegeben. Das Skript benutzt die eingebaute Word API von Microsoft und kann die Kopf- und Fusszeilen von Word-Dokumenten ersetzen, aber leider funktioniert es nicht immer. Ich habe über die Jahre viele Versuche unternommen, um das Skript zu verbessern, aber diese Versuche haben keine Früchte getragen.",
+          "slides": [
+            {
+              "description": null,
+              "imageAltText": "Grobskizze der Hauptfunktion des Skripts"
+            }
+          ]
+        },
+        {
+          "title": "Mongo Python",
+          "text": "Mongo Python heisst eigentlich Jukebox und ist ein Abschlussprojekt eines Moduls, entwickelt von mir und einem Kollegen. Es ist eine kleine Web-App, die Musik abspielen kann und die Musik in einer MongoDB speichert.",
+          "moreInfoText": "Ziel des Projekts war es, eine Web-App zu entwickeln, die Musik abspielen kann, diese in Playlists speichern kann und die Musik in einer MongoDB speichert. Die Web-App sollte auch eine Benutzeroberfläche haben, um die Musik zu verwalten. Umgesetzt wurde das Projekt mit VueJs als Frontend und Python als Backend. Die Datenbank läuft in einem Docker-Container.",
+          "slides": null
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subTitle": "Mittel und Wege um mich zu erreichen",
+    "components": {
+      "contactCardsTexts": ["Egomann88#9118", "GitHub", "LinkedIn"]
+    }
+  },
+  "references": {
+    "title": "Quellenverzeichnis",
+    "subTitle": "Ja, ich verlinke Quellen!",
+    "dividerText": "Benutzte nicht aufgelistete Bilder werden entweder noch hinzugefügt, sind Eigenkreationen oder sind direkt bei der Grafik verlinkt.",
+    "components": {
+      "referencesImagesAltTexts": [
+        "Bild von Luzern von Pixabay",
+        "Bild über Code von Pixabay",
+        "Bild von Lasagne von Pixabay",
+        "Bild von einem Wolf von Pixabay",
+        "Bild von einer Winterlandschaft von Pixabay",
+        "Bild von Wasser von Pixabay",
+        "Logo von der Kauz Informatik Medien AG",
+        "Logo vom Young Talents Hackathon 2022"
+      ],
+      "referencesContactBrandLogos": [
+        {
+          "title": "Discord Brand",
+          "imageAltText": "Discord-Tag"
+        },
+        {
+          "title": "GitHub Brand",
+          "imageAltText": "GitHub-Logo"
+        },
+        {
+          "title": "LinkedIn Brand",
+          "imageAltText": "LinkedIn-Logo"
+        }
+      ],
+      "referencesHobbyCards": [
+        {
+          "title": "The Witcher 3 Wallpaper",
+          "text": "Ein freies Bild von Luiz Eduardo auf Pinterest",
+          "imageAltText": "The Witcher 3 Wallpaper"
+        },
+        {
+          "title": "Mit KI generiert",
+          "text": "Das Bild wurde auf meinen Auftrag von GPT-4 DALL·E generiert.",
+          "imageAltText": "Mit KI generiertes Bild"
+        },
+        {
+          "title": "Buchlampe",
+          "text": "Ein freies Bild von jadeharmony1111 auf Pintrest.",
+          "imageAltText": "Bild von einem offenen Buch"
+        },
+        {
+          "title": "Mit KI generiert",
+          "text": "Das Bild wurde auf meinen Auftrag von recraft ai generiert.",
+          "imageAltText": "Mit KI generiertes Bild"
+        }
+      ]
+    }
+  },
+  "mainLayout": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "components": {
+    "learnMore": "Mehr erfahren",
+    "visitSite": "Seite besuchen",
+    "viewSourceCode": "Source Code ansehen",
+    "show": "Zeigen",
+    "copied": "Kopiert",
+    "source": "Quelle",
+    "imgFrom": "Bild von",
+    "imgOf": "auf"
+  }
+}
