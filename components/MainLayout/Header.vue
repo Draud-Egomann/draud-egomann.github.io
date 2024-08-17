@@ -1,14 +1,18 @@
 <script setup lang="ts">
-const myName: string = "Justin Urbanek";
-const navLinks = DataProvider.GetNavBarLinks();
-const isNavBarOpen: Ref<boolean> = ref(false);
 const route = useRoute();
+const { locale, setLocale, t } = useI18n()
+const isNavBarOpen: Ref<boolean> = ref(false);
+const navLinks = DataProvider.GetNavBarLinks(t);
 
 const languages: Ref<string[]> = ref([
-  "de-CH",
-  "en-US",
+  "de",
+  "en",
 ]);
-const currentLanguage: Ref<string> = ref(languages.value[0]);
+const currentLanguage: Ref<string> = ref(locale);
+
+function changeLanguage(lang: string) {
+  setLocale(lang);
+}
 
 function toggleNavBar() {
   isNavBarOpen.value = !isNavBarOpen.value;
@@ -22,7 +26,7 @@ const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
   <nav class="w-full sm:fixed z-40 bg-ownPrimary text-white sm:px-8 shadow-md shadow-gray-800">
     <div class="flex flex-col sm:flex-row justify-between items-center container py-2 lg:py-4 mx-auto">
       <p class="inline text-3xl font-bold text-white my-4 sm:my-0">
-        {{ myName }}
+        {{ $t('myName') }}
       </p>
 
       <div class="flex items-center gap-8">
@@ -34,8 +38,8 @@ const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
           </NuxtLink>
 
           <select v-model="currentLanguage" class="w-20 inline px-4 py-2 rounded-md navbar-btn-active">
-            <option v-for="language in languages" v-bind:value="language">
-              {{ language.substring(0, 2).toUpperCase() }}
+            <option v-for="language in languages" @click="changeLanguage(language)" v-bind:value="language">
+              {{ language.toUpperCase() }}
             </option>
           </select>
         </div>

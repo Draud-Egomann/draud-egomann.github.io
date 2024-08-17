@@ -8,12 +8,12 @@ import {
 } from "#imports";
 
 export class DataProvider {
-  static GetNavBarLinks = (): [string, string][] => [
-    ["Home", "/"],
-    ["Über mich", "/about"],
-    ["Erfahrung", "/experience"],
-    ["Projekte", "/projects"],
-    ["Kontakt", "/contact"],
+  static GetNavBarLinks = (t: (key: string) => string): [string, string][] => [
+    [t('mainLayout.home'), "/"],
+    [t('mainLayout.about'), "/about"],
+    [t('mainLayout.experience'), "/experience"],
+    [t('mainLayout.projects'), "/projects"],
+    [t('mainLayout.contact'), "/contact"],
   ];
 
   static GetExperienceContent = (): MediaItem[] => [
