@@ -55,14 +55,14 @@ export class DataProvider {
     ),
   ];
 
-  static GetFlipCards = (): FlipCardItem[] => [
-    new FlipCardItem("./imgs/flipCards/lucerne.jpg", "Mein Wohnort"),
-    new FlipCardItem("./imgs/flipCards/work.jpg", "Mein Beruf"),
-    new FlipCardItem("./imgs/flipCards/violet.jpg", "Meine Lieblingsfarbe"),
-    new FlipCardItem("./imgs/flipCards/food.jpg", "Mein Lieblingsessen"),
-    new FlipCardItem("./imgs/flipCards/wolf.jpg", "Mein Lieblingstier"),
-    new FlipCardItem("./imgs/flipCards/winter.jpg", "Meine Lieblingsjahreszeit"),
-    new FlipCardItem("./imgs/flipCards/water.jpg", "Mein Lieblingsgetränk"),
+  static GetFlipCards = (t: (key: string) => string): FlipCardItem[] => [
+    new FlipCardItem("./imgs/flipCards/lucerne.jpg", t('about.components.flipCardsFrontTextes[0]')),
+    new FlipCardItem("./imgs/flipCards/work.jpg", t('about.components.flipCardsFrontTextes[1]')),
+    new FlipCardItem("./imgs/flipCards/violet.jpg", t('about.components.flipCardsFrontTextes[2]')),
+    new FlipCardItem("./imgs/flipCards/food.jpg", t('about.components.flipCardsFrontTextes[3]')),
+    new FlipCardItem("./imgs/flipCards/wolf.jpg", t('about.components.flipCardsFrontTextes[4]')),
+    new FlipCardItem("./imgs/flipCards/winter.jpg", t('about.components.flipCardsFrontTextes[5]')),
+    new FlipCardItem("./imgs/flipCards/water.jpg", t('about.components.flipCardsFrontTextes[6]')),
   ];
 
   static GetFrameWorksInfo = (): CarouselWord[] => [
@@ -73,42 +73,41 @@ export class DataProvider {
     new CarouselWord("./imgs/logos/tailwind.svg", "TailwindCSS", 0, null, "TailwindCSS Logo"),
   ];
 
-  static GetHobbies = (): MediaItem[] => [
+  static GetHobbies = (t: (key: string) => string): MediaItem[] => [
     new MediaItem(
       "./imgs/hobbies/write.jpg",
-      "Kreatives Schreiben",
-      "Meine grösste Leidenschaft widmet sich dem kreativen Schreiben. Ich habe herausgefunden, dass das Verfassen und Ausdenken von Geschichten das ist, was mich persönlich am meisten erfüllt. Momentan schreibe ich nur kleinere Werke oder Konzepte.",
+      t('about.components.hobbies[0].title'),
+      t('about.components.hobbies[0].text'),
       null,
       null,
       null,
-      "Kreatives Schreiben"
+      t('about.components.hobbies[0].imageAltText')
     ),
     new MediaItem(
       "./imgs/hobbies/program.webp",
-      "Programmieren und Coden",
-      "Programmieren ist ein Hobby, mit dem man seine Freizeit sinnvoll verbringen kann und das auch Teil des Berufs sein kann. Ich programmiere gerne das Frontend, aber auch die Backend-Logik von Websites. Die Sprachen, die ich benutze, sind C#, JS/TS, Python und leider auch PHP 😪.",
+      t('about.components.hobbies[1].title'),
+      t('about.components.hobbies[1].text'),
       null,
       null,
       null,
-      "Programmieren und Coden"
+      t('about.components.hobbies[1].imageAltText')
     ),
     new MediaItem(
       "./imgs/hobbies/gaming.webp",
-      "Gaming",
-      "Ich bin das, was man als leidenschaftlichen Gamer bezeichnen würde, auch wenn diese Leidenschaft immer mehr in den Hintergrund gerät. Meine Lieblingsgenres sind RPGs, Hack'n'Slay und MMOs und glaube an die PC-Supremacy.",
+      t('about.components.hobbies[2].title'),
+      t('about.components.hobbies[2].text'),
       null,
       null,
-      null,
-      "Gaming"
+      t('about.components.hobbies[2].imageAltText')
     ),
     new MediaItem(
       "./imgs/hobbies/read.jpg",
-      "Lesen",
-      "Ein immer mehr aufkommendes Hobby ist das Lesen. Ich lese gerne Bücher, um meinen Wortschatz zu erweitern und um mich in andere Welten zu versetzen. Meine Lieblingsgenres sind Fantasy, Sci-Fi und Thriller.",
+      t('about.components.hobbies[3].title'),
+      t('about.components.hobbies[3].text'),
       null,
       null,
       null,
-      "Lesen"
+      t('about.components.hobbies[3].imageAltText')
     ),
   ];
 

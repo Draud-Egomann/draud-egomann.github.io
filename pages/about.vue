@@ -2,9 +2,11 @@
 import type { CarouselWord, FlipCardItem, MediaItem } from '#imports';
 
 const localePath = useLocalePath()
-const flipCards: FlipCardItem[] = DataProvider.GetFlipCards();
+const { t } = useI18n();
+
+const flipCards: FlipCardItem[] = DataProvider.GetFlipCards(t);
 const frameWorks: CarouselWord[] = DataProvider.GetFrameWorksInfo();
-const hobbies: MediaItem[] = DataProvider.GetHobbies();
+const hobbies: MediaItem[] = DataProvider.GetHobbies(t);
 
 function NavigateToProjects() {
   const router = useRouter();
@@ -14,26 +16,25 @@ function NavigateToProjects() {
 
 <template>
   <div>
-    <title>Justin Urbanek - Über mich</title>
+    <title>{{ $t('myName') }} - {{ $t('about.title') }}</title>
 
-    <LazyHeroBanner :title="'Über mich'"
-                    :subTitle="'Krume Tastatur, krummer Rücken, Krume Finger'"
+    <LazyHeroBanner :title="$t('about.title')"
+                    :subTitle="$t('about.subTitle')"
                     :paragraphs="[]"
                     :hasButton="false"
                     :isBigView="false"
                     :buttonText="null"
-                    @buttonClickEvent="() => {}"
-    />
+                    @buttonClickEvent="() => {}" />
 
     <LazyCardsFlipCards :cards="flipCards" />
 
-    <LazyTextCarousel :title="'Ich verwende'"
+    <LazyTextCarousel :title="$t('about.textCarouselTitle')"
                       :carouselWords="frameWorks"
-                      :buttonText="'Meine Projekte ansehen'"
+                      :buttonText="$t('about.textCarouselButtonText')"
                       @buttonClickEvent="NavigateToProjects"
     />
 
-    <LazyGridsContentGrid2 :title="'Meine Freizeitaktivitäten'" :mediaItems="hobbies" />
+    <LazyGridsContentGrid2 :title="$t('about.myHobbiesTitle')" :mediaItems="hobbies" />
 
     <MiscEastereggLink />
   </div>
