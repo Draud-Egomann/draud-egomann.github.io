@@ -16,7 +16,13 @@ watch(() => route.path, () => {
 
 function setFooterBackground() {
   currentUrl.value = route.path;
-  background.value = currentUrl.value === "/" ? "bg-footerBanner1" : "bg-footerBanner2"
+
+  // if the current route is a translation route, remove the locale from the path
+  if (currentUrl.value.includes("/en") || currentUrl.value.includes("/de")) {
+    currentUrl.value = currentUrl.value.substring(3);
+  }  
+
+  background.value = currentUrl.value === "" ? "bg-footerBanner1" : "bg-footerBanner2"
 }
 </script>
 
