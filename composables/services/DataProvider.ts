@@ -27,7 +27,7 @@ export class DataProvider {
       "Kauz Website"
     ),
     new MediaItem(
-      "./imgs/logos/magical-imagery.svg",
+      "/imgs/logos/magical-imagery.svg",
       null,
       null,
       "/projects?search=magical",
@@ -45,7 +45,7 @@ export class DataProvider {
       "Young Talents Hackathon 2022"
     ),
     new MediaItem(
-      "./imgs/logos/scavenger-hunt.svg",
+      "/imgs/logos/scavenger-hunt.svg",
       null,
       null,
       "/projects?search=scavenger",
@@ -56,26 +56,26 @@ export class DataProvider {
   ];
 
   static GetFlipCards = (t: (key: string) => string): FlipCardItem[] => [
-    new FlipCardItem("./imgs/flipCards/lucerne.jpg", t('about.components.flipCardsFrontTextes[0]')),
-    new FlipCardItem("./imgs/flipCards/work.jpg", t('about.components.flipCardsFrontTextes[1]')),
-    new FlipCardItem("./imgs/flipCards/violet.jpg", t('about.components.flipCardsFrontTextes[2]')),
-    new FlipCardItem("./imgs/flipCards/food.jpg", t('about.components.flipCardsFrontTextes[3]')),
-    new FlipCardItem("./imgs/flipCards/wolf.jpg", t('about.components.flipCardsFrontTextes[4]')),
-    new FlipCardItem("./imgs/flipCards/winter.jpg", t('about.components.flipCardsFrontTextes[5]')),
-    new FlipCardItem("./imgs/flipCards/water.jpg", t('about.components.flipCardsFrontTextes[6]')),
+    new FlipCardItem("/imgs/flipCards/lucerne.jpg", t('about.components.flipCardsFrontTextes[0]')),
+    new FlipCardItem("/imgs/flipCards/work.jpg", t('about.components.flipCardsFrontTextes[1]')),
+    new FlipCardItem("/imgs/flipCards/violet.jpg", t('about.components.flipCardsFrontTextes[2]')),
+    new FlipCardItem("/imgs/flipCards/food.jpg", t('about.components.flipCardsFrontTextes[3]')),
+    new FlipCardItem("/imgs/flipCards/wolf.jpg", t('about.components.flipCardsFrontTextes[4]')),
+    new FlipCardItem("/imgs/flipCards/winter.jpg", t('about.components.flipCardsFrontTextes[5]')),
+    new FlipCardItem("/imgs/flipCards/water.jpg", t('about.components.flipCardsFrontTextes[6]')),
   ];
 
   static GetFrameWorksInfo = (): CarouselWord[] => [
-    new CarouselWord("./imgs/logos/wordpress.svg", "WordPress", 0, null, "WordPress Logo"),
-    new CarouselWord("./imgs/logos/dotnet.svg", "ASP .NET", 0, null, "ASP .NET Logo"),
-    new CarouselWord("./imgs/logos/ionic.svg", "Ionic", 0, null, "Ionic Logo"),
-    new CarouselWord("./imgs/logos/vue.svg", "VueJS", 0, null, "VueJS Logo"),
-    new CarouselWord("./imgs/logos/tailwind.svg", "TailwindCSS", 0, null, "TailwindCSS Logo"),
+    new CarouselWord("/imgs/logos/wordpress.svg", "WordPress", 0, null, "WordPress Logo"),
+    new CarouselWord("/imgs/logos/dotnet.svg", "ASP .NET", 0, null, "ASP .NET Logo"),
+    new CarouselWord("/imgs/logos/ionic.svg", "Ionic", 0, null, "Ionic Logo"),
+    new CarouselWord("/imgs/logos/vue.svg", "VueJS", 0, null, "VueJS Logo"),
+    new CarouselWord("/imgs/logos/tailwind.svg", "TailwindCSS", 0, null, "TailwindCSS Logo"),
   ];
 
   static GetHobbies = (t: (key: string) => string): MediaItem[] => [
     new MediaItem(
-      "./imgs/hobbies/write.jpg",
+      "/imgs/hobbies/write.jpg",
       t('about.components.hobbies[0].title'),
       t('about.components.hobbies[0].text'),
       null,
@@ -84,7 +84,7 @@ export class DataProvider {
       t('about.components.hobbies[0].imageAltText')
     ),
     new MediaItem(
-      "./imgs/hobbies/program.webp",
+      "/imgs/hobbies/program.webp",
       t('about.components.hobbies[1].title'),
       t('about.components.hobbies[1].text'),
       null,
@@ -93,7 +93,7 @@ export class DataProvider {
       t('about.components.hobbies[1].imageAltText')
     ),
     new MediaItem(
-      "./imgs/hobbies/gaming.webp",
+      "/imgs/hobbies/gaming.webp",
       t('about.components.hobbies[2].title'),
       t('about.components.hobbies[2].text'),
       null,
@@ -101,7 +101,7 @@ export class DataProvider {
       t('about.components.hobbies[2].imageAltText')
     ),
     new MediaItem(
-      "./imgs/hobbies/read.jpg",
+      "/imgs/hobbies/read.jpg",
       t('about.components.hobbies[3].title'),
       t('about.components.hobbies[3].text'),
       null,
@@ -149,9 +149,9 @@ export class DataProvider {
       null,
       [], // Classes
       [
-        new MediaItem("./imgs/projects/kimWebsite/img1.jpg", null, null, null, null, null, t('projects.components.projectMenuItems[0].slides[0].imageAltText'), "./imgs/projects/kimWebsite/img1.jpg"),
-        new MediaItem("./imgs/projects/kimWebsite/img2.jpg", null, null, null, null, null, t('projects.components.projectMenuItems[0].slides[1].imageAltText'), "./imgs/projects/kimWebsite/img2.jpg"),
-        new MediaItem("./imgs/projects/kimWebsite/img3.jpg", null, null, null, null, null, t('projects.components.projectMenuItems[0].slides[2].imageAltText'), "./imgs/projects/kimWebsite/img3.jpg"),
+        new MediaItem("/imgs/projects/kimWebsite/img1.jpg", null, null, null, null, null, t('projects.components.projectMenuItems[0].slides[0].imageAltText'), "/imgs/projects/kimWebsite/img1.jpg"),
+        new MediaItem("/imgs/projects/kimWebsite/img2.jpg", null, null, null, null, null, t('projects.components.projectMenuItems[0].slides[1].imageAltText'), "/imgs/projects/kimWebsite/img2.jpg"),
+        new MediaItem("/imgs/projects/kimWebsite/img3.jpg", null, null, null, null, null, t('projects.components.projectMenuItems[0].slides[2].imageAltText'), "/imgs/projects/kimWebsite/img3.jpg"),
       ],
       "" // ImageUrl is required
     ),
@@ -165,11 +165,11 @@ export class DataProvider {
       null,
       [],
       [
-        new MediaItem("./imgs/projects/magicalImagery/img1.jpg", null, t('projects.components.projectMenuItems[1].slides[0].description'), null, null, null, t('projects.components.projectMenuItems[1].slides[0].imageAltText'), "./imgs/projects/magicalImagery/img1.jpg"),
-        new MediaItem("./imgs/projects/magicalImagery/img2.jpg", null, t('projects.components.projectMenuItems[1].slides[1].description'), null, null, null, t('projects.components.projectMenuItems[1].slides[1].imageAltText'), "./imgs/projects/magicalImagery/img2.jpg"),
-        new MediaItem("./imgs/projects/magicalImagery/img3.jpg", null, t('projects.components.projectMenuItems[1].slides[2].description'), null, null, null, t('projects.components.projectMenuItems[1].slides[2].imageAltText'), "./imgs/projects/magicalImagery/img3.jpg"),
-        new MediaItem("./imgs/projects/magicalImagery/img4.jpg", null, t('projects.components.projectMenuItems[1].slides[3].description'), null, null, null, t('projects.components.projectMenuItems[1].slides[3].imageAltText'), "./imgs/projects/magicalImagery/img4.jpg"),
-        new MediaItem("./imgs/projects/magicalImagery/img5.jpg", null, t('projects.components.projectMenuItems[1].slides[4].description'), null, null, null, t('projects.components.projectMenuItems[1].slides[4].imageAltText'), "./imgs/projects/magicalImagery/img5.jpg"),
+        new MediaItem("/imgs/projects/magicalImagery/img1.jpg", null, t('projects.components.projectMenuItems[1].slides[0].description'), null, null, null, t('projects.components.projectMenuItems[1].slides[0].imageAltText'), "/imgs/projects/magicalImagery/img1.jpg"),
+        new MediaItem("/imgs/projects/magicalImagery/img2.jpg", null, t('projects.components.projectMenuItems[1].slides[1].description'), null, null, null, t('projects.components.projectMenuItems[1].slides[1].imageAltText'), "/imgs/projects/magicalImagery/img2.jpg"),
+        new MediaItem("/imgs/projects/magicalImagery/img3.jpg", null, t('projects.components.projectMenuItems[1].slides[2].description'), null, null, null, t('projects.components.projectMenuItems[1].slides[2].imageAltText'), "/imgs/projects/magicalImagery/img3.jpg"),
+        new MediaItem("/imgs/projects/magicalImagery/img4.jpg", null, t('projects.components.projectMenuItems[1].slides[3].description'), null, null, null, t('projects.components.projectMenuItems[1].slides[3].imageAltText'), "/imgs/projects/magicalImagery/img4.jpg"),
+        new MediaItem("/imgs/projects/magicalImagery/img5.jpg", null, t('projects.components.projectMenuItems[1].slides[4].description'), null, null, null, t('projects.components.projectMenuItems[1].slides[4].imageAltText'), "/imgs/projects/magicalImagery/img5.jpg"),
       ],
       ""
     ),
@@ -200,9 +200,9 @@ export class DataProvider {
       null,
       [],
       [
-        new MediaItem("./imgs/projects/hackathon/img1.jpg", null, t('projects.components.projectMenuItems[3].slides[0].description'), null, null, null, t('projects.components.projectMenuItems[3].slides[0].imageAltText'), "./imgs/projects/hackathon/img1.jpg"),
-        new MediaItem("./imgs/projects/hackathon/img2.jpg", null, t('projects.components.projectMenuItems[3].slides[1].description'), null, null, null, t('projects.components.projectMenuItems[3].slides[1].imageAltText'), "./imgs/projects/hackathon/img2.jpg"),
-        new MediaItem("./imgs/projects/hackathon/img3.jpg", null, t('projects.components.projectMenuItems[3].slides[2].description'), null, null, null, t('projects.components.projectMenuItems[3].slides[2].imageAltText'), "./imgs/projects/hackathon/img3.jpg"),
+        new MediaItem("/imgs/projects/hackathon/img1.jpg", null, t('projects.components.projectMenuItems[3].slides[0].description'), null, null, null, t('projects.components.projectMenuItems[3].slides[0].imageAltText'), "/imgs/projects/hackathon/img1.jpg"),
+        new MediaItem("/imgs/projects/hackathon/img2.jpg", null, t('projects.components.projectMenuItems[3].slides[1].description'), null, null, null, t('projects.components.projectMenuItems[3].slides[1].imageAltText'), "/imgs/projects/hackathon/img2.jpg"),
+        new MediaItem("/imgs/projects/hackathon/img3.jpg", null, t('projects.components.projectMenuItems[3].slides[2].description'), null, null, null, t('projects.components.projectMenuItems[3].slides[2].imageAltText'), "/imgs/projects/hackathon/img3.jpg"),
       ],
       ""
     ),
@@ -216,11 +216,11 @@ export class DataProvider {
       null,
       [],
       [
-        new MediaItem("./imgs/projects/scavengerHunt/img1.jpg", null, t('projects.components.projectMenuItems[4].slides[0].description'), null, null, null, t('projects.components.projectMenuItems[4].slides[0].imageAltText'), "./imgs/projects/scavengerHunt/img1.jpg"),
-        new MediaItem("./imgs/projects/scavengerHunt/img2.jpg", null, t('projects.components.projectMenuItems[4].slides[1].description'), null, null, null, t('projects.components.projectMenuItems[4].slides[1].imageAltText'), "./imgs/projects/scavengerHunt/img2.jpg"),
-        new MediaItem("./imgs/projects/scavengerHunt/img3.jpg", null, t('projects.components.projectMenuItems[4].slides[2].description'), null, null, null, t('projects.components.projectMenuItems[4].slides[2].imageAltText'), "./imgs/projects/scavengerHunt/img3.jpg"),
-        new MediaItem("./imgs/projects/scavengerHunt/img4.jpg", null, t('projects.components.projectMenuItems[4].slides[3].description'), null, null, null, t('projects.components.projectMenuItems[4].slides[3].imageAltText'), "./imgs/projects/scavengerHunt/img4.jpg"),
-        new MediaItem("./imgs/projects/scavengerHunt/img5.jpg", null, t('projects.components.projectMenuItems[4].slides[4].description'), null, null, null, t('projects.components.projectMenuItems[4].slides[4].imageAltText'), "./imgs/projects/scavengerHunt/img5.jpg"),
+        new MediaItem("/imgs/projects/scavengerHunt/img1.jpg", null, t('projects.components.projectMenuItems[4].slides[0].description'), null, null, null, t('projects.components.projectMenuItems[4].slides[0].imageAltText'), "/imgs/projects/scavengerHunt/img1.jpg"),
+        new MediaItem("/imgs/projects/scavengerHunt/img2.jpg", null, t('projects.components.projectMenuItems[4].slides[1].description'), null, null, null, t('projects.components.projectMenuItems[4].slides[1].imageAltText'), "/imgs/projects/scavengerHunt/img2.jpg"),
+        new MediaItem("/imgs/projects/scavengerHunt/img3.jpg", null, t('projects.components.projectMenuItems[4].slides[2].description'), null, null, null, t('projects.components.projectMenuItems[4].slides[2].imageAltText'), "/imgs/projects/scavengerHunt/img3.jpg"),
+        new MediaItem("/imgs/projects/scavengerHunt/img4.jpg", null, t('projects.components.projectMenuItems[4].slides[3].description'), null, null, null, t('projects.components.projectMenuItems[4].slides[3].imageAltText'), "/imgs/projects/scavengerHunt/img4.jpg"),
+        new MediaItem("/imgs/projects/scavengerHunt/img5.jpg", null, t('projects.components.projectMenuItems[4].slides[4].description'), null, null, null, t('projects.components.projectMenuItems[4].slides[4].imageAltText'), "/imgs/projects/scavengerHunt/img5.jpg"),
       ],
       ""
     ),
@@ -234,7 +234,7 @@ export class DataProvider {
       null,
       [],
       [
-        new MediaItem("./imgs/projects/wordHeaderReplacer/img1.jpg", null, null, null, null, null, t('projects.components.projectMenuItems[5].slides[0].imageAltText'), "./imgs/projects/wordHeaderReplacer/img1.jpg")
+        new MediaItem("/imgs/projects/wordHeaderReplacer/img1.jpg", null, null, null, null, null, t('projects.components.projectMenuItems[5].slides[0].imageAltText'), "/imgs/projects/wordHeaderReplacer/img1.jpg")
       ],
       ""
     ),
@@ -254,21 +254,21 @@ export class DataProvider {
 
   static GetContactCards = (): MediaItem[] => [
     new MediaItem(
-      "./imgs/logos/discord-logo-white.svg",
+      "/imgs/logos/discord-logo-white.svg",
       null,
       null,
       null,
       "Egomann88#9118"
     ),
     new MediaItem(
-      "./imgs/logos/GitHub_Logo_White.png",
+      "/imgs/logos/GitHub_Logo_White.png",
       null,
       null,
       "https://github.com/Egomann88",
       "Github"
     ),
     new MediaItem(
-      "./imgs/logos/LI-Logo.png",
+      "/imgs/logos/LI-Logo.png",
       null,
       null,
       "https://www.linkedin.com/in/ju-573795244",
