@@ -15,11 +15,8 @@ onMounted(() => {
   countUpAnimation.setNumber(props.Age);
 })
 
-
 const onLoad = (container: Container) => {
-  // Do something with the container
-  container.pause()
-  setTimeout(() => container.play(), 2000)
+  container.play()
 }
 </script>
 
