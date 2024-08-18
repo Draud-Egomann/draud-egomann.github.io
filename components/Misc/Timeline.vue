@@ -31,7 +31,7 @@ const getYearContainerClass = (index: number): string => {
   return index % 2 === 0 ? "rounded-l-full lg:rounded-l-none lg:rounded-r-full bg-gradient-to-bl lg:bg-gradient-to-br" : "rounded-l-full bg-gradient-to-bl";
 }
 const getDescriptionContainerClass = (index: number): string => {
-  return index % 2 === 0 ? "mr-2 ml-8 lg:mr-8 lg:ml-2" : "mr-2 ml-8";
+  return index % 2 === 0 ? "sm:mr-2 ml-8 lg:mr-8 lg:ml-2" : "sm:mr-2 ml-8";
 }
 
 const onLoad = (container: Container) => {
@@ -151,8 +151,8 @@ const onLoad = (container: Container) => {
 
   .timeline-container {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 60px;
+    padding-right: 20px;
   }
 
   .timeline-container::before {
