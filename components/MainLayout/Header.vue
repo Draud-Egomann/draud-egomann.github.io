@@ -27,7 +27,9 @@ const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
   <nav class="w-full sm:fixed z-40 bg-ownPrimary text-white sm:px-8 shadow-md shadow-gray-800">
     <div class="flex flex-col sm:flex-row justify-between items-center container py-2 lg:py-4 mx-auto">
       <p class="inline text-3xl font-bold text-white my-4 sm:my-0 text-shadow-pop-tr">
-        {{ $t('myName') }}
+        <NuxtLink :to="localePath('/')" class="text-white">
+          {{ $t('myName') }}
+        </NuxtLink>
       </p>
 
       <div class="flex items-center gap-8">
