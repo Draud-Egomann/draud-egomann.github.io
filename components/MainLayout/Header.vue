@@ -13,6 +13,11 @@ const currentLanguage: Ref<string> = ref(locale);
 
 function changeLanguage(lang: string) {
   setLocale(lang);
+
+  setTimeout(() => {
+    window.location.reload();
+    console.log("Language changed to: " + lang);
+  }, 200);
 }
 
 function toggleNavBar() {
