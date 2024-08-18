@@ -56,7 +56,7 @@ function scrollDown() {
 
       <button @click="scrollDown">
         <fa-icon v-if="isBigView" icon="arrow-down" size="2x"
-          class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white animate-bounce" />
+          class="absolute bottom-6 left-[47%] sm:left-1/2 -translate-x-1/2 text-white animate-bounce" />
       </button>
     </div>
   </div>
