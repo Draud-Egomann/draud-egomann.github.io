@@ -276,7 +276,7 @@ export class DataProvider {
     ),
   ];
 
-  static GetReferencesImages = (): ImageReference[] => [
+  static GetReferencesImages = (t: (key: string) => string): ImageReference[] => [
     new ImageReference(
       "/imgs/flipCards/lucerne.jpg",
       "B. Hochsprung",
@@ -284,7 +284,7 @@ export class DataProvider {
       "Pixabay",
       "https://pixabay.com/de/photos/europa-schweiz-luzern-stadt-7128531/",
       null,
-      "Lucerne from Pixabay"
+      t('references.components.referencesImagesAltTexts[0]')
     ),
     new ImageReference(
       "/imgs/flipCards/work.jpg",
@@ -293,7 +293,7 @@ export class DataProvider {
       "Pixabay",
       "https://www.pexels.com/de-de/foto/computer-c-code-276452/",
       null,
-      "Programming from Pixabay"
+      t('references.components.referencesImagesAltTexts[1]')
     ),
     new ImageReference(
       "/imgs/flipCards/food.jpg",
@@ -302,7 +302,7 @@ export class DataProvider {
       "Pixabay",
       "https://www.pexels.com/de-de/foto/datei-aparmegiana-20426624/",
       null,
-      "Lasagne from Pixabay"
+      t('references.components.referencesImagesAltTexts[2]')
     ),
     new ImageReference(
       "/imgs/flipCards/wolf.jpg",
@@ -311,7 +311,7 @@ export class DataProvider {
       "Pixabay",
       "https://pixabay.com/de/photos/wolf-eckzahn-wald-raubtier-wild-1336229/",
       null,
-      "Wolf from Pixabay"
+      t('references.components.referencesImagesAltTexts[3]')
     ),
     new ImageReference(
       "/imgs/flipCards/winter.jpg",
@@ -320,7 +320,7 @@ export class DataProvider {
       "Pixabay",
       "https://www.pexels.com/de-de/foto/schneebedeckte-gebirgszuge-unter-dem-weissen-himmel-1398049/",
       null,
-      "Winter from Pixabay"
+      t('references.components.referencesImagesAltTexts[4]')
     ),
     new ImageReference(
       "/imgs/flipCards/water.jpg",
@@ -329,7 +329,7 @@ export class DataProvider {
       "Pixabay",
       "https://www.pexels.com/de-de/foto/nahaufnahme-der-flasche-die-wasser-auf-glas-giesst-327090/",
       null,
-      "Water from Pixabay"
+      t('references.components.referencesImagesAltTexts[5]')
     ),
     new ImageReference(
       "https://www.kauz.ch/assets/imgs/logo/kim-inv.svg",
@@ -337,6 +337,8 @@ export class DataProvider {
       null,
       "Kauz Informatik Medien AG",
       "https://kauz.ch",
+      null,
+      t('references.components.referencesImagesAltTexts[6]')
     ),
     new ImageReference(
       "https://young-talents-hackathon.ch/wp-content/uploads/2022/09/Hackathon_Logo_rgb.png",
@@ -344,6 +346,8 @@ export class DataProvider {
       null,
       "Young Talents Hackathon 2022",
       "https://young-talents-hackathon.ch/",
+      null,
+      t('references.components.referencesImagesAltTexts[7]')
     ),
   ];
 
@@ -412,7 +416,7 @@ export class DataProvider {
       "https://github.com/logos",
       null,
       null,
-      "Github Logo"
+      "Github-Logo"
     ),
     new MediaItem(
       "/imgs/logos/LI-Logo.png",
@@ -421,64 +425,64 @@ export class DataProvider {
       "https://brand.linkedin.com/en-us",
       null,
       null,
-      "Linkedin Logo"
+      "Linkedin-Logo"
     )
   ];
 
-  static GetReferencesHobbyCards = (): MediaItem[] => [
+  static GetReferencesHobbyCards = (t: (key: string) => string): MediaItem[] => [
     new MediaItem(
       "/imgs/hobbies/gaming.webp",
-      "The Witcher 3 Wallpaper",
-      "Ein freies Bild von Luiz Eduardo auf Pinterest.",
+      t('references.components.referencesHobbyCards[0].title'),
+      t('references.components.referencesHobbyCards[0].text'),
       "https://www.pinterest.com/pin/772226667335267334/",
       null,
       null,
-      "Image from witcher 3"
+      t('references.components.referencesHobbyCards[0].imageAltText'),
     ),
     new MediaItem(
       "/imgs/hobbies/program.webp",
-      "Mit KI generiert",
-      "Das Bild wurde auf meinen Auftrag von GPT-4 DALL·E generiert.",
+      t('references.components.referencesHobbyCards[1].title'),
+      t('references.components.referencesHobbyCards[1].text'),
       null,
       null,
       null,
-      "AI generated Image about programming"
+      t('references.components.referencesHobbyCards[1].imageAltText'),
     ),
     new MediaItem(
       "/imgs/hobbies/read.jpg",
-      "Buchlampe",
-      "Ein freies Bild von jadeharmony1111 auf Pintrest.",
-      "https://www.pinterest.com/pin/641411171899245887/",
+      t('references.components.referencesHobbyCards[0].title'),
+      t('references.components.referencesHobbyCards[0].text'),
       null,
       null,
-      "Image of an open Book"
+      null,
+      t('references.components.referencesHobbyCards[0].imageAltText'),
     ),
     new MediaItem(
       "/imgs/hobbies/write.jpg",
-      "Mit KI generiert",
-      "Das Bild wurde auf meinen Auftrag von GPT-4 DALL·E generiert.",
+      t('references.components.referencesHobbyCards[1].title'),
+      t('references.components.referencesHobbyCards[1].text'),
       null,
       null,
       null,
-      "Image of a Book"
+      t('references.components.referencesHobbyCards[1].imageAltText'),
     ),
     new MediaItem(
       "/imgs/logos/magical-imagery.svg",
-      "Mit KI generiert",
-      "Das Bild wurde auf meinen Auftrag von recraft ai generiert.",
+      t('references.components.referencesHobbyCards[3].title'),
+      t('references.components.referencesHobbyCards[3].text'),
       null,
       null,
       null,
-      "Magical Imagery Logo"
+      t('references.components.referencesHobbyCards[3].imageAltText'),
     ),
     new MediaItem(
       "/imgs/logos/scavenger-hunt.svg",
-      "Mit KI generiert",
-      "Das Bild wurde auf meinen Auftrag von recraft ai generiert.",
+      t('references.components.referencesHobbyCards[3].title'),
+      t('references.components.referencesHobbyCards[3].text'),
       null,
       null,
       null,
-      "Scavenger-Hunt Logo"
+      t('references.components.referencesHobbyCards[3].imageAltText'),
     ),
   ];
 }

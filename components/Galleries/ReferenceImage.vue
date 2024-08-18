@@ -12,17 +12,17 @@ defineProps<{
       class="mx-auto" aria-hidden="true" />
 
     <p class="text-white">
-      Bild von
+      {{ $t('components.imgFrom') }}
 
     <div v-if="imageReference.ProfileUrl" class="inline-block">
       <NuxtLink :to="imageReference.ProfileUrl" target="_blank" rel="nofollow" class="link">
-        {{ imageReference.ProfileName + " " }}
+        {{ imageReference.ProfileName }}
       </NuxtLink>
-      <span>auf</span>
+      <span class="mx-1">{{ $t('components.imgOn') }}</span>
     </div>
 
     <NuxtLink :to="imageReference.SiteUrl ?? ''" target="_blank" rel="nofollow" class="link">
-      {{ " " + imageReference.SiteName }}
+      {{ imageReference.SiteName }}
     </NuxtLink>
     </p>
   </div>

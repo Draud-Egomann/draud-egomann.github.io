@@ -218,20 +218,6 @@
         "Logo von der Kauz Informatik Medien AG",
         "Logo vom Young Talents Hackathon 2022"
       ],
-      "referencesContactBrandLogos": [
-        {
-          "title": "Discord Brand",
-          "imageAltText": "Discord-Tag"
-        },
-        {
-          "title": "GitHub Brand",
-          "imageAltText": "GitHub-Logo"
-        },
-        {
-          "title": "LinkedIn Brand",
-          "imageAltText": "LinkedIn-Logo"
-        }
-      ],
       "referencesHobbyCards": [
         {
           "title": "The Witcher 3 Wallpaper",
@@ -271,7 +257,7 @@
     "copied": "Kopiert",
     "source": "Quelle",
     "imgFrom": "Bild von",
-    "imgOf": "auf",
+    "imgOn": "auf",
     "badgeColors": {
       "completed": "Abgeschlossen",
       "inProgress": "In Bearbeitung",

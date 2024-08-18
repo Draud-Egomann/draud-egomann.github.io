@@ -29,7 +29,7 @@ defineProps<{
         <NuxtLink :to="card.LinkUrl ?? '/'" target="_blank" rel="nofollow">
           <button
             class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transform transition-transform duration-100 active:scale-95">
-            Quelle
+            {{ $t('components.source') }}
           </button>
         </NuxtLink>
       </div>

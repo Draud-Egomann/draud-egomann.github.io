@@ -1,18 +1,19 @@
 <script setup lang="ts">
 import type { ImageReference, MediaItem } from '#imports';
 
-const imageReferences: ImageReference[] = DataProvider.GetReferencesImages();
+const { t } = useI18n();
+const imageReferences: ImageReference[] = DataProvider.GetReferencesImages(t);
 const icons: MediaItem[] = DataProvider.GetReferencesBrandLogos();
 const contactBrandCards: MediaItem[] = DataProvider.GetReferencesContactBrandLogos();
-const contactHobbyCards: MediaItem[] = DataProvider.GetReferencesHobbyCards();
+const contactHobbyCards: MediaItem[] = DataProvider.GetReferencesHobbyCards(t);
 </script>
 
 <template>
   <div>
-    <title>Justin Urbanek - Quellenverzeichnis</title>
+   <title>{{ $t('myName') }} - {{ $t('references.title') }}</title>
 
-    <LazyHeroBanner :title="'Quellenverzeichnis'"
-                    :subTitle="'Ja, ich verlinke Quellen!'"
+    <LazyHeroBanner :title="$t('references.title')"
+                    :subTitle="$t('references.subTitle')"
                     :paragraphs="[]"
                     :hasButton="false"
                     :isBigView="false"
@@ -28,6 +29,6 @@ const contactHobbyCards: MediaItem[] = DataProvider.GetReferencesHobbyCards();
 
     <CardsReferenceCards :cards="contactHobbyCards" />
 
-    <TextDivider :text="'Benutzte nicht aufgelistete Bilder werden entweder noch hinzugefügt, sind Eigenkreationen oder sind direkt bei der Grafik verlinkt.'" />
+    <TextDivider :text="$t('references.dividerText')" />
   </div>
 </template>
