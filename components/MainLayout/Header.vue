@@ -25,7 +25,7 @@ function toggleNavBar() {
 }
 
 function getNavBarClass(link: string) {
-  const isHomeRoute = route.path === '/' || languages.value.some(lang => route.path === `/${lang}`);
+  const isHomeRoute = route.path === '/' || languages.value.some((lang: string) => route.path === `/${lang}`);
 
   if (link === '/') {
     // Consider the home route as active for both '/' and language-specific routes like '/de' or '/en'
