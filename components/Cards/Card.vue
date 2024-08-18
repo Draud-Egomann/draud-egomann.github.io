@@ -53,7 +53,7 @@ const cardBgBg = (index: number): string => {
         <button v-if="card.HasMoreInfo" @click="onclick()" :class="card.Classes[1]"
           class="rounded-lg focus:ring-4 font-medium focus:outline-none px-6 py-3.5 text-base text-white"
           data-aos="fade-up">
-          Mehr erfahren
+          {{ $t('components.learnMore') }}
         </button>
 
       </div>

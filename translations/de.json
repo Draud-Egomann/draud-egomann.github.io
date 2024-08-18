@@ -274,6 +274,13 @@
     "copied": "Kopiert",
     "source": "Quelle",
     "imgFrom": "Bild von",
-    "imgOf": "auf"
+    "imgOf": "auf",
+    "badgeColors": {
+      "completed": "Abgeschlossen",
+      "inProgress": "In Bearbeitung",
+      "onHold": "Pausiert",
+      "canceled": "Abgebrochen",
+      "unknown": "Unbekannt"
+    }
   }
 }

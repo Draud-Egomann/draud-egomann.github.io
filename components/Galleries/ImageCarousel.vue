@@ -56,7 +56,8 @@ function slideStyle(index: number) {
       (or real simulators), because the browser's responsive design mode is not accurate.
     -->
     <div>
-      <img class="w-full object-cover" :src="slides[currentSlideIndex].ImageUrl" />
+      <img class="w-full object-cover" :src="slides[currentSlideIndex].ImageUrl"
+        :alt="slides[currentSlideIndex].ImageAltText ?? ''" :class="slides[currentSlideIndex].ImageClass" />
     </div>
 
     <div v-if="hasMultipleSlides">
@@ -70,7 +71,7 @@ function slideStyle(index: number) {
 
     <div v-if="hasMultipleSlides" class="w-full">
       <img v-for="slide, index in slides" @click="setCurrentSlide(index)" :style="slideStyle(index)"
-        :src="slide.ThumbnailUrl ?? ''" class="thumbnail" />
+        :src="slide.ThumbnailUrl ?? ''" :alt="slide.ThumbnailAltText ?? ''" class="thumbnail" />
     </div>
   </div>
 </template>

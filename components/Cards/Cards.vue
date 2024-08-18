@@ -8,6 +8,7 @@ const props = defineProps<{
   searchItem: ProjectMenuItem | null;
 }>();
 
+const { t } = useI18n();
 const currentCard = ref<ProjectMenuItem | null>(null);
 const badge = ref<[BadgeColor, string]>([BadgeColor.Default, ""]);
 const isModalOpen = ref(false);
@@ -27,16 +28,16 @@ function selectCard(index: number) {
 function pickBadgeColor(status: ProjectStatus): [BadgeColor, string] {
   switch (status) {
     case ProjectStatus.InProgress:
-      return [BadgeColor.Info, "In Bearbeitung"];
+      return [BadgeColor.Info, t('components.badgeColors.inProgress')];
     case ProjectStatus.Completed:
-      return [BadgeColor.Success, "Abgeschlossen"];
+      return [BadgeColor.Success, t('components.badgeColors.completed')];
     case ProjectStatus.OnHold:
-      return [BadgeColor.Primary, "Pausiert"];
+      return [BadgeColor.Primary, t('components.badgeColors.onHold')];
     case ProjectStatus.Canceled:
-      return [BadgeColor.Danger, "Abgebrochen"];
+      return [BadgeColor.Danger, t('components.badgeColors.canceled')];
     case ProjectStatus.Unknown:
     default:
-      return [BadgeColor.Secondary, "Unbekannt"];
+      return [BadgeColor.Secondary, t('components.badgeColors.unknown')];
   }
 }
 
@@ -94,7 +95,7 @@ function closeModal() {
                   :to="currentCard?.LinkToLiveSite ?? '/'" target="_blank" rel="nofollow" data-aos="fade-up"
                   data-aos-delay="600">
                   <button class="btn btn-outline btn-info">
-                    Seite besuchen
+                    {{ $t('components.visitSite') }}
                     <fa-icon icon="external-link-square-alt" class="ml-2" />
                   </button>
                 </NuxtLink>
@@ -103,7 +104,7 @@ function closeModal() {
                   :to="currentCard?.LinkToSourceCode ?? '/'" target="_blank" rel="nofollow" data-aos="fade-up"
                   data-aos-delay="600">
                   <button class="btn btn-outline btn-info">
-                    Source Code ansehen
+                    {{ $t('components.viewSourceCode') }}
                     <fa-icon icon="external-link-square-alt" class="ml-2" />
                   </button>
                 </NuxtLink>
@@ -115,7 +116,7 @@ function closeModal() {
                     rel="nofollow" class="w-1/3 m-4 mx-auto flex justify-center" data-aos="fade-up"
                     :data-aos-delay="600 + index * 100">
                     <button class="btn btn-outline btn-info">
-                      {{ index + 1 + "." }} Source Code ansehen
+                      {{ index + 1 + "." }} {{ $t('components.viewSourceCode') }}
                       <fa-icon icon="external-link-square-alt" class="ml-2" />
                     </button>
                   </NuxtLink>

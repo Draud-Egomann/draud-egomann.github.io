@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import type { ProjectMenuItem } from '#imports';
 
+const { t } = useI18n();
 const route = useRoute();
 const searchQuery = route.query.search || null;
-const cards: ProjectMenuItem[] = DataProvider.GetProjects();
+const cards: ProjectMenuItem[] = DataProvider.GetProjects(t);
 const searchItem = ref<ProjectMenuItem | null>(null);
 
 onNuxtReady(() => {
@@ -27,10 +28,10 @@ function scrollToElement(elementId: string) {
 
 <template>
   <div>
-    <title>Justin Urbanek - Projekte</title>
+    <title>{{ $t('myName') }} - {{ $t('about.title') }}</title>
 
-    <LazyHeroBanner :title="'Nennenswerte Arbeiten'"
-                    :subTitle="'Meilensteine und kreative Leistungen'"
+    <LazyHeroBanner :title="$t('about.title')"
+                    :subTitle="$t('about.subTitle')"
                     :paragraphs="[]"
                     :hasButton="false"
                     :isBigView="false"

@@ -289,6 +289,13 @@
     "copied": "copied",
     "source": "Source",
     "imgFrom": "Image by",
-    "imgOn": "on"
+    "imgOn": "on",
+    "badgeColors": {
+      "completed": "Completed",
+      "inProgress": "In Progress",
+      "onHold": "On Hold",
+      "canceled": "Canceled",
+      "unknown": "Unknown"
+    }
   }
 }
