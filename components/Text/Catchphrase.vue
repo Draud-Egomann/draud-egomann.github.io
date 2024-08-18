@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import type { ImageBaseItem } from '#imports';
 import { useCountUpAnimationStore } from '~/stores/CountUpAnimationStore';
+import type { Container } from '@tsparticles/engine'
 
 const props = defineProps<{
   ImageItem: ImageBaseItem;
@@ -13,10 +14,17 @@ const countUpAnimation = useCountUpAnimationStore();
 onMounted(() => {
   countUpAnimation.setNumber(props.Age);
 })
+
+
+const onLoad = (container: Container) => {
+  // Do something with the container
+  container.pause()
+  setTimeout(() => container.play(), 2000)
+}
 </script>
 
 <template>
-  <div class="bg-ownPrimary text-white flex items-center justify-center lg:min-h-screen">
+  <div class="relative text-white flex items-center justify-center lg:min-h-screen">
     <div class="container lg:min-h-screen relative flex justify-center items-center m-8">
       <div class="flex flex-col items-center gap-8">
         <img :src="props.ImageItem.ImageUrl" :alt="props.ImageItem.ImageAltText ?? ''"
@@ -38,5 +46,6 @@ onMounted(() => {
           data-aos="fade-right" data-aos-duration="500" />
       </div>
     </div>
+    <NuxtParticles id="tsparticles" url="/animationJson/bubbles.json" @load="onLoad" style="z-index: -1;"></NuxtParticles>
   </div>
 </template>
