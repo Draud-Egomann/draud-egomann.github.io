@@ -20,6 +20,13 @@ onNuxtReady(() => {
 function buttonClickEvent() {
   emits("buttonClickEvent");
 }
+
+function scrollDown() {
+  window.scrollTo({
+    top: window.innerHeight,
+    behavior: "smooth",
+  });
+}
 </script>
 
 <template>
@@ -47,8 +54,10 @@ function buttonClickEvent() {
         </button>
       </div>
 
-      <fa-icon v-if="isBigView" icon="arrow-down" size="2x"
-        class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white animate-bounce" />
+      <button @click="scrollDown">
+        <fa-icon v-if="isBigView" icon="arrow-down" size="2x"
+          class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white animate-bounce" />
+      </button>
     </div>
   </div>
 </template>
