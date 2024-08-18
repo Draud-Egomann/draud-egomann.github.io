@@ -201,10 +201,7 @@
   },
   "contact": {
     "title": "Kontakt",
-    "subTitle": "Mittel und Wege um mich zu erreichen",
-    "components": {
-      "contactCardsTexts": ["Egomann88#9118", "GitHub", "LinkedIn"]
-    }
+    "subTitle": "Mittel und Wege um mich zu erreichen"
   },
   "references": {
     "title": "Quellenverzeichnis",
@@ -270,7 +267,7 @@
     "learnMore": "Mehr erfahren",
     "visitSite": "Seite besuchen",
     "viewSourceCode": "Source Code ansehen",
-    "show": "Zeigen",
+    "showLink": "Zeigen",
     "copied": "Kopiert",
     "source": "Quelle",
     "imgFrom": "Bild von",

@@ -6,10 +6,10 @@ const card: MediaItem[] = DataProvider.GetContactCards();
 
 <template>
   <div>
-    <title>Justin Urbanek - Kontakt</title>
+    <title>{{ $t('myName') }} - {{ $t('contact.title') }}</title>
 
-    <LazyHeroBanner :title="'Kontakt'"
-                    :subTitle="'Mittel und Wege um mich zu erreichen'"
+    <LazyHeroBanner :title="$t('contact.title')"
+                    :subTitle="$t('contact.subTitle')"
                     :paragraphs="[]"
                     :hasButton="false"
                     :isBigView="false"

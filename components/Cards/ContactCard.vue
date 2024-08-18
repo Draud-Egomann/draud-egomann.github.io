@@ -55,7 +55,7 @@ function copyToClipboard(text: string) {
       <div class="p-6 pt-3" data-aos="fade-up" data-aos-delay="200">
         <button @click="toggleTextVisibility"
           class="block w-full select-none rounded-lg bg-ownSecondary py-3.5 px-4 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-[#2c5ea8]/20 transition-all hover:shadow-lg hover:shadow-[#2c5ea8]/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-          Zeigen
+          {{ $t('components.showLink') }}
         </button>
       </div>
 
@@ -78,7 +78,7 @@ function copyToClipboard(text: string) {
         <!-- Popover -->
         <div v-if="isPopoverVisible"
           class="absolute bottom-full -mb-2 right-6 bg-black text-white text-xs rounded-md py-1 px-2 shadow-lg">
-          Kopiert!
+          {{ $t('components.copied') }}
           <div class="absolute top-full left-1/2 transform -translate-x-1/2 border-8 border-transparent border-t-black">
           </div>
         </div>
