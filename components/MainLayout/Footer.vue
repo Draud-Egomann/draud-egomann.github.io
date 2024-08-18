@@ -15,15 +15,19 @@ watch(() => route.path, () => {
 });
 
 function setFooterBackground() {
+  const homeRoutes = ['/', '/en', '/de'];
   currentUrl.value = route.path;
 
-  // if the current route is a translation route, remove the locale from the path
-  if (currentUrl.value.includes("/en") || currentUrl.value.includes("/de")) {
-    currentUrl.value = currentUrl.value.substring(3);
-  }  
+  // Check if the current route is one of the home routes
+  const isHomeRoute = homeRoutes.includes(route.path);
 
-  background.value = currentUrl.value === "" ? "bg-footerBanner1" : "bg-footerBanner2"
+  if (isHomeRoute) {
+    background.value = "bg-footerBanner1";
+  } else {
+    background.value = "bg-footerBanner2";
+  }
 }
+
 </script>
 
 <template>
