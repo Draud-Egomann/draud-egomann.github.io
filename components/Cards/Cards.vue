@@ -2,6 +2,7 @@
 import type { ProjectMenuItem } from '#imports';
 import { ProjectStatus } from '~/composables/enums/ProjectStatus';
 import { BadgeColor } from '~/composables/enums/BadgeColor';
+import type { Container } from '@tsparticles/engine'
 
 const props = defineProps<{
   cards: ProjectMenuItem[];
@@ -54,12 +55,18 @@ function isSearchItem(index: number) {
 function closeModal() {
   isModalOpen.value = false;
 }
+
+const onLoad = (container: Container) => {
+  container.play()
+}
 </script>
 
 <template>
-  <div class="flex flex-wrap justify-around items-center bg-ownPrimary gap-32 lg:gap-16 py-24 overflow-hidden">
-    <CardsCard v-for="card, index in cards" :key="index" :class="isSearchItem(index)" class="w-full lg:w-1/2 xl:w-1/3"
-      :card="card" :index="index" @buttonClickEvent="selectCard(index)" />
+  <div>
+    <div class="flex flex-wrap justify-around items-center gap-32 lg:gap-16 py-24 overflow-hidden">
+      <CardsCard v-for="card, index in cards" :key="index" :class="isSearchItem(index)" class="w-full lg:w-1/2 xl:w-1/3"
+        :card="card" :index="index" @buttonClickEvent="selectCard(index)" />
+    </div>
 
     <!-- modal -->
     <div v-if="currentCard" class="w-full">
@@ -129,6 +136,10 @@ function closeModal() {
         <label class="modal-backdrop bg-gray-900/80" for="my_modal_combined" @click="closeModal">Close</label>
       </dialog>
     </div>
+    
+    <NuxtParticles id="tsparticles" url="/animationJson/particles.json" @load="onLoad"
+      style="z-index: -1; position: relative;">
+    </NuxtParticles>
   </div>
 
 </template>

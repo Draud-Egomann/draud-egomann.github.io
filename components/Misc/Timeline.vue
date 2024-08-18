@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { TimelineItem } from '#imports';
+import type { Container } from '@tsparticles/engine'
 
 const props = defineProps<{
   timelineItems: TimelineItem[];
@@ -33,10 +34,13 @@ const getDescriptionContainerClass = (index: number): string => {
   return index % 2 === 0 ? "mr-2 ml-8 lg:mr-8 lg:ml-2" : "mr-2 ml-8";
 }
 
+const onLoad = (container: Container) => {
+  container.play()
+}
 </script>
 
 <template>
-  <div class="w-full bg-ownPrimary py-12">
+  <div class="w-full py-12">
     <div class="timeline relative container overflow-hidden py-24">
 
       <div v-for="item in timeline" :class="item.Classes[0]" class="timeline-container z-10" data-aos="fade-up">
@@ -68,6 +72,10 @@ const getDescriptionContainerClass = (index: number): string => {
 
         </div>
       </div>
+
+      <NuxtParticles id="tsparticles" url="/animationJson/particles.json" @load="onLoad"
+        style="z-index: -1;">
+      </NuxtParticles>
 
     </div>
   </div>

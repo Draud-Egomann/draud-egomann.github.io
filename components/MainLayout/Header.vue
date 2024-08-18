@@ -19,6 +19,17 @@ function toggleNavBar() {
   isNavBarOpen.value = !isNavBarOpen.value;
 }
 
+function getNavBarClass(link: string) {
+  const isHomeRoute = route.path === '/' || languages.value.some(lang => route.path === `/${lang}`);
+
+  if (link === '/') {
+    // Consider the home route as active for both '/' and language-specific routes like '/de' or '/en'
+    return isHomeRoute ? 'navbar-btn-active' : 'navbar-btn';
+  }
+
+  return route.path.includes(link) ? 'navbar-btn-active' : 'navbar-btn';
+}
+
 const navBarClass = computed(() => isNavBarOpen.value ? 'flex' : 'hidden lg:block');
 const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
 </script>
@@ -35,7 +46,7 @@ const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
       <div class="flex items-center gap-8">
         <div :class="navBarClass" class="navbar-content flex-col lg:flex-row">
           <NuxtLink v-for="navLink in navLinks" :to="localePath(navLink[1])"
-            :class="navLink[1] === route.path ? 'navbar-btn-active' : 'navbar-btn'"
+            :class="getNavBarClass(navLink[1])"
             class="my-2 lg:my-0 mx-2 px-4 py-2 rounded-md">
             {{ navLink[0] }}
           </NuxtLink>
