@@ -2,7 +2,7 @@
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#00000000"
+      "value": "#1D2328"
     },
     "image": "",
     "position": "",
@@ -14,7 +14,7 @@
     "composite": "destination-out",
     "cover": {
       "color": {
-        "value": "#00000000"
+        "value": "#1D2328"
       },
       "opacity": 1
     },
@@ -186,7 +186,7 @@
       }
     },
     "color": {
-      "value": "#1b1e34",
+      "value": "#373a4f",
       "animation": {
         "h": {
           "count": 0,
