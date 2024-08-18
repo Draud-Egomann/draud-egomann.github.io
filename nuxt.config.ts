@@ -12,15 +12,15 @@ export default defineNuxtConfig({
   },
 
   // https://nuxt.com/docs/guide/concepts/modules
-  modules: ["@vesp/nuxt-fontawesome", "@pinia/nuxt", "nuxt-aos", "@nuxtjs/i18n"],
+  modules: ["@vesp/nuxt-fontawesome", "@pinia/nuxt", "nuxt-aos", "@nuxtjs/i18n", 'nuxt-particles'],
 
   // https://i18n.nuxtjs.org/
   i18n: {
     locales: [
-      { code: 'en', iso: 'en-US', file: 'en.json' },
-      { code: 'de', iso: 'de-DE', file: 'de.json' }
+      { code: 'en', file: 'en.json' },
+      { code: 'de', file: 'de.json' }
     ],
-    defaultLocale: 'de',
+    defaultLocale: 'en',
     lazy: true,
     langDir: 'translations/'
   },

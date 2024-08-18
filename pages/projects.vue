@@ -28,10 +28,10 @@ function scrollToElement(elementId: string) {
 
 <template>
   <div>
-    <title>{{ $t('myName') }} - {{ $t('about.title') }}</title>
+    <title>{{ $t('myName') }} - {{ $t('projects.title') }}</title>
 
-    <LazyHeroBanner :title="$t('about.title')"
-                    :subTitle="$t('about.subTitle')"
+    <LazyHeroBanner :title="$t('projects.title')"
+                    :subTitle="$t('projects.subTitle')"
                     :paragraphs="[]"
                     :hasButton="false"
                     :isBigView="false"

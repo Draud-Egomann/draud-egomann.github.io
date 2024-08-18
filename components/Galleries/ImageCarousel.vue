@@ -35,7 +35,7 @@ function setCurrentSlide(index: number) {
 }
 
 function toggleOpacity(index: number) {
-  return currentSlideIndex.value === index ? 'opacity: 1;' : 'opacity: 0.6;';
+  return currentSlideIndex.value === index ? 'opacity: 1;' : 'opacity: 0.1;';
 }
 
 function getThumbnailWidth(slidesCount: number) {
@@ -65,13 +65,13 @@ function slideStyle(index: number) {
       <button class="carousel-control right" @click="nextSlide">&#10095;</button>
     </div>
 
-    <div class="text-center bg-gray-700 text-white p-1">
+    <div class="text-center bg-gray-700 text-white p-1 border-b-2 border-white">
       <p class="font-bold text-white text-lg my-1">{{ slides[currentSlideIndex].Description }}</p>
     </div>
 
     <div v-if="hasMultipleSlides" class="w-full">
       <img v-for="slide, index in slides" @click="setCurrentSlide(index)" :style="slideStyle(index)"
-        :src="slide.ThumbnailUrl ?? ''" :alt="slide.ThumbnailAltText ?? ''" class="thumbnail" />
+        :src="slide.ThumbnailUrl ?? ''" :alt="slide.ThumbnailAltText ?? ''" class="thumbnail border-x border-white" />
     </div>
   </div>
 </template>

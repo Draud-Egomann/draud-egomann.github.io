@@ -15,9 +15,19 @@ watch(() => route.path, () => {
 });
 
 function setFooterBackground() {
+  const homeRoutes = ['/', '/en', '/de'];
   currentUrl.value = route.path;
-  background.value = currentUrl.value === "/" ? "bg-footerBanner1" : "bg-footerBanner2"
+
+  // Check if the current route is one of the home routes
+  const isHomeRoute = homeRoutes.includes(route.path);
+
+  if (isHomeRoute) {
+    background.value = "bg-footerBanner1";
+  } else {
+    background.value = "bg-footerBanner2";
+  }
 }
+
 </script>
 
 <template>
