@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       { code: 'en', file: 'en.json' },
       { code: 'de', file: 'de.json' }
     ],
-    defaultLocale: 'de',
+    defaultLocale: 'en',
     lazy: true,
     langDir: 'translations/'
   },
