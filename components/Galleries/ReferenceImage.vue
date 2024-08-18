@@ -11,7 +11,7 @@ defineProps<{
     <img :src="imageReference.ImageUrl" :alt="imageReference.ImageAltText ?? ''" :class="imageReference.ImageClass"
       class="mx-auto" aria-hidden="true" />
 
-    <p class="text-white">
+    <p class="text-white text-center sm:text-left">
       {{ $t('components.imgFrom') }}
 
     <div v-if="imageReference.ProfileUrl" class="inline-block">
