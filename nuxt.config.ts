@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   },
 
   // https://nuxt.com/docs/guide/concepts/modules
-  modules: ["@vesp/nuxt-fontawesome", "@pinia/nuxt", "nuxt-aos", "@nuxtjs/i18n"],
+  modules: ["@vesp/nuxt-fontawesome", "@pinia/nuxt", "nuxt-aos", "@nuxtjs/i18n", 'nuxt-particles'],
 
   // https://i18n.nuxtjs.org/
   i18n: {
