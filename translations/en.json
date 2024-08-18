@@ -10,15 +10,7 @@
     "imageOfMyselfAltText": "Image of myself",
     "catchphraseText": "{age}-year-old aspiring developer with a passion for computer science",
     "experienceTitle": "Experience",
-    "experienceMainText": "Throughout my training and professional work, I have participated in a variety of projects, from school projects, work projects, and private projects to hackathon projects. My most notable projects can be viewed here.",
-    "components": {
-      "experienceContent": [
-        "Kauz Website",
-        "Magical Imagery",
-        "Young Talents Hackathon 2022",
-        "Scavenger-Hunt-Ionic-App"
-      ]
-    }
+    "experienceMainText": "Throughout my training and professional work, I have participated in a variety of projects, from school projects, work projects, and private projects to hackathon projects. My most notable projects can be viewed here."
   },
   "about": {
     "title": "About me",
@@ -35,13 +27,6 @@
         "My favorite animal",
         "My favorite season",
         "My favorite drink"
-      ],
-      "frameWorksAltTexts": [
-        "WordPress Logo",
-        "ASP .NET Logo",
-        "Ionic Logo",
-        "VueJS Logo",
-        "TailwindCSS Logo"
       ],
       "hobbies": [
         {
@@ -216,10 +201,7 @@
   },
   "contact": {
     "title": "Contact",
-    "subTitle": "Ways and means of reaching me",
-    "components": {
-      "contactCardsTexts": ["Egomann88#9118", "GitHub", "LinkedIn"]
-    }
+    "subTitle": "Ways and means of reaching me"
   },
   "references": {
     "title": "References",
