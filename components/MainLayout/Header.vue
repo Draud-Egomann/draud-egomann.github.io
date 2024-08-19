@@ -50,14 +50,14 @@ const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
 
       <div class="flex items-center gap-8">
         <div :class="navBarClass" class="navbar-content flex-col lg:flex-row">
-          <NuxtLink v-for="navLink in navLinks" :to="localePath(navLink[1])"
-            :class="getNavBarClass(navLink[1])"
+          <NuxtLink v-for="navLink in navLinks" :to="localePath(navLink[1])" :class="getNavBarClass(navLink[1])"
             class="my-2 lg:my-0 mx-2 px-4 py-2 rounded-md">
             {{ navLink[0] }}
           </NuxtLink>
 
-          <select v-model="currentLanguage" class="w-20 inline px-4 py-2 rounded-md navbar-btn-active">
-            <option v-for="language in languages" @click="changeLanguage(language)" v-bind:value="language">
+          <select v-model="currentLanguage" @change="changeLanguage(currentLanguage)"
+            class="w-20 inline px-4 py-2 rounded-md navbar-btn-active">
+            <option v-for="language in languages" :key="language" :value="language">
               {{ language.toUpperCase() }}
             </option>
           </select>
