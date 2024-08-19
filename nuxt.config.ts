@@ -12,7 +12,34 @@ export default defineNuxtConfig({
   },
 
   // https://nuxt.com/docs/guide/concepts/modules
-  modules: ["@vesp/nuxt-fontawesome", "@pinia/nuxt", "nuxt-aos", "@nuxtjs/i18n", 'nuxt-particles'],
+  modules: [
+    "@vesp/nuxt-fontawesome",
+    "@pinia/nuxt", "nuxt-aos",
+    "@nuxtjs/i18n",
+    'nuxt-particles',
+    'nuxt-multi-cache'
+  ],
+
+  // https://nuxt-multi-cache.dulnan.net/overview/configuration
+  multiCache: {
+    component: {
+      enabled: true,
+    },
+
+    data: {
+      enabled: true,
+    },
+
+    // Route cache is disabled. But because the `route` property is set the
+    // useRouteCache composable is still added to the build, it just doesn't
+    // cache.
+    route: {
+      enabled: false,
+    },
+
+    // Log detailled debugging messages, e.g. when items are cached or returned from cache.
+    debug: true
+  },
 
   // https://i18n.nuxtjs.org/
   i18n: {

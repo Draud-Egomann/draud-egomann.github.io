@@ -30,17 +30,13 @@ function scrollToElement(elementId: string) {
   <div>
     <title>{{ $t('myName') }} - {{ $t('projects.title') }}</title>
 
-    <HeroBanner :title="$t('projects.title')"
-                    :subTitle="$t('projects.subTitle')"
-                    :paragraphs="[]"
-                    :hasButton="false"
-                    :isBigView="false"
-                    :buttonText="null"
-                    @buttonClickEvent="() => { }"
-    />
+    <RenderCacheable :max-age="86400">
+      <HeroBanner :title="$t('projects.title')" :subTitle="$t('projects.subTitle')" :paragraphs="[]" :hasButton="false"
+        :isBigView="false" :buttonText="null" @buttonClickEvent="() => { }" />
 
-    <Cards :cards="cards" :searchItem="searchItem" />
+      <Cards :cards="cards" :searchItem="searchItem" />
 
-    <MiscEastereggLink />
+      <MiscEastereggLink />
+    </RenderCacheable>
   </div>
 </template>

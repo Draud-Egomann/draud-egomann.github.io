@@ -18,24 +18,26 @@ function NavigateToProjects() {
   <div>
     <title>{{ $t('myName') }} - {{ $t('about.title') }}</title>
 
-    <HeroBanner :title="$t('about.title')"
-                    :subTitle="$t('about.subTitle')"
-                    :paragraphs="[]"
-                    :hasButton="false"
-                    :isBigView="false"
-                    :buttonText="null"
-                    @buttonClickEvent="() => {}" />
-
-    <CardsFlipCards :cards="flipCards" />
-
-    <TextCarousel :title="$t('about.textCarouselTitle')"
-                      :carouselWords="frameWorks"
-                      :buttonText="$t('about.textCarouselButtonText')"
-                      @buttonClickEvent="NavigateToProjects"
-    />
-
-    <GridsContentGrid2 :title="$t('about.myHobbiesTitle')" :mediaItems="hobbies" />
-
-    <MiscEastereggLink />
+    <RenderCacheable :max-age="86400">
+      <HeroBanner :title="$t('about.title')"
+      :subTitle="$t('about.subTitle')"
+      :paragraphs="[]"
+      :hasButton="false"
+      :isBigView="false"
+      :buttonText="null"
+      @buttonClickEvent="() => {}" />
+      
+      <CardsFlipCards :cards="flipCards" />
+      
+      <TextCarousel :title="$t('about.textCarouselTitle')"
+      :carouselWords="frameWorks"
+      :buttonText="$t('about.textCarouselButtonText')"
+      @buttonClickEvent="NavigateToProjects"
+      />
+      
+      <GridsContentGrid2 :title="$t('about.myHobbiesTitle')" :mediaItems="hobbies" />
+      
+      <MiscEastereggLink />
+    </RenderCacheable>
   </div>
 </template>
