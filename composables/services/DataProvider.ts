@@ -453,7 +453,7 @@ export class DataProvider {
       "/imgs/hobbies/read.jpg",
       t('references.components.referencesHobbyCards[2].title'),
       t('references.components.referencesHobbyCards[2].text'),
-      null,
+      "https://www.pinterest.com/pin/641411171899245887/",
       null,
       null,
       t('references.components.referencesHobbyCards[2].imageAltText'),
