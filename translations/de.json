@@ -261,7 +261,8 @@
       "about": "Über mich",
       "experience": "Erfahrung",
       "projects": "Projekte",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "languageAriaLabel": "Sprache wechseln"
     },
     "footer": {
       "referencesAriaLabel": "Über die Quellen der Bilder und Grafiken auf dieser Webseite lesen",
