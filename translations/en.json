@@ -261,7 +261,8 @@
       "about": "About me",
       "experience": "Experience",
       "projects": "Projects",
-      "contact": "Contact"
+      "contact": "Contact",
+      "languageAriaLabel": "Change the language of the website"
     },
     "footer": {
       "referencesAriaLabel": "Read about the references used on this website",

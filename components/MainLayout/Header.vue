@@ -56,7 +56,7 @@ const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
           </NuxtLink>
 
           <select v-model="currentLanguage" @change="changeLanguage(currentLanguage)"
-            class="w-20 inline px-4 py-2 rounded-md navbar-btn-active">
+            class="w-20 inline px-4 py-2 rounded-md navbar-btn-active" :aria-label="$t('mainLayout.languageAriaLabel')">
             <option v-for="language in languages" :key="language" :value="language">
               {{ language.toUpperCase() }}
             </option>
