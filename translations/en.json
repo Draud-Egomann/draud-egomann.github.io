@@ -7,6 +7,7 @@
       "Currently, I am completing my apprenticeship at Kauz Informatik Medien AG and attending the BBZW Sursee vocational training center."
     ],
     "buttonText": "More about me",
+    "buttonAriaLabel": "Here you can learn more about me",
     "imageOfMyselfAltText": "Image of myself",
     "catchphraseText": "{age}-year-old aspiring developer with a passion for computer science",
     "experienceTitle": "Experience",

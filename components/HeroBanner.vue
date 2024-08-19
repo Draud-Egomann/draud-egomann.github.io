@@ -46,7 +46,7 @@ function scrollDown() {
           {{ paragraph }}
         </p>
 
-        <button v-if="hasButton" @click="buttonClickEvent"
+        <button v-show="hasButton" @click="buttonClickEvent" :aria-hidden="!hasButton" :aria-label="$t('index.buttonAriaLabel')"
           class="btn btn-outline mx-auto lg:mx-0 font-medium text-base text-white border-gray-400 rounded-full w-64 px-6 animate-fade-in">
           {{ buttonText }}
 
