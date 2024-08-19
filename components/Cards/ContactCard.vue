@@ -7,9 +7,16 @@ const props = defineProps<{
 
 const isTextVisible = ref(false);
 const isPopoverVisible = ref(false);
+const height = ref("h-64");
 
 function toggleTextVisibility() {
   isTextVisible.value = !isTextVisible.value;
+
+  if (isTextVisible.value) {
+    height.value = "h-80";
+  } else {
+    height.value = "h-64";
+  }
 }
 
 function hasContent() {
@@ -33,14 +40,15 @@ function copyToClipboard(text: string) {
 </script>
 
 <template>
-  <div class="relative flex w-full max-w-[26rem] flex-col">
-    <div class="relative bg-gradient-to-b from-gray-400 to-gray-700 text-white rounded-xl bg-clip-border shadow-lg">
+  <div :class="height" class="relative flex w-full max-w-[26rem] flex-col">
+    <div
+      class="relative flex flex-col justify-between bg-gradient-to-b from-gray-400 to-gray-700 text-white rounded-xl bg-clip-border shadow-lg h-full">
 
       <div class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white">
         <img :src="card.ImageUrl" :alt="card.ImageAltText ?? ''" :class="card.ImageClass" data-aos="fade-up" />
       </div>
 
-      <div :class="hasContent()">
+      <div :class="hasContent()" class="flex-grow">
         <div class="mb-3 flex items-center justify-between" data-aos="fade-up" data-aos-delay="100">
           <h3 class="block font-sans text-xl font-semibold leading-snug tracking-normal antialiased">
             {{ card.Title }}
