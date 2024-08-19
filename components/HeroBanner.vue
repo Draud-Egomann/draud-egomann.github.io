@@ -46,7 +46,8 @@ function scrollDown() {
           {{ paragraph }}
         </p>
 
-        <button v-show="hasButton" @click="buttonClickEvent" :aria-hidden="!hasButton" :aria-label="$t('index.buttonAriaLabel')"
+        <button v-show="hasButton" @click="buttonClickEvent" :aria-hidden="!hasButton"
+          :aria-label="$t('index.buttonAriaLabel')"
           class="btn btn-outline mx-auto lg:mx-0 font-medium text-base text-white border-gray-400 rounded-full w-64 px-6 animate-fade-in">
           {{ buttonText }}
 
@@ -54,10 +55,8 @@ function scrollDown() {
         </button>
       </div>
 
-      <button @click="scrollDown">
-        <fa-icon v-if="isBigView" icon="arrow-down" size="2x"
-          class="absolute bottom-6 left-[47%] sm:left-1/2 -translate-x-1/2 text-white animate-bounce" />
-      </button>
+      <fa-icon v-if="isBigView" icon="arrow-down" size="2x" @click="scrollDown"
+        class="absolute bottom-6 left-[47%] sm:left-1/2 -translate-x-1/2 text-white cursor-pointer animate-bounce" :aria-label="$t('components.scrollDown')" />
     </div>
   </div>
 </template>

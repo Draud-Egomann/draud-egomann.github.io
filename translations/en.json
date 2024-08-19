@@ -284,6 +284,7 @@
       "onHold": "On Hold",
       "canceled": "Canceled",
       "unknown": "Unknown"
-    }
+    },
+    "scrollDown": "scroll down"
   }
 }
