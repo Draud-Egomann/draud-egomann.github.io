@@ -26,8 +26,8 @@ const onLoad = (container: Container) => {
 
       <CardsFlipCard v-for="(card, index) in cards" :key="index" :card="card" :index="index" />
 
-      <NuxtParticles id="tsparticles" :url="animateJsonUrl" @load="onLoad" style="z-index: -1;">
-      </NuxtParticles>
+      <LazyNuxtParticles id="tsparticles" :url="animateJsonUrl" @load="onLoad" style="z-index: -1;">
+      </LazyNuxtParticles>
 
     </div>
   </div>

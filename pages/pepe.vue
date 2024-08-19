@@ -2,7 +2,7 @@
   <div>
     <title>Pepe?</title>
 
-    <LazyHeroBanner :title="'Pepe?'"
+    <HeroBanner :title="'Pepe?'"
                     :subTitle="'Pepe.'"
                     :paragraphs="[]"
                     :hasButton="false"

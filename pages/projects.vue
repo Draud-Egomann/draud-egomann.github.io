@@ -30,7 +30,7 @@ function scrollToElement(elementId: string) {
   <div>
     <title>{{ $t('myName') }} - {{ $t('projects.title') }}</title>
 
-    <LazyHeroBanner :title="$t('projects.title')"
+    <HeroBanner :title="$t('projects.title')"
                     :subTitle="$t('projects.subTitle')"
                     :paragraphs="[]"
                     :hasButton="false"
@@ -39,7 +39,7 @@ function scrollToElement(elementId: string) {
                     @buttonClickEvent="() => { }"
     />
 
-    <LazyCards :cards="cards" :searchItem="searchItem" />
+    <Cards :cards="cards" :searchItem="searchItem" />
 
     <MiscEastereggLink />
   </div>

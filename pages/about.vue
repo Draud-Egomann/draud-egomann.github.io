@@ -18,7 +18,7 @@ function NavigateToProjects() {
   <div>
     <title>{{ $t('myName') }} - {{ $t('about.title') }}</title>
 
-    <LazyHeroBanner :title="$t('about.title')"
+    <HeroBanner :title="$t('about.title')"
                     :subTitle="$t('about.subTitle')"
                     :paragraphs="[]"
                     :hasButton="false"
@@ -26,15 +26,15 @@ function NavigateToProjects() {
                     :buttonText="null"
                     @buttonClickEvent="() => {}" />
 
-    <LazyCardsFlipCards :cards="flipCards" />
+    <CardsFlipCards :cards="flipCards" />
 
-    <LazyTextCarousel :title="$t('about.textCarouselTitle')"
+    <TextCarousel :title="$t('about.textCarouselTitle')"
                       :carouselWords="frameWorks"
                       :buttonText="$t('about.textCarouselButtonText')"
                       @buttonClickEvent="NavigateToProjects"
     />
 
-    <LazyGridsContentGrid2 :title="$t('about.myHobbiesTitle')" :mediaItems="hobbies" />
+    <GridsContentGrid2 :title="$t('about.myHobbiesTitle')" :mediaItems="hobbies" />
 
     <MiscEastereggLink />
   </div>

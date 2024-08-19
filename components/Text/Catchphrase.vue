@@ -43,6 +43,7 @@ const onLoad = (container: Container) => {
           data-aos="fade-right" data-aos-duration="500" />
       </div>
     </div>
-    <NuxtParticles id="tsparticles" url="/animationJson/bubbles.json" @load="onLoad" style="z-index: -1;"></NuxtParticles>
+    <LazyNuxtParticles id="tsparticles" url="/animationJson/bubbles.json" @load="onLoad" style="z-index: -1;">
+    </LazyNuxtParticles>
   </div>
 </template>

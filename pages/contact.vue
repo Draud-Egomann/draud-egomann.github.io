@@ -13,21 +13,14 @@ const onLoad = (container: Container) => {
   <div>
     <title>{{ $t('myName') }} - {{ $t('contact.title') }}</title>
 
-    <LazyHeroBanner :title="$t('contact.title')"
-                    :subTitle="$t('contact.subTitle')"
-                    :paragraphs="[]"
-                    :hasButton="false"
-                    :isBigView="false"
-                    :buttonText="null"
-                    @buttonClickEvent="() => { }"
-    />
+    <HeroBanner :title="$t('contact.title')" :subTitle="$t('contact.subTitle')" :paragraphs="[]" :hasButton="false"
+      :isBigView="false" :buttonText="null" @buttonClickEvent="() => { }" />
 
     <div class="min-h-[50vh] flex flex-col justify-center">
       <CardsContactCards :cards="card" data-aos="zoom-in" />
 
-      <NuxtParticles id="tsparticles" url="/animationJson/particles.json" @load="onLoad"
-        style="z-index: -1;">
-      </NuxtParticles>
+      <LazyNuxtParticles id="tsparticles" url="/animationJson/particles.json" @load="onLoad" style="z-index: -1;">
+      </LazyNuxtParticles>
     </div>
 
     <MiscEastereggLink />
