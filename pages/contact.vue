@@ -22,7 +22,7 @@ const onLoad = (container: Container) => {
                     @buttonClickEvent="() => { }"
     />
 
-    <div class="h-[50vh] flex flex-col justify-center">
+    <div class="min-h-[50vh] flex flex-col justify-center">
       <CardsContactCards :cards="card" data-aos="zoom-in" />
 
       <NuxtParticles id="tsparticles" url="/animationJson/particles.json" @load="onLoad"
