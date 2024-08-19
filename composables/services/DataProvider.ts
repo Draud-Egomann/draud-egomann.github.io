@@ -9,11 +9,11 @@ import {
 
 export class DataProvider {
   static GetNavBarLinks = (t: (key: string) => string): [string, string][] => [
-    [t('mainLayout.home'), "/"],
-    [t('mainLayout.about'), "/about"],
-    [t('mainLayout.experience'), "/experience"],
-    [t('mainLayout.projects'), "/projects"],
-    [t('mainLayout.contact'), "/contact"],
+    [t('mainLayout.header.home'), "/"],
+    [t('mainLayout.header.about'), "/about"],
+    [t('mainLayout.header.experience'), "/experience"],
+    [t('mainLayout.header.projects'), "/projects"],
+    [t('mainLayout.header.contact'), "/contact"],
   ];
 
   static GetExperienceContent = (t: (key: string) => string): MediaItem[] => [

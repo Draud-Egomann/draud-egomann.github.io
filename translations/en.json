@@ -251,16 +251,18 @@
     }
   },
   "mainLayout": {
-    "home": "Home",
-    "about": "About me",
-    "experience": "Experience",
-    "projects": "Projects",
-    "contact": "Contact"
-  },
-  "footer": {
-    "referencesAriaLabel": "Read about the references used on this website",
-    "referencesGithub": "Direct link to my GitHub profile",
-    "referencesLinkedin": "Direct link to my LinkedIn profile"
+    "header": {
+      "home": "Home",
+      "about": "About me",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "footer": {
+      "referencesAriaLabel": "Read about the references used on this website",
+      "referencesGithub": "Direct link to my GitHub profile",
+      "referencesLinkedin": "Direct link to my LinkedIn profile"
+    }
   },
   "components": {
     "learnMore": "Learn more",
