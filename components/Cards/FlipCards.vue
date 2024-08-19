@@ -6,15 +6,6 @@ defineProps<{
   cards: FlipCardItem[]
 }>();
 
-const animateJsonUrl = ref("");
-
-onMounted(() => {
-  const width = window.innerWidth;
-
-  if (width < 768) animateJsonUrl.value = '/animationJson/parallax_withoutHover.json'
-  else animateJsonUrl.value = '/animationJson/parallax.json'
-})
-
 const onLoad = (container: Container) => {
   container.play()
 }
@@ -26,7 +17,7 @@ const onLoad = (container: Container) => {
 
       <CardsFlipCard v-for="(card, index) in cards" :key="index" :card="card" :index="index" />
 
-      <LazyNuxtParticles id="tsparticles" :url="animateJsonUrl" @load="onLoad" style="z-index: -1;">
+      <LazyNuxtParticles id="tsparticles" url="/animationJson/parallax.json" @load="onLoad" style="z-index: -1;">
       </LazyNuxtParticles>
 
     </div>
