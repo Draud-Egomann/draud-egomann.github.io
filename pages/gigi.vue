@@ -2,7 +2,7 @@
   <div>
     <title>Justin Urbanek - GiGi?</title>
 
-    <LazyHeroBanner :title="'GiGi?'"
+    <HeroBanner :title="'GiGi?'"
                     :subTitle="'GIGI QUEEN.'"
                     :paragraphs="[]"
                     :hasButton="false"

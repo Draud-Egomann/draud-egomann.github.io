@@ -15,7 +15,7 @@ onMounted(() => {
   <div>
     <title>{{ $t('myName') }} - {{ $t('experience.title') }}</title>
 
-    <LazyHeroBanner :title="$t('experience.title')"
+    <HeroBanner :title="$t('experience.title')"
                     :subTitle="$t('experience.subTitle')"
                     :paragraphs="[]"
                     :hasButton="false"

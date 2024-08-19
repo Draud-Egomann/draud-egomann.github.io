@@ -21,7 +21,7 @@ function NavigateToAbout() {
   <div>
     <title>{{ $t('index.title') }}</title>
 
-    <LazyHeroBanner :title="$t('index.title')"
+    <HeroBanner :title="$t('index.title')"
                     :subTitle="null"
                     :paragraphs="[$t('index.paragraphs[0]'), $t('index.paragraphs[1]')]"
                     :hasButton="true"
@@ -29,11 +29,11 @@ function NavigateToAbout() {
                     :buttonText="$t('index.buttonText')"
                     @buttonClickEvent="NavigateToAbout" />
 
-    <LazyTextCatchphrase :ImageItem="mySelfImage"
+    <TextCatchphrase :ImageItem="mySelfImage"
                          :Text="$t('index.catchphraseText')"
                          :Age="diff" />
 
-    <LazyGridsContentGrid :title="$t('index.experienceTitle')"
+    <GridsContentGrid :title="$t('index.experienceTitle')"
                           :main-text="$t('index.experienceMainText')"
                           :mediaItems="experiences" />
 

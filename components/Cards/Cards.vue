@@ -137,9 +137,9 @@ const onLoad = (container: Container) => {
       </dialog>
     </div>
     
-    <NuxtParticles id="tsparticles" url="/animationJson/particles.json" @load="onLoad"
+    <LazyNuxtParticles id="tsparticles" url="/animationJson/particles.json" @load="onLoad"
       style="z-index: -1; position: relative;">
-    </NuxtParticles>
+    </LazyNuxtParticles>
   </div>
 
 </template>
