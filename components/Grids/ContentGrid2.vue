@@ -7,21 +7,10 @@ defineProps<{
 }>();
 
 const icon = ref('arrow-up');
-const isModalOpen = ref(false);
-const currentItem = ref<MediaItem | null>(null);
 
 onMounted(() => {
   icon.value = window.innerWidth < 768 ? 'hand-pointer' : 'arrow-up';
 });
-
-function showModal(item: MediaItem) {
-  currentItem.value = item;
-  isModalOpen.value = true;
-}
-
-function closeModal() {
-  isModalOpen.value = false;
-}
 </script>
 
 <template>
@@ -44,7 +33,7 @@ function closeModal() {
 
             <img :src="item.ImageUrl" :alt="item.ImageAltText ?? ''" class="w-full h-auto rounded-xl" />
 
-            <button @click="showModal(item)" class="btn-overlay absolute z-10 left-1/2 top-1/2 p-0">
+            <button class="btn-overlay absolute z-10 left-1/2 top-1/2 p-0">
               <fa-icon :icon="icon"
                 class="bg-white text-gray-800 shadow-gray-600 shadow-md rounded-full text-2xl sm:text-3xl py-4 px-5" />
             </button>
@@ -52,25 +41,6 @@ function closeModal() {
           </div>
         </div>
       </div>
-
-      <input type="checkbox" id="my_modal_combined" class="modal-toggle" :checked="isModalOpen" />
-      <dialog v-if="isModalOpen" class="modal">
-        <div class="modal-box relative bg-gray-700">
-          <div class="flex flex-row-reverse justify-between items-center">
-            <label for="my_modal_combined" class="btn btn-sm btn-circle btn-ghost text-white/80 text-xl"
-              @click="closeModal">✕</label>
-
-            <h3 class="text-xl font-bold text-white text-center md:text-left">{{ currentItem?.Title }}</h3>
-          </div>
-
-          <div class="my-4 border-b border-gray-100/20"></div>
-
-          <p class="text-lg sm:text-xl lg:text-3xl text-center text-white" data-aos="fade-up">
-            {{ currentItem?.Description }}
-          </p>
-        </div>
-        <label class="modal-backdrop bg-gray-900/80" for="my_modal_combined" @click="closeModal">Close</label>
-      </dialog>
 
     </div>
   </div>
