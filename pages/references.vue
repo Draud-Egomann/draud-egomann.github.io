@@ -17,23 +17,26 @@ const onLoad = (container: Container) => {
   <div>
     <title>{{ $t('myName') }} - {{ $t('references.title') }}</title>
 
-    <HeroBanner :title="$t('references.title')" :subTitle="$t('references.subTitle')" :paragraphs="[]"
-      :hasButton="false" :isBigView="false" :buttonText="null" @buttonClickEvent="() => { }" />
+    <RenderCacheable :max-age="86400">
 
-    <div>
-      <GalleriesReferenceImages :imageReferences="imageReferences" />
+      <HeroBanner :title="$t('references.title')" :subTitle="$t('references.subTitle')" :paragraphs="[]"
+        :hasButton="false" :isBigView="false" :buttonText="null" @buttonClickEvent="() => { }" />
 
-      <GalleriesReferenceIcons :icons="icons" />
+      <div>
+        <GalleriesReferenceImages :imageReferences="imageReferences" />
 
-      <CardsReferenceCards :cards="contactBrandCards" />
+        <GalleriesReferenceIcons :icons="icons" />
 
-      <CardsReferenceCards :cards="contactHobbyCards" />
+        <CardsReferenceCards :cards="contactBrandCards" />
 
-      <LazyNuxtParticles id="tsparticles" url="/animationJson/particles.json" @load="onLoad"
-        style="z-index: -1; position: relative">
-      </LazyNuxtParticles>
-    </div>
+        <CardsReferenceCards :cards="contactHobbyCards" />
 
-    <TextDivider :text="$t('references.dividerText')" />
+        <LazyNuxtParticles id="tsparticles" url="/animationJson/particles.json" @load="onLoad"
+          style="z-index: -1; position: relative">
+        </LazyNuxtParticles>
+      </div>
+
+      <TextDivider :text="$t('references.dividerText')" />
+    </RenderCacheable>
   </div>
 </template>

@@ -21,22 +21,24 @@ function NavigateToAbout() {
   <div>
     <title>{{ $t('index.title') }}</title>
 
-    <HeroBanner :title="$t('index.title')"
-                    :subTitle="null"
-                    :paragraphs="[$t('index.paragraphs[0]'), $t('index.paragraphs[1]')]"
-                    :hasButton="true"
-                    :isBigView="true"
-                    :buttonText="$t('index.buttonText')"
-                    @buttonClickEvent="NavigateToAbout" />
+    <RenderCacheable :max-age="86400">
+      <HeroBanner :title="$t('index.title')"
+                  :subTitle="null"
+                  :paragraphs="[$t('index.paragraphs[0]'), $t('index.paragraphs[1]')]"
+                  :hasButton="true"
+                  :isBigView="true"
+                  :buttonText="$t('index.buttonText')"
+                  @buttonClickEvent="NavigateToAbout" />
+                    
+      <TextCatchphrase :ImageItem="mySelfImage"
+                       :Text="$t('index.catchphraseText')"
+                      :Age="diff" />
 
-    <TextCatchphrase :ImageItem="mySelfImage"
-                         :Text="$t('index.catchphraseText')"
-                         :Age="diff" />
-
-    <GridsContentGrid :title="$t('index.experienceTitle')"
-                          :main-text="$t('index.experienceMainText')"
-                          :mediaItems="experiences" />
-
-    <MiscEastereggLink />
+      <GridsContentGrid :title="$t('index.experienceTitle')"
+                        :main-text="$t('index.experienceMainText')"
+                        :mediaItems="experiences" />
+                          
+      <MiscEastereggLink />
+    </RenderCacheable>
   </div>
 </template>
