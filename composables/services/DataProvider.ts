@@ -451,12 +451,12 @@ export class DataProvider {
     ),
     new MediaItem(
       "/imgs/hobbies/read.jpg",
-      t('references.components.referencesHobbyCards[0].title'),
-      t('references.components.referencesHobbyCards[0].text'),
+      t('references.components.referencesHobbyCards[2].title'),
+      t('references.components.referencesHobbyCards[2].text'),
       null,
       null,
       null,
-      t('references.components.referencesHobbyCards[0].imageAltText'),
+      t('references.components.referencesHobbyCards[2].imageAltText'),
     ),
     new MediaItem(
       "/imgs/hobbies/write.jpg",
