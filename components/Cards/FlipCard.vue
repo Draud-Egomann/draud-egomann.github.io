@@ -8,7 +8,7 @@ const props = defineProps<{
 const emits = defineEmits(['onCardClicked']);
 
 function setCurrentCard() {
-  emits("onCardClicked", props.card);
+  //emits("onCardClicked", props.card);
 }
 </script>
 
