@@ -63,7 +63,8 @@ const navBarIcon = computed(() => isNavBarOpen.value ? 'times' : 'bars');
           </select>
         </div>
 
-        <button @click="toggleNavBar" class="block lg:hidden navbar-btn px-4 p-2 rounded-md">
+        <button @click="toggleNavBar" class="block lg:hidden navbar-btn px-4 p-2 rounded-md"
+          :aria-label="navBarIcon == 'bars' ? $t('mainLayout.header.toggleBtnAriaLabelClosed') : $t('mainLayout.header.toggleBtnAriaLabelOpened')">
           <fa-icon :icon="navBarIcon" class="text-[1.75rem] sm:text-[2rem]" />
         </button>
       </div>

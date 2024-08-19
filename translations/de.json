@@ -262,7 +262,9 @@
       "experience": "Erfahrung",
       "projects": "Projekte",
       "contact": "Kontakt",
-      "languageAriaLabel": "Sprache wechseln"
+      "languageAriaLabel": "Sprache wechseln",
+      "toggleBtnAriaLabelClosed": "Menü öffnen",
+      "toggleBtnAriaLabelOpened": "Menü schliessen"
     },
     "footer": {
       "referencesAriaLabel": "Über die Quellen der Bilder und Grafiken auf dieser Webseite lesen",

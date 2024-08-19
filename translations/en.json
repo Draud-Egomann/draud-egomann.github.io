@@ -262,7 +262,9 @@
       "experience": "Experience",
       "projects": "Projects",
       "contact": "Contact",
-      "languageAriaLabel": "Change the language of the website"
+      "languageAriaLabel": "Change the language of the website",
+      "toggleBtnAriaLabelClosed": "open menu",
+      "toggleBtnAriaLabelOpened": "close menu"
     },
     "footer": {
       "referencesAriaLabel": "Read about the references used on this website",
