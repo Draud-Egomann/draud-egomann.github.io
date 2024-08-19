@@ -33,22 +33,21 @@ const justifyWithIndex = (index: number): string => {
           :class="justifyWithIndex(props.mediaItems.indexOf(item))" data-aos="zoom-in">
           <div class="relative bg-gray-600 rounded-lg w-full max-w-[368px] h-[256px] overflow-hidden">
 
-            <NuxtLink :to="localePath(item.LinkUrl ?? '/')">
-              <button class="relative w-full h-full rounded-lg overflow-hidden p-8">
-                <!-- Separate text and image to separate hover effects -->
-                <div :class="item.ImageClass" :style="`background-image: url(${item.ImageUrl});`"
-                  class="absolute inset-0 bgImgParallax transform-gpu duration-300 hover:scale-125">
-                </div>
+            <NuxtLink :to="localePath(item.LinkUrl ?? '/')"
+              class="block relative w-full h-full rounded-lg overflow-hidden p-8" :aria-label="item.LinkText">
+              <!-- Separate text and image to separate hover effects -->
+              <div :class="item.ImageClass" :style="`background-image: url(${item.ImageUrl});`"
+                class="absolute inset-0 bgImgParallax transform-gpu duration-300 hover:scale-125">
+              </div>
 
-                <div v-if="!stringHelper.IsNullOrEmpty(item.Title)"
-                  class="absolute bottom-8 left-8 flex items-center gap-4">
-                  <fa-icon icon="arrow-right" class="text-white" />
+              <div v-if="!stringHelper.IsNullOrEmpty(item.Title)"
+                class="absolute bottom-8 left-8 flex items-center gap-4">
+                <fa-icon icon="arrow-right" class="text-white" />
 
-                  <p class="text-xl text-white">
-                    {{ item.Title }}
-                  </p>
-                </div>
-              </button>
+                <p class="text-xl text-white">
+                  {{ item.Title }}
+                </p>
+              </div>
             </NuxtLink>
 
           </div>

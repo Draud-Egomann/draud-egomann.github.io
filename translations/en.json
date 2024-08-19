@@ -11,7 +11,15 @@
     "imageOfMyselfAltText": "Image of myself",
     "catchphraseText": "{age}-year-old aspiring developer with a passion for computer science",
     "experienceTitle": "Experience",
-    "experienceMainText": "Throughout my training and professional work, I have participated in a variety of projects, from school projects, work projects, and private projects to hackathon projects. My most notable projects can be viewed here."
+    "experienceMainText": "Throughout my training and professional work, I have participated in a variety of projects, from school projects, work projects, and private projects to hackathon projects. My most notable projects can be viewed here.",
+    "components": {
+      "experiencesAriaLabels": [
+        "Read more about my participation on the Kauz Informatik Medien AG website",
+        "Read more about our pilot online store Magical Imagery",
+        "Read more about our project at the Young Talents Hackathon 2022",
+        "Read more about our scavenger hunt app"
+      ]
+    }
   },
   "about": {
     "title": "About me",
@@ -33,22 +41,26 @@
         {
           "title": "Creative writing",
           "text": "My greatest passion is dedicated to creative writing. I have discovered that writing and coming up with stories is what fulfills me the most personally. At the moment, I only write smaller works or concepts.",
-          "imageAltText": "A picture of a notebook"
+          "imageAltText": "A picture of a notebook",
+          "linkAriaLabel": "Find out more about my writing"
         },
         {
           "title": "Programming and coding",
           "text": "Programming is a hobby that you can spend your free time on productively, and it can also be part of your profession. I enjoy programming the frontend as well as the backend logic of websites. The languages I use are C#, JS/TS, Python, and unfortunately also PHP 😪.",
-          "imageAltText": "A picture of a workplace"
+          "imageAltText": "A picture of a workplace",
+          "linkAriaLabel": "Find out more about my programming"
         },
         {
           "title": "Gaming",
           "text": "I am what one would call a passionate gamer, even though this passion is increasingly taking a backseat. My favorite genres are RPGs, hack'n'slash, and MMOs, and I believe in PC supremacy.",
-          "imageAltText": "A wallpaper about the game 'The Witcher 3: Wild Hunt'"
+          "imageAltText": "A wallpaper about the game 'The Witcher 3: Wild Hunt'",
+          "linkAriaLabel": "Find out more about my gaming preferences"
         },
         {
           "title": "Reading",
           "text": "Reading is becoming an increasingly prevalent hobby. I like to read books to expand my vocabulary and to immerse myself in other worlds. My favorite genres are fantasy, sci-fi, and thrillers.",
-          "imageAltText": "A picture of a book"
+          "imageAltText": "A picture of a book",
+          "linkAriaLabel": "Find out more about my reading habits"
         }
       ]
     }
@@ -244,11 +256,18 @@
     }
   },
   "mainLayout": {
-    "home": "Home",
-    "about": "About me",
-    "experience": "Experience",
-    "projects": "Projects",
-    "contact": "Contact"
+    "header": {
+      "home": "Home",
+      "about": "About me",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "footer": {
+      "referencesAriaLabel": "Read about the references used on this website",
+      "referencesGithub": "Direct link to my GitHub profile",
+      "referencesLinkedin": "Direct link to my LinkedIn profile"
+    }
   },
   "components": {
     "learnMore": "Learn more",

@@ -9,20 +9,20 @@ import {
 
 export class DataProvider {
   static GetNavBarLinks = (t: (key: string) => string): [string, string][] => [
-    [t('mainLayout.home'), "/"],
-    [t('mainLayout.about'), "/about"],
-    [t('mainLayout.experience'), "/experience"],
-    [t('mainLayout.projects'), "/projects"],
-    [t('mainLayout.contact'), "/contact"],
+    [t('mainLayout.header.home'), "/"],
+    [t('mainLayout.header.about'), "/about"],
+    [t('mainLayout.header.experience'), "/experience"],
+    [t('mainLayout.header.projects'), "/projects"],
+    [t('mainLayout.header.contact'), "/contact"],
   ];
 
-  static GetExperienceContent = (): MediaItem[] => [
+  static GetExperienceContent = (t: (key: string) => string): MediaItem[] => [
     new MediaItem(
       "https://www.kauz.ch/assets/imgs/logo/kim-inv.svg",
       null,
       null,
       "/projects?search=kauz",
-      null,
+      t('index.components.experiencesAriaLabels[0]'),
       "bg-[#1b2533] bgImg",
       "Kauz Website"
     ),
@@ -31,7 +31,7 @@ export class DataProvider {
       null,
       null,
       "/projects?search=magical",
-      null,
+      t('index.components.experiencesAriaLabels[1]'),
       null,
       "Magical Imagery"
     ),
@@ -40,7 +40,7 @@ export class DataProvider {
       null,
       null,
       "/projects?search=hackathon",
-      null,
+      t('index.components.experiencesAriaLabels[2]'),
       "bg-[#1b2533] bgImg",
       "Young Talents Hackathon 2022"
     ),
@@ -49,7 +49,7 @@ export class DataProvider {
       null,
       null,
       "/projects?search=scavenger",
-      null,
+      t('index.components.experiencesAriaLabels[3]'),
       null,
       "Scavenger-Hunt-Ionic-App"
     ),
@@ -79,7 +79,7 @@ export class DataProvider {
       t('about.components.hobbies[0].title'),
       t('about.components.hobbies[0].text'),
       null,
-      null,
+      t('about.components.hobbies[0].linkAriaLabel'),
       null,
       t('about.components.hobbies[0].imageAltText')
     ),
@@ -88,7 +88,7 @@ export class DataProvider {
       t('about.components.hobbies[1].title'),
       t('about.components.hobbies[1].text'),
       null,
-      null,
+      t('about.components.hobbies[0].linkAriaLabel'),
       null,
       t('about.components.hobbies[1].imageAltText')
     ),
@@ -97,6 +97,7 @@ export class DataProvider {
       t('about.components.hobbies[2].title'),
       t('about.components.hobbies[2].text'),
       null,
+      t('about.components.hobbies[0].linkAriaLabel'),
       null,
       t('about.components.hobbies[2].imageAltText')
     ),
@@ -105,7 +106,7 @@ export class DataProvider {
       t('about.components.hobbies[3].title'),
       t('about.components.hobbies[3].text'),
       null,
-      null,
+      t('about.components.hobbies[0].linkAriaLabel'),
       null,
       t('about.components.hobbies[3].imageAltText')
     ),
