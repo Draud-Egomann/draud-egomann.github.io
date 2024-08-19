@@ -36,11 +36,6 @@ export default defineNuxtConfig({
     suffix: true,
     icons: {
       solid: [
-        "dollar-sign",
-        "cog",
-        "circle",
-        "check",
-        "calendar",
         "bars",
         "times",
         "arrow-right",
