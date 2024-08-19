@@ -10,7 +10,15 @@
     "imageOfMyselfAltText": "Ein Bild von mir",
     "catchphraseText": "{age}-jähriger angehender Entwickler mit einer Leidenschaft für Informatik.",
     "experienceTitle": "Erfahrung",
-    "experienceMainText": "Ich habe bereits Erfahrung in der Entwicklung von Webseiten und Webapplikationen. Dabei habe ich unter anderem mit HTML, CSS, JavaScript, PHP und SQL gearbeitet."
+    "experienceMainText": "Ich habe bereits Erfahrung in der Entwicklung von Webseiten und Webapplikationen. Dabei habe ich unter anderem mit HTML, CSS, JavaScript, PHP und SQL gearbeitet.",
+    "components": {
+      "experiencesAriaLabels": [
+        "Mehr Lesen über meinen Einsatz bei der Webseite der Kauz Informatik Medien AG",
+        "Mehr Lesen über unsern Pilot-Online-Shop Magical Imagery",
+        "Mehr Lesen über unser Projekt beim Young Talents Hackathon 2022",
+        "Mehr Lesen über unsere Schnitzeljagd-App"
+      ]
+    }
   },
   "about": {
     "title": "Über mich",
@@ -248,6 +256,11 @@
     "experience": "Erfahrung",
     "projects": "Projekte",
     "contact": "Kontakt"
+  },
+  "footer": {
+    "referencesAriaLabel": "Über die Quellen der Bilder und Grafiken auf dieser Webseite lesen",
+    "referencesGithub": "Link zu meinem GitHub Profil",
+    "referencesLinkedin": "Link zu meinem LinkedIn Profil"
   },
   "components": {
     "learnMore": "Mehr erfahren",

@@ -8,7 +8,7 @@ const birthDate: Date = new Date(2004, 12, 17);
 const diff = new Date().getFullYear() - birthDate.getFullYear();
 
 const mySelfImage = new ImageBaseItem("/imgs/me.png", null, t('index.imageOfMyselfAltText'));
-const experiences: MediaItem[] = DataProvider.GetExperienceContent();
+const experiences: MediaItem[] = DataProvider.GetExperienceContent(t);
 
 
 function NavigateToAbout() {

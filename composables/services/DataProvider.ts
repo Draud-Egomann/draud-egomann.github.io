@@ -16,13 +16,13 @@ export class DataProvider {
     [t('mainLayout.contact'), "/contact"],
   ];
 
-  static GetExperienceContent = (): MediaItem[] => [
+  static GetExperienceContent = (t: (key: string) => string): MediaItem[] => [
     new MediaItem(
       "https://www.kauz.ch/assets/imgs/logo/kim-inv.svg",
       null,
       null,
       "/projects?search=kauz",
-      null,
+      t('index.components.experiencesAriaLabels[0]'),
       "bg-[#1b2533] bgImg",
       "Kauz Website"
     ),
@@ -31,7 +31,7 @@ export class DataProvider {
       null,
       null,
       "/projects?search=magical",
-      null,
+      t('index.components.experiencesAriaLabels[1]'),
       null,
       "Magical Imagery"
     ),
@@ -40,7 +40,7 @@ export class DataProvider {
       null,
       null,
       "/projects?search=hackathon",
-      null,
+      t('index.components.experiencesAriaLabels[2]'),
       "bg-[#1b2533] bgImg",
       "Young Talents Hackathon 2022"
     ),
@@ -49,7 +49,7 @@ export class DataProvider {
       null,
       null,
       "/projects?search=scavenger",
-      null,
+      t('index.components.experiencesAriaLabels[3]'),
       null,
       "Scavenger-Hunt-Ionic-App"
     ),

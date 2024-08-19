@@ -34,7 +34,7 @@ const justifyWithIndex = (index: number): string => {
           <div class="relative bg-gray-600 rounded-lg w-full max-w-[368px] h-[256px] overflow-hidden">
 
             <NuxtLink :to="localePath(item.LinkUrl ?? '/')"
-              class="block relative w-full h-full rounded-lg overflow-hidden p-8">
+              class="block relative w-full h-full rounded-lg overflow-hidden p-8" :aria-label="item.LinkText">
               <!-- Separate text and image to separate hover effects -->
               <div :class="item.ImageClass" :style="`background-image: url(${item.ImageUrl});`"
                 class="absolute inset-0 bgImgParallax transform-gpu duration-300 hover:scale-125">

@@ -10,7 +10,15 @@
     "imageOfMyselfAltText": "Image of myself",
     "catchphraseText": "{age}-year-old aspiring developer with a passion for computer science",
     "experienceTitle": "Experience",
-    "experienceMainText": "Throughout my training and professional work, I have participated in a variety of projects, from school projects, work projects, and private projects to hackathon projects. My most notable projects can be viewed here."
+    "experienceMainText": "Throughout my training and professional work, I have participated in a variety of projects, from school projects, work projects, and private projects to hackathon projects. My most notable projects can be viewed here.",
+    "components": {
+      "experiencesAriaLabels": [
+        "Read more about my participation on the Kauz Informatik Medien AG website",
+        "Read more about our pilot online store Magical Imagery",
+        "Read more about our project at the Young Talents Hackathon 2022",
+        "Read more about our scavenger hunt app"
+      ]
+    }
   },
   "about": {
     "title": "About me",
@@ -248,6 +256,11 @@
     "experience": "Experience",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "footer": {
+    "referencesAriaLabel": "Read about the references used on this website",
+    "referencesGithub": "Direct link to my GitHub profile",
+    "referencesLinkedin": "Direct link to my LinkedIn profile"
   },
   "components": {
     "learnMore": "Learn more",
