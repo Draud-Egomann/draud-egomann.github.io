@@ -33,7 +33,7 @@ onMounted(() => {
 
             <img :src="item.ImageUrl" :alt="item.ImageAltText ?? ''" class="w-full h-auto rounded-xl" />
 
-            <button class="btn-overlay absolute z-10 left-1/2 top-1/2 p-0">
+            <button class="btn-overlay absolute z-10 left-1/2 top-1/2 p-0" :aria-label="item.LinkText ?? ''">
               <fa-icon :icon="icon"
                 class="bg-white text-gray-800 shadow-gray-600 shadow-md rounded-full text-2xl sm:text-3xl py-4 px-5" />
             </button>

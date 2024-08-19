@@ -40,22 +40,26 @@
         {
           "title": "Creative writing",
           "text": "My greatest passion is dedicated to creative writing. I have discovered that writing and coming up with stories is what fulfills me the most personally. At the moment, I only write smaller works or concepts.",
-          "imageAltText": "A picture of a notebook"
+          "imageAltText": "A picture of a notebook",
+          "linkAriaLabel": "Find out more about my writing"
         },
         {
           "title": "Programming and coding",
           "text": "Programming is a hobby that you can spend your free time on productively, and it can also be part of your profession. I enjoy programming the frontend as well as the backend logic of websites. The languages I use are C#, JS/TS, Python, and unfortunately also PHP 😪.",
-          "imageAltText": "A picture of a workplace"
+          "imageAltText": "A picture of a workplace",
+          "linkAriaLabel": "Find out more about my programming"
         },
         {
           "title": "Gaming",
           "text": "I am what one would call a passionate gamer, even though this passion is increasingly taking a backseat. My favorite genres are RPGs, hack'n'slash, and MMOs, and I believe in PC supremacy.",
-          "imageAltText": "A wallpaper about the game 'The Witcher 3: Wild Hunt'"
+          "imageAltText": "A wallpaper about the game 'The Witcher 3: Wild Hunt'",
+          "linkAriaLabel": "Find out more about my gaming preferences"
         },
         {
           "title": "Reading",
           "text": "Reading is becoming an increasingly prevalent hobby. I like to read books to expand my vocabulary and to immerse myself in other worlds. My favorite genres are fantasy, sci-fi, and thrillers.",
-          "imageAltText": "A picture of a book"
+          "imageAltText": "A picture of a book",
+          "linkAriaLabel": "Find out more about my reading habits"
         }
       ]
     }

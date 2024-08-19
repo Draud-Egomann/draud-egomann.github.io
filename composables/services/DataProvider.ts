@@ -79,7 +79,7 @@ export class DataProvider {
       t('about.components.hobbies[0].title'),
       t('about.components.hobbies[0].text'),
       null,
-      null,
+      t('about.components.hobbies[0].linkAriaLabel'),
       null,
       t('about.components.hobbies[0].imageAltText')
     ),
@@ -88,7 +88,7 @@ export class DataProvider {
       t('about.components.hobbies[1].title'),
       t('about.components.hobbies[1].text'),
       null,
-      null,
+      t('about.components.hobbies[0].linkAriaLabel'),
       null,
       t('about.components.hobbies[1].imageAltText')
     ),
@@ -97,6 +97,7 @@ export class DataProvider {
       t('about.components.hobbies[2].title'),
       t('about.components.hobbies[2].text'),
       null,
+      t('about.components.hobbies[0].linkAriaLabel'),
       null,
       t('about.components.hobbies[2].imageAltText')
     ),
@@ -105,7 +106,7 @@ export class DataProvider {
       t('about.components.hobbies[3].title'),
       t('about.components.hobbies[3].text'),
       null,
-      null,
+      t('about.components.hobbies[0].linkAriaLabel'),
       null,
       t('about.components.hobbies[3].imageAltText')
     ),
