@@ -205,7 +205,7 @@
         },
         {
           "title": "Mongo Python",
-          "text": "Mongo Python heisst eigentlich Jukebox und ist ein Abschlussprojekt eines Moduls, entwickelt von mir und einem Kollegen. Es ist eine kleine Web-App, die Musik abspielen kann und die Musik in einer MongoDB speichert.",
+          "text": "Mongo Python / Jukebox war ein Abschlussprojekt eines Moduls, entwickelt von einem Kollegen und meine Wenigkeit. Es ist eine kleine Web-App, die Musik abspielen kann und die Musik in einer MongoDB speichert.",
           "moreInfoText": "Ziel des Projekts war es, eine Web-App zu entwickeln, die Musik abspielen kann, diese in Playlists speichern kann und die Musik in einer MongoDB speichert. Die Web-App sollte auch eine Benutzeroberfläche haben, um die Musik zu verwalten. Umgesetzt wurde das Projekt mit VueJs als Frontend und Python als Backend. Die Datenbank läuft in einem Docker-Container.",
           "slides": null
         }
