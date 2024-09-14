@@ -59,7 +59,7 @@ export class DataProvider {
     new FlipCardItem("/imgs/flipCards/lucerne.jpg", t('about.components.flipCardsFrontTextes[0]')),
     new FlipCardItem("/imgs/flipCards/work.jpg", t('about.components.flipCardsFrontTextes[1]')),
     new FlipCardItem("/imgs/flipCards/violet.jpg", t('about.components.flipCardsFrontTextes[2]')),
-    new FlipCardItem("/imgs/flipCards/food.jpg", t('about.components.flipCardsFrontTextes[3]')),
+    new FlipCardItem("/imgs/hobbies/gaming.webp", t('about.components.flipCardsFrontTextes[3]')),
     new FlipCardItem("/imgs/flipCards/wolf.jpg", t('about.components.flipCardsFrontTextes[4]')),
     new FlipCardItem("/imgs/flipCards/winter.jpg", t('about.components.flipCardsFrontTextes[5]')),
     new FlipCardItem("/imgs/flipCards/water.jpg", t('about.components.flipCardsFrontTextes[6]')),
