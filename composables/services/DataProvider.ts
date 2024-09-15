@@ -280,7 +280,7 @@ export class DataProvider {
   static GetReferencesImages = (t: (key: string) => string): ImageReference[] => [
     new ImageReference(
       "/imgs/flipCards/lucerne.jpg",
-      "B. Hochsprung",
+      "bea61",
       "https://pixabay.com/de/users/bea61-12517357/",
       "Pixabay",
       "https://pixabay.com/de/photos/europa-schweiz-luzern-stadt-7128531/",
@@ -297,17 +297,17 @@ export class DataProvider {
       t('references.components.referencesImagesAltTexts[1]')
     ),
     new ImageReference(
-      "/imgs/flipCards/food.jpg",
-      "the_food _shot_",
-      "https://www.pexels.com/de-de/@the_food-_shot_-445040244/",
-      "Pixabay",
-      "https://www.pexels.com/de-de/foto/datei-aparmegiana-20426624/",
+      "/imgs/flipCards/game.jpg",
+      "greywolf513",
+      "https://suwalls.com/user/greywolf513",
+      "suwalls",
+      "https://suwalls.com/games/the-witcher-3-wild-hunt-warriors",
       null,
       t('references.components.referencesImagesAltTexts[2]')
     ),
     new ImageReference(
       "/imgs/flipCards/wolf.jpg",
-      "Andrea Bohl",
+      "Wildfaces",
       "https://pixabay.com/de/users/wildfaces-932734/",
       "Pixabay",
       "https://pixabay.com/de/photos/wolf-eckzahn-wald-raubtier-wild-1336229/",

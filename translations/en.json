@@ -148,7 +148,7 @@
         },
         {
           "title": "Hackathon",
-          "text": "In 2022, three colleageus and myself participated in the Young Talents Hackathon, organized by UMB AG and ICT-Berufsbildung Zentralschweiz. We were supposed to develop a vacation planner for the employees of HSLU.",
+          "text": "In 2022, three colleagues and I participated in the Young Talents Hackathon, organized by UMB AG and ICT-Berufsbildung Zentralschweiz. We were supposed to develop a vacation planner for the employees of HSLU.",
           "moreInfoText": "The actual implementation was rather poor; it was our first attempt to develop a web app. In the end, we developed and presented a simple web app with VueJs as the frontend and .Net as the REST API. Not much came of it, but it was an interesting experience.",
           "slides": [
             {
@@ -167,12 +167,12 @@
         },
         {
           "title": "Scavenger-Hunt-Ionic-App",
-          "text": "As the name suggests, the Scavenger Hunt is a scavenger hunt app. This small app was developed by me and two colleagues as part of a Inter-company vocational training course.",
-          "moreInfoText": "The app is written in Ionic and Angular. In the app, you can do scavenger hunts with a total of 6 tasks, where potatoes are distributed if you spend too much time on a task. All scavenger hunts can be viewed in a leaderboard. The data is stored in the local storage of the device, and during the course, the players' performance was stored in a Google spreadsheet. The source code is currently not publicly available.",
+          "text": "As the name suggests, the Scavenger Hunt is a scavenger hunt app. This small app was developed by me and two colleagues as part of an inter-company vocational training course.",
+          "moreInfoText": "The app is written in Ionic and Angular. In the app, you can do scavenger hunts with a total of 6 tasks, where penalties like 'potatoes' are distributed if you spend too much time on a task. All scavenger hunts can be viewed on a leaderboard. The data is stored in the local storage of the device, and during the course, the players' performance was stored in a Google spreadsheet. The source code is currently not publicly available.",
           "slides": [
             {
               "description": "Home and Leaderboard",
-              "imageAltText": "Home page of the scavenger hunt app with ranking list"
+              "imageAltText": "Home page of the scavenger hunt app with a ranking list"
             },
             {
               "description": "Task 1: Sensor",
@@ -194,19 +194,19 @@
         },
         {
           "title": "Powershell Word-Header replacer",
-          "text": "The Powershell Word-Header replacer is a small script that a colleague and I developed in our first year of our apprenticeship within 3 days. The goal of the script was to replace the headers and footers of Word documents with those of another.",
-          "moreInfoText": "A teacher asked us if we could develop such a script because they needed it for work, and PowerShell was specified as the language. The script uses the built-in Word API from Microsoft and can replace the headers and footers of Word documents, but unfortunately, it doesn't always work. I have made many attempts to improve the script over the years, but none have been crowned with success.A teacher asked us if we could develop such a script because they needed it for work, and PowerShell was specified as the language. The script uses the built-in Word API from Microsoft and can replace the headers and footers of Word documents, but unfortunately, it doesn't always work. I have made many attempts to improve the script over the years, but none have been crowned with success.",
+          "text": "The Powershell Word-Header replacer is a small script that a colleague and I developed in our first year of apprenticeship within 3 days. The goal of the script was to replace the headers and footers of Word documents with those of another document.",
+          "moreInfoText": "A teacher asked us if we could develop such a script because they needed it for work, and PowerShell was specified as the language. The script uses the built-in Word API from Microsoft and can replace the headers and footers of Word documents, but unfortunately, it doesn't always work perfectly. Over the years, I have made many attempts to improve the script, but none have been crowned with success.",
           "slides": [
             {
               "description": null,
-              "imageAltText": "sketch of the main function of the script"
+              "imageAltText": "Sketch of the main function of the script"
             }
           ]
         },
         {
           "title": "Mongo Python",
-          "text": "Mongo Python is actually called Jukebox and is a final project of a module, developed by a colleague and myself. It is a small web app that can play music and store the music in a MongoDB.",
-          "moreInfoText": "The goal of the project was to develop a web app that can play music, save it in playlists, and store the music in a MongoDB. The web app should also have a user interface to manage the music. The project was implemented with VueJs as the frontend and Python as the backend. The database runs in a Docker-Container.",
+          "text": "Mongo Python is actually called Jukebox and is a final project for a module, developed by a colleague and myself. It is a small web app that can play music and store the music in a MongoDB.",
+          "moreInfoText": "The goal of the project was to develop a web app that can play music, save it in playlists, and store the music in a MongoDB. The web app should also have a user interface to manage the music. The project was implemented with VueJs as the frontend and Python as the backend. The database runs in a Docker container.",
           "slides": null
         }
       ]
@@ -226,7 +226,7 @@
         "Image about code from Pixabay",
         "Image of lasagna from Pixabay",
         "Image of a wolf from Pixabay",
-        "Image of a winter landscape by Pixabay",
+        "Image of a winter landscape from Pixabay",
         "Picture of water from Pixabay",
         "Logo from Kauz Informatik Medien AG",
         "Logo of the Young Talents Hackathon 2022"
@@ -239,17 +239,17 @@
         },
         {
           "title": "AI Generated",
-          "text": "The image was generated on my request by GPT-4 DALL·E.",
+          "text": "The image was generated at my request by GPT-4 DALL·E.",
           "imageAltText": "AI Generated"
         },
         {
           "title": "Book Lamp",
           "text": "A free image by jadeharmony1111 on Pinterest.",
-          "imageAltText": "Image of a open book"
+          "imageAltText": "Image of an open book"
         },
         {
           "title": "AI Generated",
-          "text": "The image was generated on my request by recraft ai.",
+          "text": "The image was generated at my request by Recraft AI.",
           "imageAltText": "AI Generated"
         }
       ]
@@ -263,8 +263,8 @@
       "projects": "Projects",
       "contact": "Contact",
       "languageAriaLabel": "Change the language of the website",
-      "toggleBtnAriaLabelClosed": "open menu",
-      "toggleBtnAriaLabelOpened": "close menu"
+      "toggleBtnAriaLabelClosed": "Open menu",
+      "toggleBtnAriaLabelOpened": "Close menu"
     },
     "footer": {
       "referencesAriaLabel": "Read about the references used on this website",
@@ -276,8 +276,8 @@
     "learnMore": "Learn more",
     "visitSite": "Visit Site",
     "viewSourceCode": "Link to Source Code",
-    "showLink": "show",
-    "copied": "copied",
+    "showLink": "Show",
+    "copied": "Copied",
     "source": "Source",
     "imgFrom": "Image by",
     "imgOn": "on",
@@ -288,6 +288,6 @@
       "canceled": "Canceled",
       "unknown": "Unknown"
     },
-    "scrollDown": "scroll down"
+    "scrollDown": "Scroll down"
   }
 }
