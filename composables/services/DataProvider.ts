@@ -280,7 +280,7 @@ export class DataProvider {
   static GetReferencesImages = (t: (key: string) => string): ImageReference[] => [
     new ImageReference(
       "/imgs/flipCards/lucerne.jpg",
-      "B. Hochsprung",
+      "bea61",
       "https://pixabay.com/de/users/bea61-12517357/",
       "Pixabay",
       "https://pixabay.com/de/photos/europa-schweiz-luzern-stadt-7128531/",
@@ -307,7 +307,7 @@ export class DataProvider {
     ),
     new ImageReference(
       "/imgs/flipCards/wolf.jpg",
-      "Andrea Bohl",
+      "Wildfaces",
       "https://pixabay.com/de/users/wildfaces-932734/",
       "Pixabay",
       "https://pixabay.com/de/photos/wolf-eckzahn-wald-raubtier-wild-1336229/",
