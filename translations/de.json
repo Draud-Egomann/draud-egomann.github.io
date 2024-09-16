@@ -10,7 +10,7 @@
     "buttonAriaLabel": "Hier klicken, um mehr über mich zu erfahren",
     "imageOfMyselfAltText": "Ein Bild von mir",
     "catchphraseText": "{age}-jähriger angehender Entwickler mit einer Leidenschaft für Informatik.",
-    "experienceTitle": "Erfahrung",
+    "experienceTitle": "Portfolio",
     "experienceMainText": "Ich habe bereits Erfahrung in der Entwicklung von Webseiten und Webapplikationen. Dabei habe ich unter anderem mit HTML, CSS, JavaScript, PHP und SQL gearbeitet.",
     "components": {
       "experiencesAriaLabels": [

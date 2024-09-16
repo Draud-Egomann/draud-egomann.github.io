@@ -53,7 +53,7 @@ function setFooterBackground() {
           </svg>
         </NuxtLink>
 
-        <NuxtLink to="https://github.com/Egomann88" target="_blank" rel="nofollow" class="cursor-pointer"
+        <NuxtLink to="https://github.com/Draud-Egomann" target="_blank" rel="nofollow" class="cursor-pointer"
           :aria-label="$t('mainLayout.footer.referencesLinkedin')">
           <svg class="w-8" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
             <path

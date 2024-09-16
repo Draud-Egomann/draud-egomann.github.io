@@ -10,7 +10,7 @@
     "buttonAriaLabel": "Here you can learn more about me",
     "imageOfMyselfAltText": "Image of myself",
     "catchphraseText": "{age}-year-old aspiring developer with a passion for computer science",
-    "experienceTitle": "Experience",
+    "experienceTitle": "Portfolio",
     "experienceMainText": "Throughout my training and professional work, I have participated in a variety of projects, from school projects, work projects, and private projects to hackathon projects. My most notable projects can be viewed here.",
     "components": {
       "experiencesAriaLabels": [
