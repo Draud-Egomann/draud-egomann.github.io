@@ -182,10 +182,10 @@ export class DataProvider {
       null,
       null,
       [
-        "https://github.com/Egomann88/BlazorWebTemplate",
-        "https://github.com/Egomann88/BlazorRazdenTemplate",
-        "https://github.com/Egomann88/BlazorBlazoriseTailwindTemplate",
-        "https://github.com/Egomann88/BlazorBlazoriseBootstrapTemplate",
+        "https://github.com/Draud-Egomann/BlazorWebTemplate",
+        "https://github.com/Draud-Egomann/BlazorRazdenTemplate",
+        "https://github.com/Draud-Egomann/BlazorBlazoriseTailwindTemplate",
+        "https://github.com/Draud-Egomann/BlazorBlazoriseBootstrapTemplate",
       ],
       [],
       null, // Slides
@@ -197,7 +197,7 @@ export class DataProvider {
       t('projects.components.projectMenuItems[3].moreInfoText'),
       ProjectStatus.Completed,
       null,
-      "https://github.com/Egomann88/newHackathonDJMN",
+      "https://github.com/Draud-Egomann/newHackathonDJMN",
       null,
       [],
       [
@@ -231,7 +231,7 @@ export class DataProvider {
       t('projects.components.projectMenuItems[5].moreInfoText'),
       ProjectStatus.Unknown,
       null,
-      "https://github.com/Egomann88/PSCopyFromWord2Word",
+      "https://github.com/Draud-Egomann/PSCopyFromWord2Word",
       null,
       [],
       [
@@ -265,7 +265,7 @@ export class DataProvider {
       "/imgs/logos/GitHub_Logo_White.png",
       null,
       null,
-      "https://github.com/Egomann88",
+      "https://github.com/Draud-Egomann",
       "Github"
     ),
     new MediaItem(
