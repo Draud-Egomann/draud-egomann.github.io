@@ -1,4 +1,10 @@
 <script setup lang="ts">
+const localePath = useLocalePath()
+const { t } = useI18n();
+
+const profileImage: MediaItem = DataProvider.GetProfileImage();
+const [title, description] = DataProvider.GetTitleAndDesc();
+const socialLinks: SocialLink = DataProvider.GetSocialLinks();
 </script>
 
 <template>
@@ -8,38 +14,7 @@
     <div class="container mx-auto py-8 flex flex-col lg:flex-row">
 
       <!-- Left Sidebar -->
-      <aside class="w-full lg:w-1/4 rounded p-6 mb-6 lg:mb-0">
-        <div class="text-left">
-          <div class="size-24 lg:size-40 mx-auto bg-gray-300 rounded-full">
-            <img src="/imgs/logos/magical-imagery.svg" alt="" class="rounded-full" />
-          </div>
-          <h2 class="text-xl text-white font-semibold mt-4">Justin Urbanek</h2>
-          <p class="text-sm text-gray-400 mt-2">
-            Apprentice as a Computer Scientist specializing in Application Development at Berufsbildungszentrum
-            Wirtschaft, Informatik und Technik (BBZW) Sursee.
-          </p>
-
-          <ul class="mr-auto p-2 mt-4 shadow bg-base-100 rounded-box w-52 text-gray-400">
-            <li class="mt-1 flex items-center justify-left gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="size-4" stroke="#fff" fill="#fff"
-                aria-hidden="true">
-                <path
-                  d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
-              </svg>
-              Location
-            </li>
-            <li class="mt-1 flex items-center justify-left gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="size-4" stroke="#fff" fill="#fff">
-                <path
-                  d="M48 0C21.5 0 0 21.5 0 48L0 464c0 26.5 21.5 48 48 48l96 0 0-80c0-26.5 21.5-48 48-48s48 21.5 48 48l0 80 96 0c26.5 0 48-21.5 48-48l0-416c0-26.5-21.5-48-48-48L48 0zM64 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm112-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM80 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM272 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z" />
-              </svg>
-              Company
-            </li>
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Linkedin</a></li>
-          </ul>
-        </div>
-      </aside>
+      <SidebarsSidebar1 :profile-image="profileImage" :title="title" :description="description" :social-links="socialLinks" />
 
       <!-- Main Content -->
       <main class="w-full lg:w-3/4 rounded p-6 text-white">

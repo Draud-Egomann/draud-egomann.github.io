@@ -5,7 +5,9 @@ import {
   TimelineItem,
   ProjectMenuItem,
   ImageReference,
+  ImageBaseItem
 } from "#imports";
+import { SocialLink } from "../models/SocialLink";
 
 export class DataProvider {
   static GetNavBarLinks = (t: (key: string) => string): [string, string][] => [
@@ -485,5 +487,27 @@ export class DataProvider {
       null,
       t('references.components.referencesHobbyCards[3].imageAltText'),
     ),
+  ];
+
+  // classic view
+  static GetProfileImage = (): ImageBaseItem => new ImageBaseItem(
+    "/imgs/me.png",
+    null,
+    "Profile Picture",
+    null,
+    null
+  )
+
+  static GetTitleAndDesc = (): [string, string] => [
+    "Justin Urbanek",
+    "Apprentice as a Computer Scientist specializing in Application Development at Berufsbildungszentrum Wirtschaft, Informatik und Technik (BBZW) Sursee."
+  ];
+
+  static GetSocialLinks = (): SocialLink[] => [
+    new SocialLink("Switzerland", "location-dot", null),
+    new SocialLink("Kauz Informatik Medien AG", "building", null),
+    new SocialLink("Egomann88#9118", ["fab", "discord"], null),
+    new SocialLink("Linkedin", ["fab", "linkedin"], "https://www.linkedin.com/in/ju-573795244"),
+    new SocialLink("Github", ["fab", "github"], "https://github.com/Draud-Egomann"),
   ];
 }

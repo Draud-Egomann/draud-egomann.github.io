@@ -74,8 +74,15 @@ export default defineNuxtConfig({
         "external-link-square-alt",
         "copy",
         "link",
+        "location-dot",
+        "building",
       ],
       regular: ["user"],
+      brands: [
+        "discord",
+        "linkedin",
+        "github",
+      ],
     },
   },
 
