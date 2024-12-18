@@ -261,7 +261,7 @@ export class DataProvider {
       null,
       null,
       null,
-      "Egomann88#9118"
+      "draud_egomann"
     ),
     new MediaItem(
       "/imgs/logos/GitHub_Logo_White.png",
