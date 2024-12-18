@@ -255,6 +255,16 @@
       ]
     }
   },
+  "classic": {
+    "pageTitle": "Klassische Ansicht",
+    "description": "Ausbildung als Informatiker Fachrichtung Applikationsentwicklung am Berufsbildungszentrum Wirtschaft, Informatik und Technik (BBZW) Sursee.",
+    "components": {
+      "profileImageAltText": "Profilbild von Justin Urbanek",
+      "socialLinks": {
+        "location": "Schweiz"
+      }
+    }
+  },
   "mainLayout": {
     "header": {
       "home": "Startseite",

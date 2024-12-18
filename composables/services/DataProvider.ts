@@ -490,21 +490,21 @@ export class DataProvider {
   ];
 
   // classic view
-  static GetProfileImage = (): ImageBaseItem => new ImageBaseItem(
+  static GetProfileImage = (t: (key: string) => string): ImageBaseItem => new ImageBaseItem(
     "/imgs/me.png",
     null,
-    "Profile Picture",
+    t('classic.components.profileImageAltText'),
     null,
     null
   )
 
-  static GetTitleAndDesc = (): [string, string] => [
-    "Justin Urbanek",
-    "Apprentice as a Computer Scientist specializing in Application Development at Berufsbildungszentrum Wirtschaft, Informatik und Technik (BBZW) Sursee."
+  static GetTitleAndDesc = (t: (key: string) => string): [string, string] => [
+    t('myName'),
+    t('classic.description')
   ];
 
-  static GetSocialLinks = (): SocialLink[] => [
-    new SocialLink("Switzerland", "location-dot", null),
+  static GetSocialLinks = (t: (key: string) => string): SocialLink[] => [
+    new SocialLink(t('classic.components.socialLinks.location'), "location-dot", null),
     new SocialLink("Kauz Informatik Medien AG", "building", null),
     new SocialLink("Egomann88#9118", ["fab", "discord"], null),
     new SocialLink("Linkedin", ["fab", "linkedin"], "https://www.linkedin.com/in/ju-573795244"),

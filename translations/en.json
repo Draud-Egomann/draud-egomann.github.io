@@ -255,6 +255,16 @@
       ]
     }
   },
+  "classic": {
+    "pageTitle": "Classic View",
+    "description": "Apprentice as a Computer Scientist specializing in Application Development at Berufsbildungszentrum Wirtschaft, Informatik und Technik (BBZW) Sursee.",
+    "components": {
+      "profileImageAltText": "Profile picture of Justin Urbanek",
+      "socialLinks": {
+        "location": "Switzerland"
+      }
+    }
+  },
   "mainLayout": {
     "header": {
       "home": "Home",
