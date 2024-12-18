@@ -1,15 +1,17 @@
 <script setup lang="ts">
+import type { ImageBaseItem, SocialLink } from '#imports';
+
 const localePath = useLocalePath()
 const { t } = useI18n();
 
-const profileImage: MediaItem = DataProvider.GetProfileImage();
-const [title, description] = DataProvider.GetTitleAndDesc();
-const socialLinks: SocialLink = DataProvider.GetSocialLinks();
+const profileImage: ImageBaseItem = DataProvider.GetProfileImage(t);
+const [title, description] = DataProvider.GetTitleAndDesc(t);
+const socialLinks: SocialLink[] = DataProvider.GetSocialLinks(t);
 </script>
 
 <template>
   <div>
-    <title>{{ $t('myName') }} - {{ $t('contact.title') }}</title>
+    <title>{{ $t('myName') }} - {{ $t('classic.pageTitle') }}</title>
 
     <div class="container mx-auto py-8 flex flex-col lg:flex-row">
 
