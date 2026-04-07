@@ -1,0 +1,121 @@
+<script lang="ts" setup>
+const currentUrl = ref("");
+const background = ref("");
+
+const route = useRoute();
+const localePath = useLocalePath();
+
+onMounted(() => {
+  setFooterBackground();
+});
+
+// Watch for route changes
+watch(
+  () => route.path,
+  () => {
+    setFooterBackground();
+  }
+);
+
+function setFooterBackground() {
+  const homeRoutes = ["/", "/en", "/de"];
+  currentUrl.value = route.path;
+
+  // Check if the current route is one of the home routes
+  const isHomeRoute = homeRoutes.includes(route.path);
+
+  background.value = "bg-footerBanner2";
+  return;
+
+  if (isHomeRoute) {
+    background.value = "bg-footerBanner1";
+  } else {
+    background.value = "bg-footerBanner2";
+  }
+}
+</script>
+
+<template>
+  <div :class="background" class="w-full text-white">
+    <div
+      class="flex flex-col sm:flex-row justify-between items-center container px-8 py-4 mx-auto"
+    >
+      <p class="flex gap-4 items-center text-2xl font-bold text-white my-4 sm:my-0">
+        <svg
+          fill="#fff"
+          height="24px"
+          width="24px"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 367.467 367.467"
+          xml:space="preserve"
+        >
+          <g>
+            <path
+              d="M183.73,0.018C82.427,0.018,0,82.404,0,183.733c0,101.289,82.427,183.716,183.73,183.716
+		c101.315,0,183.737-82.427,183.737-183.716C367.467,82.404,285.045,0.018,183.73,0.018z M183.73,326.518
+		c-78.743,0-142.798-64.052-142.798-142.784c0-78.766,64.055-142.817,142.798-142.817c78.752,0,142.807,64.052,142.807,142.817
+		C326.536,262.466,262.481,326.518,183.73,326.518z"
+            />
+            <path
+              d="M244.036,217.014c-11.737,20.141-33.562,32.635-56.956,32.635c-36.329,0-65.921-29.585-65.921-65.915 
+		c0-36.36,29.592-65.955,65.921-65.955c23.395,0,45.219,12.54,56.956,32.641l1.517,2.627h44.28l-2.658-7.129
+		c-7.705-20.413-21.225-37.769-39.122-50.157c-17.942-12.42-39.017-19.009-60.973-19.009c-58.981,0-106.946,48.006-106.946,106.982
+		c0,58.98,47.965,106.941,106.946,106.941c21.956,0,43.03-6.567,60.973-19.006c17.897-12.391,31.417-29.741,39.122-50.154
+		l2.658-7.133h-44.28L244.036,217.014z"
+            />
+          </g>
+        </svg>
+
+        2025 Justin Urbanek - Alle Rechte vorbehalten
+      </p>
+
+      <div class="flex items-center gap-8">
+        <!-- <NuxtLink :to="localePath('/references')" class="cursor-pointer"
+          :aria-label="$t('mainLayout.footer.referencesAriaLabel')">
+          <fa-icon icon="book" class="text-white fa-2x" />
+        </NuxtLink> -->
+
+        <NuxtLink
+          to="https://www.linkedin.com/in/ju-urbanek/"
+          target="_blank"
+          rel="nofollow"
+          class="cursor-pointer"
+          :aria-label="$t('mainLayout.footer.referencesGithub')"
+        >
+          <svg
+            class="w-8"
+            fill="#fff"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+            />
+          </svg>
+        </NuxtLink>
+
+        <NuxtLink
+          to="https://github.com/Draud-Egomann"
+          target="_blank"
+          rel="nofollow"
+          class="cursor-pointer"
+          :aria-label="$t('mainLayout.footer.referencesLinkedin')"
+        >
+          <svg
+            class="w-8"
+            fill="#fff"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512"
+          >
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            />
+          </svg>
+        </NuxtLink>
+      </div>
+    </div>
+  </div>
+</template>

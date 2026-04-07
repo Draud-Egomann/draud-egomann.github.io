@@ -1,0 +1,287 @@
+{
+  "myName": "Justin Urbanek",
+  "index": {
+    "title": "Justin Urbanek - Me",
+    "paragraphs": [
+      "Welcome to my personal website! I am Justin Urbanek, a freshly graduated computer scientist EFZ with a passion for innovative technologies.",
+      "After successfully completing my apprenticeship, I am looking for new challenges for my personal and professional development."
+    ],
+    "buttonText": "More about me",
+    "buttonAriaLabel": "Here you can learn more about me",
+    "imageOfMyselfAltText": "Image of myself",
+    "catchphraseText": "{age}-year-old computer scientist EFZ with a passion for computer science.",
+    "experienceTitle": "Portfolio",
+    "experienceMainText": "I already have experience in developing websites and web applications. I have worked with HTML, CSS, JavaScript, PHP and SQL, among others. In addition to expanding my technical knowledge, I was also able to develop personally.",
+    "components": {
+      "experiencesAriaLabels": [
+        "Read more about my participation on the Kauz Informatik Medien AG website",
+        "Read more about our pilot online store Magical Imagery",
+        "Read more about our project at the Young Talents Hackathon 2022",
+        "Read more about our scavenger hunt app"
+      ]
+    }
+  },
+  "about": {
+    "title": "About me",
+    "subTitle": "Crooked keyboard, crooked back, crooked fingers",
+    "textCarouselTitle": "I use",
+    "textCarouselButtonText": "View my projects",
+    "myHobbiesTitle": "My hobbies",
+    "components": {
+      "flipCardsFrontTextes": [
+        "My favorite color",
+        "My favorite game",
+        "My favorite animal",
+        "My favorite season"
+      ],
+      "hobbies": [
+        {
+          "title": "Bouldering",
+          "text": "For me, bouldering is the perfect way to balance out long hours at a desk. It's the mix of strength, technique, and mental challenge that fascinates me, making every session a small achievement.",
+          "imageAltText": "A person on a bouldering wall"
+        },
+        {
+          "title": "Reading",
+          "text": "I love to read to escape the everyday and dive into other worlds. It's the best way to broaden my horizons and expand my vocabulary. My favorite genres are still Fantasy, Sci-Fi, and Thrillers.",
+          "imageAltText": "A stack of books"
+        },
+        {
+          "title": "Programming & Hosting",
+          "text": "Programming is a hobby that's a meaningful way to spend free time and can also be part of a profession. I enjoy developing the entire application, from the frontend to the backend logic, and I also host my projects myself.",
+          "imageAltText": "Code on a monitor"
+        },
+        {
+          "title": "Pen & Paper (RPG)",
+          "text": "While video games give you a pre-made world, in Pen & Paper, we create it ourselves. Experiencing stories and developing characters with friends is a very special kind of hobby. I'm even currently working on my own streamlined rule system based on D&D.",
+          "imageAltText": "A set of polyhedral dice on a table"
+        }
+      ]
+    }
+  },
+  "experience": {
+    "title": "My Experience",
+    "subTitle": "My previous positions and experiences",
+    "components": {
+      "timelines": [
+        {
+          "title": "Compulsory school",
+          "text": "Nine years of compulsory schooling."
+        },
+        {
+          "title": "Center for Bridge Programs",
+          "text": "At the Center for Bridge Programs, we were prepared for Apprenticeships or a Fachmittelschule (specialized upper-secondary school)."
+        },
+        {
+          "title": "Apprenticeship as a computer scientist in application development (Kauz Informatik Medien AG)",
+          "text": "Four years of intensive training that took me from the basics to complex web applications. Customer support, agile development, and modern technologies were my daily routine. With a final grade of 5.2 and a backpack full of experience, I am now starting the next chapter of my career."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "Notable Projects",
+    "subTitle": "Milestones and Creative Achievements",
+    "components": {
+      "projectMenuItems": [
+        {
+          "title": "Kauz Website",
+          "text": "The Kauz Website was a project to redesign the website of Kauz Informatik Medien AG. I helped with the implementation of the design.",
+          "moreInfoText": "This was an internal project and my tasks included implementing design elements. I had the freedom to design the elements as long as usability, functionality, and basic requirements were ensured.",
+          "slides": [
+            {
+              "description": null,
+              "imageAltText": "Project image 1"
+            },
+            {
+              "description": null,
+              "imageAltText": "Project image 2"
+            },
+            {
+              "description": null,
+              "imageAltText": "Project image 3"
+            }
+          ]
+        },
+        {
+          "title": "Magical Imagery",
+          "text": "Magical Imagery was a pilot project as part of a module in my apprenticeship and was meant to simulate how to plan and implement a real project. It is an online shop for photography and art, aimed at creating a simple platform for artists to sell their works.",
+          "moreInfoText": "An online shop that should meet both private and business needs. The challenge was to create a simple and intuitive user interface that is easy to use for both artists and customers. The motivation for this idea was to make life easier for artists and allow them to sell their works on our platform without the legal hurdles of their own shop. We also wanted to provide freedom for AI-generated artworks.",
+          "slides": [
+            {
+              "description": "Index page",
+              "imageAltText": "Image of the index page"
+            },
+            {
+              "description": "Detailed view of a product",
+              "imageAltText": "Image of the detailed view of a product"
+            },
+            {
+              "description": "License Models",
+              "imageAltText": "Image of the license models"
+            },
+            {
+              "description": "Shopping Cart",
+              "imageAltText": "Image of a shopping cart"
+            },
+            {
+              "description": "Create Product Page",
+              "imageAltText": "Image of the create product view"
+            }
+          ]
+        },
+        {
+          "title": "Blazor Templates",
+          "text": "The Blazor Templates are a small collection of templates for Blazor web projects. They are intended for developers looking for a quick and easy template for their projects.",
+          "moreInfoText": "All Blazor templates consist of the same structure, which separates the database logic and the user interface; written as a Blazor web app. Currently, there are 4 templates: a standard Blazor web app, the standard one with Radzen as a UI library, and two more standard ones with Blazorise as a UI library; one with TailwindCSS and the other with Bootstrap.",
+          "slides": null
+        },
+        {
+          "title": "Hackathon",
+          "text": "In 2022, three colleagues and I participated in the Young Talents Hackathon, organized by UMB AG and ICT-Berufsbildung Zentralschweiz. We were supposed to develop a vacation planner for the employees of HSLU.",
+          "moreInfoText": "The actual implementation was rather poor; it was our first attempt to develop a web app. In the end, we developed and presented a simple web app with VueJs as the frontend and .Net as the REST API. Not much came of it, but it was an interesting experience.",
+          "slides": [
+            {
+              "description": "Login",
+              "imageAltText": "Login-Page of the vacation planner"
+            },
+            {
+              "description": "Calendar",
+              "imageAltText": "Calendar-Page of the vacation planner"
+            },
+            {
+              "description": "Requested Vacations",
+              "imageAltText": "View of the requested vacations"
+            }
+          ]
+        },
+        {
+          "title": "Scavenger-Hunt-Ionic-App",
+          "text": "As the name suggests, the Scavenger Hunt is a scavenger hunt app. This small app was developed by me and two colleagues as part of an inter-company vocational training course.",
+          "moreInfoText": "The app is written in Ionic and Angular. In the app, you can do scavenger hunts with a total of 6 tasks, where penalties like 'potatoes' are distributed if you spend too much time on a task. All scavenger hunts can be viewed on a leaderboard. The data is stored in the local storage of the device, and during the course, the players' performance was stored in a Google spreadsheet. The source code is currently not publicly available.",
+          "slides": [
+            {
+              "description": "Home and Leaderboard",
+              "imageAltText": "Home page of the scavenger hunt app with a ranking list"
+            },
+            {
+              "description": "Task 1: Sensor",
+              "imageAltText": "Screenshot of the first task where sensors are used"
+            },
+            {
+              "description": "Task 2: Running",
+              "imageAltText": "Image of the task where users have to walk"
+            },
+            {
+              "description": "Task 4: Shaking or Turning",
+              "imageAltText": "Game scene in which the device is shaken or rotated"
+            },
+            {
+              "description": "End and Evaluation",
+              "imageAltText": "Final image with evaluation of the scavenger hunt"
+            }
+          ]
+        },
+        {
+          "title": "Powershell Word-Header replacer",
+          "text": "The Powershell Word-Header replacer is a small script that a colleague and I developed in our first year of apprenticeship within 3 days. The goal of the script was to replace the headers and footers of Word documents with those of another document.",
+          "moreInfoText": "A teacher asked us if we could develop such a script because they needed it for work, and PowerShell was specified as the language. The script uses the built-in Word API from Microsoft and can replace the headers and footers of Word documents, but unfortunately, it doesn't always work perfectly. Over the years, I have made many attempts to improve the script, but none have been crowned with success.",
+          "slides": [
+            {
+              "description": null,
+              "imageAltText": "Sketch of the main function of the script"
+            }
+          ]
+        },
+        {
+          "title": "Mongo Python",
+          "text": "Mongo Python is actually called Jukebox and is a final project for a module, developed by a colleague and myself. It is a small web app that can play music and store the music in a MongoDB.",
+          "moreInfoText": "The goal of the project was to develop a web app that can play music, save it in playlists, and store the music in a MongoDB. The web app should also have a user interface to manage the music. The project was implemented with VueJs as the frontend and Python as the backend. The database runs in a Docker container.",
+          "slides": null
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subTitle": "Ways and means of reaching me"
+  },
+  "references": {
+    "title": "References",
+    "subTitle": "Yes, I reference the work of others.",
+    "dividerText": "Unlisted images used are either still to be added, are my own creations, or are linked directly to the graphic.",
+    "components": {
+      "referencesImagesAltTexts": [
+        "Image of Lucerne from Pixabay",
+        "Image about code from Pixabay",
+        "Image of lasagna from Pixabay",
+        "Image of a wolf from Pixabay",
+        "Image of a winter landscape from Pixabay",
+        "Picture of water from Pixabay",
+        "Logo from Kauz Informatik Medien AG",
+        "Logo of the Young Talents Hackathon 2022"
+      ],
+      "referencesHobbyCards": [
+        {
+          "title": "The Witcher 3 Wallpaper",
+          "text": "A free image by Luiz Eduardo on Pinterest.",
+          "imageAltText": "The Witcher 3 Wallpaper"
+        },
+        {
+          "title": "AI Generated",
+          "text": "The image was generated at my request by GPT-4 DALL·E.",
+          "imageAltText": "AI Generated"
+        },
+        {
+          "title": "Book Lamp",
+          "text": "A free image by jadeharmony1111 on Pinterest.",
+          "imageAltText": "Image of an open book"
+        },
+        {
+          "title": "AI Generated",
+          "text": "The image was generated at my request by Recraft AI.",
+          "imageAltText": "AI Generated"
+        }
+      ]
+    }
+  },
+  "mainLayout": {
+    "header": {
+      "home": "Home",
+      "about": "About me",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact",
+      "languageAriaLabel": "Change the language of the website",
+      "toggleBtnAriaLabelClosed": "Open menu",
+      "toggleBtnAriaLabelOpened": "Close menu"
+    },
+    "footer": {
+      "referencesAriaLabel": "Read about the references used on this website",
+      "referencesGithub": "Direct link to my GitHub profile",
+      "referencesLinkedin": "Direct link to my LinkedIn profile"
+    }
+  },
+  "components": {
+    "learnMore": "Learn more",
+    "visitSite": "Visit Site",
+    "viewSourceCode": "Link to Source Code",
+    "showLink": "Show",
+    "copy": "Copy",
+    "visitLink": "Visit Link",
+    "copied": "Copied!",
+    "copiedDetails": "Content was successfully copied to clipboard.",
+    "copyError": "Error",
+    "copyErrorDetails": "Content could not be copied.",
+    "source": "Source",
+    "imgFrom": "Image by",
+    "imgOn": "on",
+    "badgeColors": {
+      "completed": "Completed",
+      "inProgress": "In Progress",
+      "onHold": "On Hold",
+      "canceled": "Canceled",
+      "unknown": "Unknown"
+    },
+    "scrollDown": "Scroll down"
+  }
+}

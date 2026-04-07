@@ -1,0 +1,30 @@
+{
+    # Global options
+    admin off
+}
+
+:80 {
+    # Set the root directory to where Nuxt files are stored
+    root * /srv
+
+    # Enable compression
+    encode gzip
+
+    # Log requests
+    log {
+        output stdout
+        format console
+    }
+
+    # Define a matcher for static file extensions.
+    # This must be at the site-level, not inside another directive.
+    @static path *.css *.js *.ico *.gif *.jpg *.jpeg *.png *.svg *.webp
+
+    # Handle SPA routing: try to find the file, otherwise serve index.html
+    try_files {path} /index.html
+    file_server
+
+    # Apply headers. Each header is a separate directive.
+    header Access-Control-Allow-Origin *
+    header @static Cache-Control "public, max-age=31536000"
+}
